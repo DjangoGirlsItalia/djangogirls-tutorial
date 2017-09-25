@@ -22,7 +22,7 @@ Per prima cosa bisogna controllare se la tua verisione di Windows è a 32-bit o 
 
 Puoi scaricare Python per Windows dal sito web https://www.python.org/downloads/windows/. Fai click sul link "Latest Python 3 Release - Python x.x.x". 
 
-Scorri la pagina fino al fondo e se la tua versione di Windows è **64-bit**, scarica **Windows x86-64 executable installer**. Altrimenti, scarica **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+Scorri la pagina fino al fondo e se la tua versione di Windows è **64-bit**, scarica **Windows x86-64 executable installer**. Altrimenti, scarica **Windows x86 executable installer**.
 
 Dopo aver scaricato l'installer, lo dovresti eseguire (cliccaci sopra due volte) e segui le istruzioni. È importante ricordare il percorso (la directory) dove ha installato Python. Più tardi sarà necessario!
 
@@ -35,14 +35,26 @@ Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più av
 
 ![Scrivi "cmd" nella finestra "Run"](/installation/images/windows-plus-r.png)
 
-Nota: se stai usando una vecchia versione di Windows (7, Vista, or any older version) e l'installer di python 3.6.x ti da un errore puoi provare queste cose:
+>Nota: se stai usando una vecchia versione di Windows (7, Vista, or any older version) e l'installer di python 3.6.x ti da un errore puoi provare queste cose:
 
-1. install all Windows Updates and try to install Python 3.6 again; or
-2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+>1. Installa tutti gli update di Windows Updates e riprova; or
+2. installa una [vecchia versione Python](https://www.python.org/downloads/windows/), es., [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-Se installi una vecchia versione di Python, la schermata di installazione potrebbe essere un pochino diversa. **Assicurati** di scrollare per vedere "Add python.exe to Path", quindi fai click sul bottone a sinistra e seleziona "Will be installed on local hard drive":
+>Se installi una vecchia versione di Python, la schermata di installazione potrebbe essere un pochino diversa. **Assicurati** di scrollare per vedere "Add python.exe to Path", quindi fai click sul bottone a sinistra e seleziona "Will be installed on local hard drive":
 
 ![Non dimenticare di aggiungere Python al Path](/installation/images/add_python_to_windows_path.png)
+
+<!--endsec-->
+
+<!--sec data-title="OS X" data-id="python_OSX"
+data-collapse=true ces-->
+
+> **Nota** Prima di installare Python su OS X, devi assicurarti che nelle impostazioni del tuo Mac permettano l'installazione di applicazioni che non provengono dell'App Store. Vai nelle `Preferenze di Sistema` cliccando sulla mela in alto a sinistra, fai click su `Sicurezza & Privacy`, qundi sul tab `Generali`. Se `Consenti app scaricate da:` è impostato su `App Store` cambialo in `App Store e sviluppatori identificati`.
+
+Devi andare sul sito https://www.python.org/downloads/mac-osx/. Fai click sul link "Latest Python 3 Release - Python x.x.x" e scarica il programma d'installazione di Python:
+
+* Scarica *Mac OS X 64-bit/32-bit installer*,
+* Fai doppio click sul file appena scaricato per iniziare l'installazione.
 
 <!--endsec-->
 
