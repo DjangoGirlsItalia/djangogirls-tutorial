@@ -28,7 +28,7 @@ Dopo aver scaricato l'installer, lo dovresti eseguire (cliccaci sopra due volte)
 
 Una cosa a cui fare **attenzione**: in una schermata dell'installazione guidata, contrassegnata con "Setup", assicurati di scegliere l'opzione "Add Python 3.6 to PATH", come illustrato qui:
 
-![Non dimenticare di aggiungere Python al Path](/assets/python-installation-options.png)
+![Non dimenticare di aggiungere Python al Path](./images/python-installation-options.png)
 
 Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più avanti nel tutorial). Per adesso, se hai bisogno di aprirla, vai nel menù Start → Windows System → Command Prompt. Puoi anche tenere premuto il tasto `Windows` e premere il pulsante `R` finché la finestra `Run` non compare. Per aprire la linea di comando ti basterà scrivere `cmd` e premere `enter` nella finestra `Run`.
 (Nelle nuove versioni di Windows potrebbe essere necessario cercare `Prompt dei comandi` perché a volte è nascosta.)
