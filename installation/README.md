@@ -10,11 +10,11 @@ Assicurati di avere il tuo coach a disposizione in caso di dubbi o problemi.
 
 > Questa sezione si basa su un tutorial fatto da Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django è scritto in Python. Abbiamo bisogno di Python per fare qualsiasi cosa in Django. Iniziamo con l'installazione! Vogliamo che sul tuo pc sia installato Python 3.6.1 quindi se hai una versione precedente, dovrai aggiornarlo.
+Django è scritto in Python. Abbiamo bisogno di Python per fare qualsiasi cosa in Django. Iniziamo con l'installazione! Vogliamo che sul tuo pc sia installato Python 3.6.2 quindi se hai una versione precedente, dovrai aggiornarlo.
 
 ### Windows
 
-Puoi scaricare Python per Windows dal sito web https://www.python.org/downloads/release/python-343/. Dopo aver scaricato il file ***.msi**, lo dovresti eseguire (cliccaci sopra due volte) e segui le istruzioni. È importante ricordare il percorso (la directory) dove ha installato Python. Più tardi sarà necessario!
+Puoi scaricare Python per Windows dal sito web https://www.python.org/downloads/release/python-362/. Dopo aver scaricato il file ***.msi**, lo dovresti eseguire (cliccaci sopra due volte) e segui le istruzioni. È importante ricordare il percorso (la directory) dove ha installato Python. Più tardi sarà necessario!
 
 Una cosa a cui fare attenzione: sulla seconda schermata dell'installazione guidata, contrassegnata "Customize", assicurati di scorrere verso il basso e di scegliere l'opzione "Add python.exe to the Path", come illustrato qui:
 
@@ -25,7 +25,7 @@ Una cosa a cui fare attenzione: sulla seconda schermata dell'installazione guida
 È molto probabile che tu abbia Python già installato di default. Per controllare se ce l'hai già installato (e quale versione è), apri una console e digita il seguente comando:
 
     $ python3 --version
-    Python 3.4.3
+    Python 3.6.2
     
 
 Se non hai Python installato o se vuoi una versione diversa, puoi installarla come segue:

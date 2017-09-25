@@ -4,6 +4,14 @@
 
 > Questo lavoro è sotto la licenza internazionale di Creative Commons Attribution-ShareAlike 4.0. Per vedere una copia di questa licenza, visita [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
 
+## Benvenuta {#welcome}
+
+Benvenuta al tutorial di Django Girls! Siamo felici di vederti :\) 
+
+In questo tutorial ti faremo vedere cosa succede sotto il cofano di un sito web, mostrandoti tutti i pezzi che compongono il web per come lo consciamo.
+
+Ci saranno un sacco di cose che non hai mai visto e sarà come vivere un'avventura - ma non preoccuparti, se hai preso la decisione di provarci hai tutto quello che serve per arrivare in fondo :\)
+
 ## Introduzione
 
 Hai mai sentito che il mondo sta diventando sempre più tecnologico e sei in qualche modo rimasta indietro? ti sei mai chiesta come creare un sito web ma non hai mai avuto abbastanza motivazione per iniziare? Hai mai pensato che il mondo del software è troppo complicato per te persino per provare a fare qualcosa per conto tuo?
@@ -12,7 +20,7 @@ Beh, abbiamo buone notizie per te! La programmazione non è così complicata com
 
 Il tutorial non ti trasformerà magicamente in una programmatrice. Se vuoi diventare brava, ci vorranno mesi o addirittura anni di apprendimento e pratica. Ma ti vogliamo dimostrare che la programmazione o creare siti web non è complicato come sembra. Proveremo a spiegarti diversi argomenti come meglio possiamo, in modo che non ti senta più intimidita dalla tecnologia.
 
-Speriamo di essere in grado di farti amare la tecnologia come lo facciamo noi!
+Speriamo di essere in grado di farti amare la tecnologia come noi!
 
 ## Cosa imparerai durante questo tutorial?
 
