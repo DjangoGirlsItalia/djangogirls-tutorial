@@ -33,6 +33,8 @@ Una cosa a cui fare **attenzione**: in una schermata dell'installazione guidata,
 Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più avanti nel tutorial). Per adesso, se hai bisogno di aprirla, vai nel menù Start → Windows System → Command Prompt. Puoi anche tenere premuto il tasto `Windows` e premere il pulsante `R` finché la finestra `Run` non compare. Per aprire la linea di comando ti basterà scrivere `cmd` e premere `enter` nella finestra `Run`.
 (Nelle nuove versioni di Windows potrebbe essere necessario cercare `Prompt dei comandi` perché a volte è nascosta.)
 
+![Scrivi "cmd" nella finestra "Run"](/installation/images/windows-plus-r.png)
+
 <!--endsec-->
 
 ### Linux
