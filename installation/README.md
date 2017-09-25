@@ -4,6 +4,8 @@ Nel workshop costruirai un blog, e ci sono alcuni task dedicati all'impostazione
 
 Assicurati di avere il tuo coach a disposizione in caso di dubbi o problemi.
 
+Buona fortuna!
+
 # Installare Python
 
 ## Installare Python
@@ -12,13 +14,26 @@ Assicurati di avere il tuo coach a disposizione in caso di dubbi o problemi.
 
 Django è scritto in Python. Abbiamo bisogno di Python per fare qualsiasi cosa in Django. Iniziamo con l'installazione! Vogliamo che sul tuo pc sia installato Python 3.6.2 quindi se hai una versione precedente, dovrai aggiornarlo.
 
+<!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
+
 ### Windows
 
-Puoi scaricare Python per Windows dal sito web https://www.python.org/downloads/release/python-362/. Dopo aver scaricato il file ***.msi**, lo dovresti eseguire (cliccaci sopra due volte) e segui le istruzioni. È importante ricordare il percorso (la directory) dove ha installato Python. Più tardi sarà necessario!
+Per prima cosa bisogna controllare se la tua verisione di Windows è a 32-bit o 64-bit, per farlo premi il tasto `Windows + Pause/Break`, che apriranno le informazioni di sistema e cerca "Tipo sistema". 
 
-Una cosa a cui fare attenzione: sulla seconda schermata dell'installazione guidata, contrassegnata "Customize", assicurati di scorrere verso il basso e di scegliere l'opzione "Add python.exe to the Path", come illustrato qui:
+Puoi scaricare Python per Windows dal sito web https://www.python.org/downloads/windows/. Fai click sul link "Latest Python 3 Release - Python x.x.x". 
 
-![Non dimenticare di aggiungere Python al Path](../python_installation/images/add_python_to_windows_path.png)
+Scorri la pagina fino al fondo e se la tua versione di Windows è **64-bit**, scarica **Windows x86-64 executable installer**. Altrimenti, scarica **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+
+Dopo aver scaricato l'installer, lo dovresti eseguire (cliccaci sopra due volte) e segui le istruzioni. È importante ricordare il percorso (la directory) dove ha installato Python. Più tardi sarà necessario!
+
+Una cosa a cui fare **attenzione**: in una schermata dell'installazione guidata, contrassegnata con "Setup", assicurati di scegliere l'opzione "Add Python 3.6 to PATH", come illustrato qui:
+
+![Non dimenticare di aggiungere Python al Path](/assets/python-installation-options.png)
+
+Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più avanti nel tutorial). Per adesso, se hai bisogno di aprirla, vai nel menù Start → Windows System → Command Prompt. Puoi anche tenere premuto il tasto `Windows` e premere il pulsante `R` finché la finestra `Run` non compare. Per aprire la linea di comando ti basterà scrivere `cmd` e premere `enter` nella finestra `Run`.
+(Nelle nuove versioni di Windows potrebbe essere necessario cercare `Prompt dei comandi` perché a volte è nascosta.)
+
+<!--endsec-->
 
 ### Linux
 
