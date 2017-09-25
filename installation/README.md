@@ -35,6 +35,15 @@ Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più av
 
 ![Scrivi "cmd" nella finestra "Run"](/installation/images/windows-plus-r.png)
 
+Nota: se stai usando una vecchia versione di Windows (7, Vista, or any older version) e l'installer di python 3.6.x ti da un errore puoi provare queste cose:
+
+1. install all Windows Updates and try to install Python 3.6 again; or
+2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+
+Se installi una vecchia versione di Python, la schermata di installazione potrebbe essere un pochino diversa. **Assicurati** di scrollare per vedere "Add python.exe to Path", quindi fai click sul bottone a sinistra e seleziona "Will be installed on local hard drive":
+
+
+
 <!--endsec-->
 
 ### Linux
