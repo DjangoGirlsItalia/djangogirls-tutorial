@@ -10,10 +10,8 @@
     },
     "plugins": [
         "heading-anchors@1.0.3",
-        "ga@1.0.1",
         "richquotes@0.0.9",
         "github@2.0.0",
-        "language-picker",
         "sidebar-ad",
         "codeblock-label",
         "sectionx"
@@ -21,6 +19,9 @@
     "pluginsConfig": {
         "richquotes": {
             "default": false
+        },
+        "github": {
+            "url": "https://github.com/DjangoGirls/tutorial"
         },
         "sidebar-ad": {
             "imageUrl": "https://cdn.shopify.com/s/files/1/0992/7712/products/codelikeagirl---mockup4_large.jpg",
