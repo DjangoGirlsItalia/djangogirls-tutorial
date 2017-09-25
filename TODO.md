@@ -1,2 +1,0 @@
-- in tutto il progetto si rimanda al sito di djangogirls, cosa fattibile avendo riscritto il tutorial?
-- cambiato il link della chat con la chat locale, leggittimo?

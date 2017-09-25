@@ -2,6 +2,9 @@
 logs
 *.log
 
+COSEFATTE.md
+TODO.md
+
 # Runtime data
 pids
 *.pid
