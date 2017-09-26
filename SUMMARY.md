@@ -1,10 +1,10 @@
-# Indice
+# Summary
 
 * [Introduzione](README.md)
 * [Installazione](installation/README.md)
 * [Come funziona Internet](how_the_internet_works/README.md)
 * [Introduzione alla command line](intro_to_command_line/README.md)
-* [Installazione di Python](python_installation/README.md)
+* [Python](python_installation/README.md)
 * [Code Editor](code_editor/README.md)
 * [Introduzione a Python](python_introduction/README.md)
 * [Che cos'è Django?](django/README.md)
@@ -16,7 +16,7 @@
 * [Django URL](django_urls/README.md)
 * [Le views di Django - è arrivata l'ora di creare!](django_views/README.md)
 * [Introduzione all'HTML](html/README.md)
-* [ORM di Django (Querysets)](django_orm/README.md)
+* [ORM di Django \(Querysets\)](django_orm/README.md)
 * [I dati dinamici in templates](dynamic_data_in_templates/README.md)
 * [I templates di Django](django_templates/README.md)
 * [CSS - dagli un bell'aspetto](css/README.md)
@@ -24,3 +24,4 @@
 * [Estendi la tua applicazione](extend_your_application/README.md)
 * [Form Django](django_forms/README.md)
 * [Quali sono le prospettive?](whats_next/README.md)
+
