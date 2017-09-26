@@ -113,7 +113,7 @@ Verifica che l'installazione sia andata a buon fine aprendo la command line e sc
 {% filename %}command-line{% endfilename %}
 ```
 $ python3 --version
-Python 3.6.1
+Python 3.6.2
 ```
 
 **NOTA:** Se usi Windows e ottieni un messaggio di errore tipo `python3` non è stato trovato, prova ad usare solo `python` (senza il `3`) e controlla che sia una versione di Python 3.6 come mostrato sopra.
