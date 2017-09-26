@@ -21,7 +21,7 @@
         "terminal": {
             "copyButtons": false,
             "fade": false,
-            "style": "classic",
+            "style": "classic"
         },
         "richquotes": {
             "default": false
