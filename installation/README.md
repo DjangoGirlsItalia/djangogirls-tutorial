@@ -58,6 +58,8 @@ Devi andare sul sito https://www.python.org/downloads/mac-osx/. Fai click sul li
 * Scarica *Mac OS X 64-bit/32-bit installer*,
 * Fai doppio click sul file appena scaricato per iniziare l'installazione.
 
+Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più avanti nel tutorial). Per adesso, se hai bisogno di aprirla, vai nel `Launchpad` e apri l'app `Terminale`. Puoi anche tenere premere contemporanemente il tasto `mela + spazio` e comparirà la barra di ricerca. Per aprire la linea di comando ti basterà scrivere `Terminale` e premere `enter`.
+
 <!--endsec-->
 
 ### Linux
