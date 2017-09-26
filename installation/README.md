@@ -71,6 +71,8 @@ data-collapse=true ces-->
 
 ### Linux
 
+Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più avanti nel tutorial). Per adesso, se hai bisogno di aprirla, vai nelle `Applicazioni` e apri l'app `Terminale`. 
+
 È molto probabile che tu abbia Python già installato di default. Per controllare se ce l'hai già installato (e quale versione è), apri una console e digita il seguente comando:
 
 {% filename %}command-line{% endfilename %}
