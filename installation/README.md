@@ -108,6 +108,18 @@ $ sudo zypper install python3
 
 <!--endsec-->
 
+Verifica che l'installazione sia andata a buon fine aprendo la command line e scrivi il comando `python3`:
+
+{% filename %}command-line{% endfilename %}
+```
+$ python3 --version
+Python 3.6.1
+```
+
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
+
+----
+
 Se hai dubbi o se qualcosa è andato storto e non hai idea di cosa fare dopo - chiedi al tuo insegnante! A volte le cose non vanno come dovrebbero ed è meglio chiedere aiuto a qualcuno con più esperienza.
 
 # installare Django
