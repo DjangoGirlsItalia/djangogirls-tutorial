@@ -51,6 +51,8 @@ Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più av
 <!--sec data-title="OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
+### OSX
+
 > **Nota** Prima di installare Python su OS X, devi assicurarti che nelle impostazioni del tuo Mac permettano l'installazione di applicazioni che non provengono dell'App Store. Vai nelle `Preferenze di Sistema` cliccando sulla mela in alto a sinistra, fai click su `Sicurezza & Privacy`, qundi sul tab `Generali`. Se `Consenti app scaricate da:` è impostato su `App Store` cambialo in `App Store e sviluppatori identificati`.
 
 ![App Store e sviluppatori identificati](./images/AppStore.png)
@@ -64,13 +66,18 @@ Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più av
 
 <!--endsec-->
 
+<!--sec data-title="Linux" data-id="python_linux"
+data-collapse=true ces-->
+
 ### Linux
 
 È molto probabile che tu abbia Python già installato di default. Per controllare se ce l'hai già installato (e quale versione è), apri una console e digita il seguente comando:
 
-    $ python3 --version
-    Python 3.6.2
-    
+{% filename %}command-line{% endfilename %}
+```
+$ python3 --version
+Python 3.6.2
+```
 
 Se non hai Python installato o se vuoi una versione diversa, puoi installarla come segue:
 
@@ -78,21 +85,30 @@ Se non hai Python installato o se vuoi una versione diversa, puoi installarla co
 
 Digita questo comando nella tua console:
 
-    $ sudo apt-get install python3.4
-    
+{% filename %}command-line{% endfilename %}
+```
+$ sudo apt-get install python3.4
+```    
 
 #### Fedora
 
 Usa questo comando nella tua console:
 
-    $ sudo dnf install python3.4
-    
+{% filename %}command-line{% endfilename %}
+```
+$ sudo dnf install python3.4
+```  
 
 #### openSUSE
 
 Usa questo comando nella tua console:
 
-    $ sudo zypper install python3
+{% filename %}command-line{% endfilename %}
+```
+$ sudo zypper install python3
+```
+
+<!--endsec-->
 
 Se hai dubbi o se qualcosa è andato storto e non hai idea di cosa fare dopo - chiedi al tuo insegnante! A volte le cose non vanno come dovrebbero ed è meglio chiedere aiuto a qualcuno con più esperienza.
 
