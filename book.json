@@ -18,7 +18,8 @@
         "terminal"
     ],
     "pluginsConfig": {
-        "copyButtons": false,
+        "terminal": {
+            "copyButtons": false,
             "fade": false,
             "style": "classic",
         },
