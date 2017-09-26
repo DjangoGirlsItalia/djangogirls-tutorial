@@ -73,8 +73,7 @@ Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più av
 
 {% filename %}command-line{% endfilename %}
 ```
-**[terminal]
-**[prompt foo@joe]**[path ~]**[delimiter  $ ]**[python3 --version]
+$ python3 --version
 Python 3.6.2
 ```
 
