@@ -20,6 +20,8 @@ Django è scritto in Python. Abbiamo bisogno di Python per fare qualsiasi cosa i
 
 Per prima cosa bisogna controllare se la tua verisione di Windows è a 32-bit o 64-bit, per farlo premi il tasto `Windows + Pausa/Break`, che apriranno le informazioni di sistema e cerca "Tipo sistema". 
 
+![Tipo sitema](/installation/images/sistemtype.jpg)
+
 Puoi scaricare Python per Windows dal sito web https://www.python.org/downloads/windows/. Fai click sul link "Latest Python 3 Release - Python x.x.x". 
 
 Scorri la pagina fino al fondo e se la tua versione di Windows è **64-bit**, scarica **Windows x86-64 executable installer**. Altrimenti, scarica **Windows x86 executable installer**.
@@ -91,22 +93,6 @@ Usa questo comando nella tua console:
 Usa questo comando nella tua console:
 
     $ sudo zypper install python3
-
-
-### OS X
-
-Devi andare sul sito https://www.python.org/downloads/release/python-343/ e scarica il programma d'installazione di Python:
-
-  * Scarica il file *Mac OS X 64-bit/32-bit installer*
-  * Fai doppio click su *python-3.4.3-macosx10.6.pkg* per eseguire il programma d'installazione.
-
-Verifica che l'installazione si sia conclusa correttamente aprendo l'applicazione *Terminal* ed eseguendo il comando `python3`:
-
-    $ python3 --version
-    Python 3.4.3
-    
-
-* * *
 
 Se hai dubbi o se qualcosa è andato storto e non hai idea di cosa fare dopo - chiedi al tuo insegnante! A volte le cose non vanno come dovrebbero ed è meglio chiedere aiuto a qualcuno con più esperienza.
 
