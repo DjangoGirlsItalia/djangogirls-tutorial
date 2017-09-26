@@ -16,8 +16,6 @@ Django è scritto in Python. Abbiamo bisogno di Python per fare qualsiasi cosa i
 
 <!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
 
-### Windows
-
 Per prima cosa bisogna controllare se la tua verisione di Windows è a 32-bit o 64-bit, per farlo premi il tasto `Windows + Pausa/Break`, che apriranno le informazioni di sistema e cerca "Tipo sistema". 
 
 ![Tipo sitema](/installation/images/sistemtype.jpg)
@@ -50,8 +48,6 @@ Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più av
 
 <!--sec data-title="OS X" data-id="python_OSX"
 data-collapse=true ces-->
-
-### OSX
 
 > **Nota** Prima di installare Python su OS X, devi assicurarti che nelle impostazioni del tuo Mac permettano l'installazione di applicazioni che non provengono dell'App Store. Vai nelle `Preferenze di Sistema` cliccando sulla mela in alto a sinistra, fai click su `Sicurezza & Privacy`, qundi sul tab `Generali`. Se `Consenti app scaricate da:` è impostato su `App Store` cambialo in `App Store e sviluppatori identificati`.
 
