@@ -85,7 +85,7 @@ Digita questo comando nella tua console:
 
 {% filename %}command-line{% endfilename %}
 ```
-$ sudo apt-get install python3.4
+$ sudo apt-get install python3.6
 ```    
 
 #### Fedora
@@ -94,7 +94,7 @@ Usa questo comando nella tua console:
 
 {% filename %}command-line{% endfilename %}
 ```
-$ sudo dnf install python3.4
+$ sudo dnf install python3.6
 ```  
 
 #### openSUSE
