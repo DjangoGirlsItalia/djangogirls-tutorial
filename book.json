@@ -14,15 +14,9 @@
         "github@2.0.0",
         "sidebar-ad",
         "codeblock-label",
-        "sectionx",
-        "terminal"
+        "sectionx"
     ],
     "pluginsConfig": {
-        "terminal": {
-            "copyButtons": false,
-            "fade": false,
-            "style": "classic"
-        },
         "richquotes": {
             "default": false
         },
