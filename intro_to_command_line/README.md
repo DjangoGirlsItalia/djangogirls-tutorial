@@ -199,21 +199,12 @@ cd Desktop
 cd Desktop
 {% endpr %}
 
-
-
 <!--endsec-->
-
-
-
-
-
 
 Controlla ora se ti sei veramente spostata:
 
 
-<!--sec da
-
-itle="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec daitle="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$ ", language="term", output="2" %}
@@ -221,28 +212,22 @@ pwd
 /Users/olasitarska/Desktop
 {% endpre %}
 
-
-
-
-
-
-
-
-
-
-
 <!--endsec-->
-
-
-    $ pwd
-    /Users/olasitarska/Desktop
-    
 
 Windows:
 
     > cd
     C:\Users\olasitarska\Desktop
     
+<!--sec data-title="Windows" data-id="windows_cd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="> ", language="term", output="2" %}
+cd
+C:\Users\olasitarska\Desktop
+{% endpre %}
+
+<!--endsec-->
 
 Ecco fatto!
 
