@@ -213,11 +213,6 @@ pwd
 {% endpre %}
 
 <!--endsec-->
-
-Windows:
-
-    > cd
-    C:\Users\olasitarska\Desktop
     
 <!--sec data-title="Windows" data-id="windows_cd2" data-collapse=true ces-->
 
@@ -239,13 +234,23 @@ Ecco fatto!
 
 Che ne dici di creare una directory di pratica sul tuo desktop? Puoi farlo in questo modo:
 
-    $ mkdir practice
-    
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
-Windows:
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="term" %}
+mkdir practice
+{% endpre %}
 
-    > mkdir practice
-    
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_mkdir" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt=">", language="term" %}
+mkdir practice
+{% endpre %}
+
+<!--endsec-->
 
 Questo breve comando creerà una cartella con il nome `practice` sul tuo desktop. Puoi controllare se è lì semplicemente guardando sul tuo desktop oppure eseguendo un commando `ls` oppure `dir`! Provalo :)
 
