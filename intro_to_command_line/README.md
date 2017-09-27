@@ -45,9 +45,9 @@ Ora dovresti essere in grado di vedere una finestra bianca o nera che è in atte
 Se sei su Mac o Linux, probabilmente vedi `$`, proprio come questo:
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="term" %}
-
-{% endpre %}
+```
+$
+```
 
 <!--endsec-->
 
@@ -56,9 +56,9 @@ Se sei su Mac o Linux, probabilmente vedi `$`, proprio come questo:
 Su Windows, è un segno `>`, come questo:
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="> ", language="term" %}
-
-{% endpre %}
+```
+>
+```
 
 <!--endsec-->
 
@@ -158,16 +158,6 @@ Music
 {% endpre %}
 
 <!--endsec-->
-
-Windows:
-
-    > dir
-     Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR>      Applications
-    05/08/2014 07:28 PM <DIR>      Desktop
-    05/08/2014 07:28 PM <DIR>      Downloads
-    05/08/2014 07:28 PM <DIR>      Music
-    ...
     
 <!--sec data-title="Windows" data-id="windows_dir" data-collapse=true ces-->
 
