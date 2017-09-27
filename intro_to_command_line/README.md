@@ -42,50 +42,68 @@ Ora dovresti essere in grado di vedere una finestra bianca o nera che è in atte
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-
 Se sei su Mac o Linux, probabilmente vedi `$`, proprio come questo:
 
 {% filename %}command-line{% endfilename %}
-```
-$
-```
+{% pre prompt="$ ", language="term" %}
+
+{% endpre %}
+
 <!--endsec-->
 
-
-
-    $
-    
+<!--sec data-title="Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
 Su Windows, è un segno `>`, come questo:
 
-    >
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="> ", language="term" %}
+
+{% endpre %}
+
+<!--endsec-->
 
 Ogni comando sarà preceduto da questo simbolo e da uno spazio, ma tu non hai bisogno di digitarlo. Il computer lo farà per te :)
 
 > Solo una piccola nota: nel tuo caso ci dovrebbe essere qualcosa come `C:\Users\ola>` oppure `Olas-MacBook-Air:~ ola$` prima del segno di prompt. È corretto al 100%. In questo tutorial lo semplificheremo al massimo.
 
+La parte fino a `$` o a `>` è chiamata *command line prompt*, o *prompt* per comodità. Ti richiede di inserire qualcosa.
+
+Nel tutorial, quando dovrai scrivere qualche comando, noi lo mostreremo con incluso `$` o `>` e a volte con altre cose alla sua sinistra. Ignora quella parte e scrivi semplicemente il comando che inizia dopo il prompt.
+
 ## Il tuo primo comando (YAY!)
 
 Cominciamo con qualcosa di veramente semplice. Digita questo comando:
 
-    $ whoami
-    
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
-oppure
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$ ", language="term" %}
+whoami
+{% endpre %}
 
-    > whoami
-    
+<!--endsec-->
+
+
+<!--sec data-title="Windows" data-id="windows_whoami" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="> ", language="term" %}
+whoami
+{% endpre %}
+
+<!--endsec-->
 
 Premi `invio`. Questo è il nostro risultato:
 
-    $ whoami
-    olasitarska
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$ ", language="term", output="2" %}
+whoami
+olasitarska
+{% endpre %}
 
 Come puoi vedere, il computer ha appena stampato il tuo nome utente. Bello, eh?:)
 
-> Prova a digitare ogni comando, non copiare ed incollare. Ti ricorderai di più in questo modo!
+> **Prova a digitare ogni comando, non copiare ed incollare. Ti ricorderai di più in questo modo!**
 
 ## Nozioni di base
 
@@ -95,33 +113,51 @@ Ogni sistema operativo ha un insieme di comandi leggermente diverso per la comma
 
 Sarebbe bello sapere dove siamo adesso, vero? Vediamo. Digita questo commando e premi `invio`:
 
-    $ pwd
-    /Users/olasitarska
-    
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
-Se sei su Windows:
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$ ", language="term", output="2" %}
+pwd
+/Users/olasitarska
+{% endpre %}
 
-    > cd
-    C:\Users\olasitarska
-    
+> Nota: `pwd` sta per 'print working directory'.
+
+<!--endsec-->  
+
+<!--sec data-title="Windows" data-id="windows_cd" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="> ", language="term", output="2" %}
+cd
+C:\Users\olasitarska
+{% endpre %}
+
+> Note: `cd` sta per 'change directory'. Con powershell puoi usare `pwd` esattamente come su Linux o su Mac OS X.
+
+<!--endsec-->  
 
 Probabilmente vedrai qualcosa di simile sul tuo computer. Quando apri la command-line normalmente inizi sulla tua directory home.
 
-> Nota: 'pwd' sta per 'stampa directory di lavoro'.
-
-* * *
+---
 
 ### Elenco di file e cartelle
 
 Cosa c'è dentro? Sarebbe bello scoprirlo. Vediamo come:
 
-    $ ls
-    Applications
-    Desktop
-    Downloads
-    Music
-    ...
-    
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$ ", language="term", output="2-6" %}
+ls
+Applications
+Desktop
+Downloads
+Music
+...
+{% endpre %}
+
+<!--endsec-->
 
 Windows:
 
@@ -133,8 +169,23 @@ Windows:
     05/08/2014 07:28 PM <DIR>      Music
     ...
     
+<!--sec data-title="Windows" data-id="windows_dir" data-collapse=true ces-->
 
-* * *
+{% filename %}command-line{% endfilename %}
+{% pre prompt="> ", language="term", output="2-7" %}
+dir
+Directory of C:\Users\olasitarska
+05/08/2014 07:28 PM <DIR>      Applications
+05/08/2014 07:28 PM <DIR>      Desktop
+05/08/2014 07:28 PM <DIR>      Downloads
+05/08/2014 07:28 PM <DIR>      Music
+...
+{% endpre %}
+
+> Nota: In powershell puoi anche usare 'ls' come su Linux e Mac OS X.
+<!--endsec-->
+
+---
 
 ### Cambiare cartella corrente
 
