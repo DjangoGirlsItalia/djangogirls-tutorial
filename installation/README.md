@@ -142,11 +142,10 @@ Ora che siamo nella cartella giusta, puoi installare Django usando `pip`. Nella 
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$ ", language="bash", output="2-5" %}
-pip install --user django~=1.11.0
-Downloading/unpacking django==1.8
+pip install --user django~=1.11.0Collecting django~=1.11.0
+Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
 Installing collected packages: django
-Successfully installed django
-Cleaning up...
+Successfully installed django-1.11.3
 {% endpre %}
 
 <!--sec data-title="Windows" data-id="django_err_windows"
