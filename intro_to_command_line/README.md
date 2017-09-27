@@ -233,7 +233,7 @@ Ecco fatto!
 
 > Suggerimento PRO: se digiti `cd D` e poi premi `tab` sulla tastiera, la command-line completerà automaticamente il resto del nome per cui puoi navigare più velocemente. Se c'è più di una cartella che comincia con "D", premi `tab` due volte per ottenere la lista con tutte le opzioni.
 
-* * *
+---
 
 ### Creare una directory
 
