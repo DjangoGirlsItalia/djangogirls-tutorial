@@ -8,8 +8,6 @@ Buona fortuna!
 
 # Installare Python
 
-## Installare Python
-
 > Questa sezione si basa su un tutorial fatto da Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
 Django è scritto in Python. Abbiamo bisogno di Python per fare qualsiasi cosa in Django. Iniziamo con l'installazione! Vogliamo che sul tuo pc sia installato Python 3.6.2 quindi se hai una versione precedente, dovrai aggiornarlo.
@@ -84,37 +82,37 @@ Se non hai Python installato o se vuoi una versione diversa, puoi installarla co
 Digita questo comando nella tua console:
 
 {% filename %}command-line{% endfilename %}
-```
-$ sudo apt-get install python3.6
-```    
+{% pre prompt="$ ", language="bash" %}
+sudo apt-get install python3.6
+{% endpre %}
 
 #### Fedora
 
 Usa questo comando nella tua console:
 
 {% filename %}command-line{% endfilename %}
-```
-$ sudo dnf install python3.6
-```  
+{% pre prompt="$ ", language="bash" %}
+sudo dnf install python3.6
+{% endpre %}
 
 #### openSUSE
 
 Usa questo comando nella tua console:
 
 {% filename %}command-line{% endfilename %}
-```
-$ sudo zypper install python3
-```
+{% pre prompt="$ ", language="bash" %}
+sudo zypper install python3
+{% endpre %}
 
 <!--endsec-->
 
 Verifica che l'installazione sia andata a buon fine aprendo la command line e scrivi il comando `python3`:
 
 {% filename %}command-line{% endfilename %}
-```
-$ python3 --version
+{% pre prompt="$ ", language="bash", output="2" %}
+python3 --version
 Python 3.6.2
-```
+{% endpre %}
 
 **NOTA:** Se usi Windows e ottieni un messaggio di errore tipo `python3` non è stato trovato, prova ad usare solo `python` (senza il `3`) e controlla che sia una versione di Python 3.6 come mostrato sopra.
 
