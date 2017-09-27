@@ -120,7 +120,7 @@ Python 3.6.2
 
 Se hai dubbi o se qualcosa è andato storto e non hai idea di cosa fare dopo - chiedi al tuo insegnante! A volte le cose non vanno come dovrebbero ed è meglio chiedere aiuto a qualcuno con più esperienza.
 
-# installare Django
+# Installare Django
 
 {% include "/django_installation/instructions.md" %}
 
