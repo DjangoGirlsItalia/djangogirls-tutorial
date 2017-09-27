@@ -268,9 +268,35 @@ sudo zypper install git
 
 Vai su [GitHub.com](https://www.github.com) e iscriviti per un nuovo account gratuito.
 
-# Creare un account su Heroku
+# Heroku
 
-{% include "/deploy/signup_pythonanywhere.md" %}
+Vai su [Heroku](https://heroku.com/) e iscriviti facendo attenzione a selezionare Python nel menù `Primary Development Language`.
+
+## Heroku Toolbelt
+
+Avrai bisogno di installare la [**Toolbelt**](https://toolbelt.heroku.com/) è come una cintura dei supereroi: contiene tutti gli strumenti per gestire il *tuo* server. 
+
+<!--sec data-title="Windows" data-id="heroku_install_windows"
+data-collapse=true ces-->
+
+Assicurati che tutte le opzioni siano selezionate quando ti verrà richiesto quale componenti installare. Al termine dell'installazione chiudi e riapri la linea di comando.
+
+Dopo aver riaperto la linea di comando ricordati di tornare alla cartella `djangogirls`.
+
+<!--endsec-->
+
+Per controllare che tutto sia andato a buon fine e per finire la configurazione dobbiamo effettuare il login con heroku.
+
+Apri la linea di comando e digita:
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$ ", language="bash", output="" %}
+heroku login
+Enter your Heroku credentials.
+Email: adam@example.com
+Password (typing will be hidden):
+Authentication successful.
+{% endpre %} 
 
 # Inizia la lettura
 
