@@ -72,10 +72,10 @@ Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più av
 È molto probabile che tu abbia Python già installato di default. Per controllare se ce l'hai già installato (e quale versione è), apri linea di comando e digita il seguente comando:
 
 {% filename %}command-line{% endfilename %}
-```
-$ python3 --version
+{% pre prompt="$ ", language="bash", output="2" %}
+python3 --version
 Python 3.6.2
-```
+{% endpre %}
 
 Se non hai Python installato o se vuoi una versione diversa, puoi installarla come segue:
 
