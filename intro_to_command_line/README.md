@@ -40,7 +40,18 @@ Probabilmente è sotto Applicazioni → Accessori → Terminal, ma quello potreb
 
 Ora dovresti essere in grado di vedere una finestra bianca o nera che è in attesa di ricevere un comando.
 
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+
+
 Se sei su Mac o Linux, probabilmente vedi `$`, proprio come questo:
+
+{% filename %}command-line{% endfilename %}
+```
+$
+```
+<!--endsec-->
+
+
 
     $
     
