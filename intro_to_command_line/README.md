@@ -204,7 +204,7 @@ cd Desktop
 Controlla ora se ti sei veramente spostata:
 
 
-<!--sec daitle="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$ ", language="term", output="2" %}
