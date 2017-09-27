@@ -237,7 +237,7 @@ Che ne dici di creare una directory di pratica sul tuo desktop? Puoi farlo in qu
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-buo
+{% pre prompt="$", language="term" %}
 mkdir practice
 {% endpre %}
 
