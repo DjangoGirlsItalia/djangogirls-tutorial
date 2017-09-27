@@ -14,7 +14,8 @@
         "github@2.0.0",
         "sidebar-ad",
         "codeblock-label",
-        "sectionx"
+        "sectionx",
+        "gitbook-plugin-prism-djangogirls@git+https://github.com/simobasso/gitbook-plugin-prism-djangogirls.git"
     ],
     "pluginsConfig": {
         "richquotes": {
