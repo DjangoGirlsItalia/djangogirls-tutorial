@@ -238,7 +238,7 @@ Scarica Git da [git-scm.com](https://git-scm.com/) e segui le istruzioni.
 data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="bash" %}
+{% pre prompt="$ ", language="term" %}
 sudo apt-get install git
 {% endpre %}
 
@@ -248,7 +248,7 @@ sudo apt-get install git
 data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="bash" %}
+{% pre prompt="$ ", language="term" %}
 sudo dnf install git
 {% endpre %}
 
@@ -258,7 +258,7 @@ sudo dnf install git
 data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="bash" %}
+{% pre prompt="$ ", language="term" %}
 sudo zypper install git
 {% endpre %}
 
@@ -290,7 +290,7 @@ Per controllare che tutto sia andato a buon fine e per finire la configurazione 
 Apri la linea di comando e digita:
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="bash", output="" %}
+{% pre prompt="$ ", language="term", output="2-5" %}
 heroku login
 Enter your Heroku credentials.
 Email: adam@example.com
@@ -309,3 +309,7 @@ Complimenti, ora sei pronta! Se hai un po' di tempo prima del workshop, potrebbe
   * [Introduzione a Python](../python_introduction/README.md)
 
   * [Che cos'è Django?](../django/README.md)
+
+# Enjoy the workshop!
+
+Quando inizierai il workshop potrai partire direttamente da [Il tuo primo progetto in Django!](../django_start_project/README.md)
