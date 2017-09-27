@@ -213,7 +213,56 @@ Vedremo tutto ciò più tardi. Il tuo fidato code editor sarà presto uno dei tu
 
 # Installare Git
 
-{% include "/deploy/install_git.md" %}
+Git è un "sistema di controllo versione" usato da un sacco di programmatori. Questo software ci permette di tracciare le modifiche ai file nel tempo, in modo che tu possa riprendere una versione specifica più tardi. Come le "Versioni" in Microsoft Word, ma molto più potente.
+
+## Installare Git
+
+<!--sec data-title="Windows" data-id="git_install_windows"
+data-collapse=true ces-->
+
+È possibile scaricare Git da [git-scm.com](https://git-scm.com/). Puoi saltare tutti i passaggi tranne uno. Nel quinto passaggio, dal titolo "Regolazione della variabile PATH di sistema", scegli "Esegui Git e gli strumenti Unix associati dalla riga di comando di Windows" (l'opzione in basso). A parte questo, i valori predefiniti vanno bene. 'Checkout Windows-style' e 'commit Unix-style line endings' vanno bene.
+
+Non dimenticare di chiudere e riaprire la linea di comando dopo che l'installazione è finita.
+<!--endsec-->
+
+<!--sec data-title="OS X" data-id="git_install_OSX"
+data-collapse=true ces-->
+
+Scarica Git da [git-scm.com](https://git-scm.com/) e segui le istruzioni.
+
+> **Note** Se usi OS X 10.6, 10.7, or 10.8, dovrai installare git partendo da qui: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+
+<!--endsec-->
+
+<!--sec data-title="Debian or Ubuntu" data-id="git_install_debian_ubuntu"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$ ", language="bash" %}
+sudo apt-get install git
+{% endpre %}
+
+<!--endsec-->
+
+<!--sec data-title="Fedora" data-id="git_install_fedora"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$ ", language="bash" %}
+sudo dnf install git
+{% endpre %}
+
+<!--endsec-->
+
+<!--sec data-title="openSUSE" data-id="git_install_openSUSE"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$ ", language="bash" %}
+sudo zypper install git
+{% endpre %}
+
+<!--endsec-->
 
 # Creare un account su GitHub
 
