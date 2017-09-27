@@ -131,14 +131,14 @@ Se hai dubbi o se qualcosa è andato storto e non hai idea di cosa fare dopo - c
 Per questo tutorial useremo una nuova directory `djangogirls` dalla tua home directory, quindi apri una nuova linea di comando e digita:
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="bash", output="2" %}
+{% pre prompt="$ ", language="bash" %}
 mkdir djangogirls
 cd djangogirls
 {% endpre %}
 
 Non ti preoccupare se non sai cosa vogliano dire questi comandi, più avanti nel tutorial li guarderemo tutti.
 
-Ora che siamo nella cartella giusta, puoi installare Django usando `pip`. Nella console, esegui `pip install --user django~=1.11.0` (nota che usiamo un doppio simbolo di uguale: `==`).
+Ora che siamo nella cartella giusta, puoi installare Django usando `pip`. Nella console, esegui `pip install --user django~=1.11.0` (nota che usiamo una tilde seguita da un simbolo di uguale: `~=`).
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$ ", language="bash", output="2-5" %}
@@ -163,8 +163,8 @@ data-collapse=true ces-->
 >
 >{% filename %}command-line{% endfilename %}
 >{% pre prompt="C:\Users\Name\djangogirls> ", output="2-5" %}
->python -m pip install django~=1.11.0
->{% endpre %}
+python -m pip install django~=1.11.0
+{% endpre %}
 
 <!--endsec-->
 
