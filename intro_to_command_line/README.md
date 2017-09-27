@@ -16,17 +16,25 @@ La finestra solitamente chiamata **comand-line** o **interfaccia della command-l
 
 Per cominciare a sperimentare dobbiamo aprire l'interfaccia della nostra command-line.
 
-### Windows
+<!--sec data-title="Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Vai a menù Start → tutti i programmi → accessori → prompt dei comandi.
+Vai in Start menu → Windows System → Command Prompt.
 
-### Mac OS X
+> Per le vecchie versioni di windows, guarda in Start menu → Windows System → Command Prompt.
 
-Applicazioni → utilità → terminal.
+<!--endsec-->
 
-### Linux
+<!--sec data-title="OS X" data-id="OSX_prompt" data-collapse=true ces-->
+
+Vai in Applicazioni → utilità → terminal.
+
+<!--endsec-->
+
+<!--sec data-title="Linux" data-id="linux_prompt" data-collapse=true ces-->
 
 Probabilmente è sotto Applicazioni → Accessori → Terminal, ma quello potrebbe dipendere dal tuo sistema. Se non è lì cercalo su Google :)
+
+<!--endsec-->
 
 ## Prompt
 
