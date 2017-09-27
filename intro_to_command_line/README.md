@@ -183,13 +183,56 @@ Ora, andiamo nella nostra directory Desktop:
 
     $ cd Desktop
     
+<!--sec data-title="OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
-Windows:
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$ ", language="term" %}
+cd Desktop
+{% endpre %}
 
-    > cd Desktop
-    
+<!--endsec-->
 
-Controlla ora se ti sei veramente spostato/a:
+<!--sec data-title="Windows" data-id="windows_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="> ", language="term" %}
+cd Desktop
+{% endpr %}
+
+
+
+<!--endsec-->
+
+
+
+
+
+
+Controlla ora se ti sei veramente spostata:
+
+
+<!--sec da
+
+itle="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$ ", language="term", output="2" %}
+pwd
+/Users/olasitarska/Desktop
+{% endpre %}
+
+
+
+
+
+
+
+
+
+
+
+<!--endsec-->
+
 
     $ pwd
     /Users/olasitarska/Desktop
