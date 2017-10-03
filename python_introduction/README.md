@@ -13,11 +13,6 @@ Per iniziare a giocare con Python, devi avviare sul tuo computer una *linea di c
 Una volta pronta, segui le istruzioni riportate di seguito.
 
 Vogliamo aprire una console Python, quindi digita `python` su Windows o `python3` su Mac OS/Linux e premi `invio`.
-
-    $ python3
-    Python 3.4.3 (...)
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>>
     
 <!--sec data-title="OS X e Linux" data-id="OSX_Linux_python" data-collapse=true ces-->
 
@@ -26,7 +21,7 @@ Vogliamo aprire una console Python, quindi digita `python` su Windows o `python3
 python3
 Python 3.6.1 (...)
 Type "help", "copyright", "credits" or "license" for more information.
->>>
+\>\>\>
 {% endpre %}
 
 <!--endsec-->
@@ -38,7 +33,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 python
 Python 3.6.1 (...)
 Type "help", "copyright", "credits" or "license" for more information.
->>>
+\>\>\>
 {% endpre %}
 
 <!--endsec-->
