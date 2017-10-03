@@ -180,8 +180,6 @@ Directory of C:\Users\olasitarska
 ### Cambiare cartella corrente
 
 Ora, andiamo nella nostra directory Desktop:
-
-    $ cd Desktop
     
 <!--sec data-title="OS X e Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
