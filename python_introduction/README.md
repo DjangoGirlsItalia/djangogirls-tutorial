@@ -19,6 +19,29 @@ Vogliamo aprire una console Python, quindi digita `python` su Windows o `python3
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
     
+<!--sec data-title="OS X e Linux" data-id="OSX_Linux_python" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="term", output="2-4" %}
+python3
+Python 3.6.1 (...)
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+{% endpre %}
+
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_python" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt=">", language="term", output="2-4" %}
+python
+Python 3.6.1 (...)
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+{% endpre %}
+
+<!--endsec-->
 
 ## Il tuo primo comando Python!
 
@@ -28,11 +51,25 @@ Se ad un certo punto vuoi uscire dalla console di Python, digita `exit()` oppure
 
 Per ora non vogliamo uscire dalla console Python. Vogliamo saperne di più. Cominciamo con qualcosa davvero semplice. Per esempio, prova un po' di matematica, come `2 + 3` e premi `invio`.
 
-    >>> 2 + 3
-    5
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+2 + 3
+5
+{% endpre %}
 
-Fantastico! Hai visto come è comparsa la risposta? Python conosce la matematica! potresti provare altri comandi come: - `4 * 5` - `5 - 1` - `40 / 2`
+Fantastico! Hai visto come è comparsa la risposta? Python conosce la matematica! potresti provare altri comandi come:
+
+- `4 * 5`
+- `5 - 1`
+- `40 / 2`
+
+Per usare le potenze, come ad esempio 2 alla 3a, scrivi:
+
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+2 ** 3
+8
+{% endpre %}
 
 Divertiti con questo per un pò e dopo torna qui :).
 
@@ -42,51 +79,65 @@ Come puoi vedere, Python è una buona calcolatrice. Ora ti starai sicuramente ch
 
 Che ne dici di scrivere il tuo nome? Digitalo tra virgolette così:
 
-    >>> "Ola"
-    'Ola'
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+"Ola"
+'Ola'
+{% endpre %}
 
 Hai appena creato la tua prima stringa! Una stringa è una sequenza di caratteri che possono essere elaborati da un computer. La stringa deve sempre iniziare e finire con lo stesso carattere. Che può essere una virgoletta semplice (`'`) o doppia (`"`) (non c'è differenza!) Le virgolette dicono a Python che il contenuto al loro interno è una stringa.
 
 Le stringhe possono essere legate assieme. Prova questo:
 
-    >>> " Ciao " + "Ola"
-    'Ciao Ola'
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+"Ciao " + "Ola"
+'Ciao Ola'
+{% endpre %}
 
 Puoi anche moltiplicare le stringhe con un numero:
 
-    >>> "Ola" * 3
-    'OlaOlaOla'
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+"Ola" * 3
+'OlaOlaOla'
+{% endpre %}
 
 Se devi mettere un apostrofo nella tua stringa, hai due modi per farlo.
 
 Utilizzando le virgolette doppie:
 
-    >>> "Correre verso l'albero"
-    "Correre verso l'albero"
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+"Correre verso l'albero"
+"Correre verso l'albero"
+{% endpre %}
 
 o facendo l'escape dell'apostrofo (cioè trattandolo come un carattere qualunque) con una barra rovesciata ( \ ):
 
-    >>> 'Correre verso l\'albero'
-    "Correre verso l'albero"
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+'Correre verso l\'albero'
+"Correre verso l'albero"
+{% endpre %}
 
 Bello, eh? Per vedere il tuo nome in maiuscolo, digita:
 
-    >>> "Ola".upper()
-    'OLA'
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+"Ola".upper()
+'OLA'
+{% endpre %}
 
-Hai appena usato la funzione `upper` sulla tua stringa! Una funzione (come `upper()`) è una sequenza di istruzioni che Python deve eseguire su un determinato oggetto (`"Ola"`).
+Hai appena usato il **metodo** `upper` sulla tua stringa! Un metodo (come `upper()`) è una sequenza di istruzioni che Python deve eseguire su un determinato oggetto (`"Ola"`).
 
-Se vuoi sapere il numero delle lettere presenti nel tuo nome, c'è una funzione anche per quello!
+Se vuoi sapere il numero di lettere presenti nel tuo nome, c'è una **funzione** anche per quello!
 
-    >>> len("Ola")
-    3
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+len("Ola")
+3
+{% endpre %}
 
 Ti stai chiedendo perché certe volte chiami una funzione con un `.` alla fine di una stringa (come `"Ola".upper()`) ed in altri casi chiami prima una funzione e poi metti la stringa tra parentesi? Beh, in alcuni casi, le funzioni appartengono ad oggetti, come `upper()`, che può essere eseguita solo su stringhe. In questo caso, chiamiamo la funzione **metodo**. Altre volte, le funzioni non appartengono a niente di specifico e possono essere utilizzate su diversi tipi di oggetti, proprio come `len()`. Ecco perché stiamo dando `"Ola"` come un parametro alla funzione `len`.
 
@@ -105,24 +156,28 @@ Queste sono le basi di ogni linguaggio di programmazione che impari. Pronta per 
 
 Proviamo qualcosa di nuovo. Possiamo ottenere la lunghezza di un numero nella stessa forma in cui abbiamo potuto scoprire la lunghezza del nostro nome? Digita `len(304023)` e premi `Invio`:
 
-    >>> len(304023)
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    TypeError: object of type 'int' has no len()
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2-4" %}
+len(304023)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: object of type 'int' has no len()
+{% endpre %}
 
 Abbiamo ottenuto il nostro primo errore! Ci dice che gli oggetti di tipo "int" (integers, numeri interi) non hanno lunghezza. Quindi cosa possiamo fare? Forse possiamo scrivere il nostro numero come una stringa? Le stringhe hanno una lunghezza, vero?
 
-    >>> len(str(304023))
-    6
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+len(str(304023))
+6
+{% endpre %}
 
 Ha funzionato! Usiamo la funzione `str` all'interno della funzione `len`. `str()` converte tutto in stringhe.
 
 *   La funzione `str` converte le cose in **stringhe**
 *   La funzione `int` converte le cose in **numeri interi**
 
-> Importante: possiamo convertire i numeri in testo, ma non possiamo convertire il testo in numeri - cosa potrebbe essere `int('hello')`?
+> Importante: possiamo convertire i numeri in testo, ma non possiamo convertire il testo in numeri - cosa potrebbe mai essere `int('hello')`?
 
 ## Variabili
 
@@ -130,46 +185,58 @@ Un concetto importante nella programmazione è quello delle variabili. Una varia
 
 Diciamo che vogliamo creare una nuova variabile chiamata `nome`:
 
-    >>> nome = "Ola"
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python" %}
+nome = "Ola"
+{% endpre %}
 
-Vedi? È facile! è semplicemente: nome è uguale a Ola.
+Vedi? È facile! è semplicemente: `nome` è uguale a `Ola`.
 
 Come avrai notato, il programma non ha ritornato nulla, diversamente da prima. Quindi come facciamo a sapere che la variabile esiste? Digita `nome` e premi `enter`:
 
-    >>> nome
-    'Ola'
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+nome
+'Ola'
+{% endpre %}
 
 Evvai! La tua prima variabile :)! Puoi sempre modificare a cosa si riferisce:
 
-    >>> nome = "Sonja"
-    >>> nome
-    'Sonja'
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="3" %}
+nome = "Sonja"
+nome
+'Sonja'
+{% endpre %}
 
 La puoi utilizzare anche nelle funzioni:
 
-    >>> len(nome)
-    5
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+len(nome)
+5
+{% endpre %}
 
 Fantastico, vero? Certo, le variabile possono essere qualsiasi cosa, così come i numeri! Prova questo:
 
-    >>> a = 4
-    >>> b = 6
-    >>> a * b
-    24
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="4" %}
+a = 4
+b = 6
+a * b
+24
+{% endpre %}
 
 Ma cosa succede se utilizziamo il nome sbagliato? Riesci a immaginare cosa succederebbe? Proviamo!
 
-    >>> city = "Tokyo"
-    >>> ctiy
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    NameError: name 'ctiy' is not defined
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="3-5" %}
+city = "Tokyo"
+ctiy
+Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+NameError: name 'ctiy' is not defined
+{% endpre %}
 
 Un errore! Come puoi vedere, Python ha diversi tipi di errori e questo qui si chiama **NameError**. Python ti darà questo errore se provi ad utilizzare una variabile che non è stata ancora definita. Se incontri questo errore più tardi, controlla il tuo codice per vedere se hai digitato in modo errato i nomi.
 
@@ -179,12 +246,14 @@ Giocaci per un po' e vedi cosa puoi fare!
 
 Prova questo:
 
-    >>> nome = 'Maria'
-    >>> nome
-    'Maria'
-    >>> print(nome)
-    Maria
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="3,5" %}
+nome = 'Maria'
+nome
+'Maria'
+print(nome)
+Maria
+{% endpre %}
 
 Quando digiti `nome`, l'interprete di Python risponde con una stringa *rappresentazione* della variabile 'nome', che contiene le lettere M-a-r-i-a, circondate da singole virgolette, ''. Quando dici `print(nome)`, Python "stamperà" i contenuti della variabile sullo schermo, senza le virgolette, che è più pulito.
 
@@ -196,89 +265,111 @@ Oltre alle stringhe ed ai numeri interi, Python ha tanti tipi di oggetti. Ora ne
 
 Vai avanti e crea una lista:
 
-    >>> []
-    []
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+[]
+[]
+{% endpre %}
 
 Si, questa lista è vuota. Non serve a molto, giusto? Creiamo una lista di numeri della lotteria. Non vogliamo ripetere tutto ogni volta, quindi metteremo la lista in una variabile:
 
-    >>> lotteria = [3, 42, 12, 19, 30, 59]
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python" %}
+lotteria = [3, 42, 12, 19, 30, 59]
+{% endpre %}
 
 Abbiamo una lista! Cosa possiamo farne? Vediamo quanti numeri della lotteria ci sono nella lista. Hai idea di quale funzione potresti utilizzare per farlo? Lo abbiamo imparato insieme prima!
 
-    >>> len(lotteria)
-    6
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+len(lotteria)
+6
+{% endpre %}
 
 Si! `len()` può darti il numero di oggetti in una lista. Utile, vero? Forse abbiamo risolto:
 
-    >>> lotteria.sort()
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python" %}
+lotteria.sort()
+{% endpre %}
 
 Questo comando non dà nessun risultato, ha semplicemente cambiato l'ordine in cui i numeri appaiono nella lista. Stampiamo di nuovo la lista per vedere cosa è successo:
 
-    >>> print(lotteria)
-    [3, 12, 19, 30, 42, 59]
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+print(lotteria)
+[3, 12, 19, 30, 42, 59]
+{% endpre %}
 
 Come puoi vedere, adesso i numeri nella tua lista sono ordinati dal valore più basso a quello più alto. Congratulazioni!
 
 Vogliamo invertire quell'ordine? Facciamolo!
 
-    >>> lotteria.reverse()
-    >>> print(lotteria)
-    [59, 42, 30, 19, 12, 3]
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="3" %}
+lotteria.reverse()
+print(lotteria)
+[59, 42, 30, 19, 12, 3]
+{% endpre %}
 
 Facile, vero? Se vuoi aggiungere qualcosa alla tua lista, puoi farlo digitando questo comando:
 
-    >>> lotteria.append(199)
-    >>> print(lotteria)
-    [59, 42, 30, 19, 12, 3, 199]
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="3" %}
+lotteria.append(199)
+print(lotteria)
+[59, 42, 30, 19, 12, 3, 199]
+{% endpre %}
 
 Se vuoi mostrare solo il primo numero, puoi farlo usando gli **indici**. L'indice è il numero che dice la posizione esatta dell'elemento all'interno di una lista. I programmatori preferiscono iniziare a contare da 0, quindi il primo oggetto nella lista è all'indice 0, il successivo all'1, e così via. Prova questo:
 
-    >>> print(lotteria[0])
-    59
-    >>> print(lotteria[1])
-    42
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2,4" %}
+print(lotteria[0])
+59
+print(lotteria[1])
+42
+{% endpre %}
 
 Come puoi vedere, puoi accedere a diversi oggetti nella tua lista usando il nome della lista e l'indice dell'oggetto all'interno delle parentesi quadre.
 
 Per eliminare qualcosa dalla lista dovrai usare **indexes** come abbiamo visto sopra, e lo statement `pop()`. Proviamo a fare qualcosa per rafforzare quanto imparato prima; elimineremo il primo numero della lista.
 
-    >>> print(lotteria)
-    [59, 42, 30, 19, 12, 3, 199]
-    >>> print(lotteria[0])
-    59
-    >>> lotteria.pop(0)
-    >>> print(lotteria)
-    [42, 30, 19, 12, 3, 199]
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2,4,7" %}
+print(lotteria)
+[59, 42, 30, 19, 12, 3, 199]
+print(lotteria[0])
+59
+lotteria.pop(0)
+print(lotteria)
+[42, 30, 19, 12, 3, 199]
+{% endpre %}
 
 Ha funzionato a meraviglia!
 
-Prova altri indici: 6, 7, 1000, -1, -6 o -1000. Prova a prevedere il risultato ancora prima di eseguire il comando. Hanno senso i risultati?
+Prova altri indici: `6`, `7`, `1000`, `-1`, `-6` o `-1000`. Prova a prevedere il risultato ancora prima di eseguire il comando. Hanno senso i risultati?
 
 Per saperne di più su i metodi disponibili per le liste puoi consultare questo capitolo della documentazione Python: https://docs.python.org/3/tutorial/datastructures.html
 
 ## Dizionari
 
-Un dizionario (dictionary) è simile a una lista, ma accedi ai valori cercando una chiave invece di un indice. Una chiave può essere qualsiasi stringa o numero. La sintassi per definire un dizionario vuoto è:
+Un **dizionario** (dictionary) è simile a una lista, ma accedi ai valori cercando una *chiave* invece di un indice. Una chiave può essere qualsiasi stringa o numero. La sintassi per definire un dizionario vuoto è:
 
-    >>> {}
-    {}
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+{}
+{}
+{% endpre %}
 
 Questo dimostra che hai appena creato un dizionario vuoto. Evviva!
 
 Ora, prova a scrivere il seguente comando (prova a sostituirlo con le tue informazioni):
 
-    >>> partecipante = {'nome': 'Ola', 'paese': 'Polonia', 'numeri_preferiti': [7, 42, 92]}
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python" %}
+partecipante = {'nome': 'Ola', 'paese': 'Polonia', 'numeri_preferiti': [7, 42, 92]}
+{% endpre %}
 
 Con questo comando hai appena creato una variabile chiamata `partecipante` con tre coppie di chiavi-valori:
 
@@ -288,21 +379,25 @@ Con questo comando hai appena creato una variabile chiamata `partecipante` con t
 
 Puoi controllare il contenuto di chiavi individuali con questa sintassi:
 
-    >>> print(partecipante['nome'])
-    Ola
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+print(partecipante['nome'])
+Ola
+{% endpre %}
 
 Vedi, assomiglia ad una lista. Ma non devi ricordare l'indice - solo il nome.
 
 Cosa succede se chiediamo a Python il valore di una chiave che non esiste? Riesci a indovinarlo? Proviamo!
 
-    >>> partecipante['età']
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    KeyError: 'età'
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2-4" %}
+partecipante['anni']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'anni'
+{% endpre %}
 
-Guarda, un altro errore! Questo qua è un **KeyError**. Python è utile e ti dice che la chiave `'età'` non esiste in questo dizionario.
+Guarda, un altro errore! Questo qua è un **KeyError**. Python è utile e ti dice che la chiave `'anni'` non esiste in questo dizionario.
 
 Quando usare un dizionario o una lista? Bella domanda. Prova a formulare una soluzione mentalmente prima di vedere la risposta nella prossima riga.
 
@@ -311,32 +406,40 @@ Quando usare un dizionario o una lista? Bella domanda. Prova a formulare una sol
 
 I dizionari, come le liste, sono *mutable*, significa che possono essere cambiati dopo che sono stati creati. Si possono aggiugere nuove coppie chiave/valore ad un dizionario dopo averlo creato:
 
-    >>> partecipante['linguaggio_preferito'] = 'Python'
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python" %}
+partecipante['linguaggio_preferito'] = 'Python'
+{% endpre %}
 
 Così come succede se applicato alle liste, il metodo `len()` restituisce il numero di coppie chiave/valore anche quando applicato a un dizionario. Vai e digita il comando:
 
-    >>> len(partecipante)
-    4
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+len(partecipante)
+4
+{% endpre %}
 
 Spero che abbia senso per te. :) Pronta per divertirti con i dizionari? Vai alla prossima riga per realizzare altre cose fantastiche.
 
 Puoi usare il comando `pop()` per cancellare un elemento nella directory. Se vuoi cancellare la voce che corrisponde alla chiave `'numeri_preferiti'`, digita il seguente comando:
 
-    >>> partecipante.pop('numeri_preferiti')
-    >>> partecipante
-    {'paese': 'Polonia', 'linguaggio_preferito': 'Python', 'nome': 'Ola'}
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="3" %}
+partecipante.pop('numeri_preferiti')
+partecipante
+{'paese': 'Polonia', 'linguaggio_preferito': 'Python', 'nome': 'Ola'}
+{% endpre %}
 
-Come puoi vedere dall'output, la coppia chiave-valore corrispondente alla chiave 'numeri_preferiti' è stato cancellata.
+Come puoi vedere dall'output, la coppia chiave-valore corrispondente alla chiave `'numeri_preferiti'` è stato cancellata.
 
 Puoi anche cambiare un valore associato ad una chiave già creata nel dizionario. Digita:
 
-    >>> partecipante['paese'] = 'Germania'
-    >>> partecipante
-    {'paese': 'Germania', 'linguaggio_preferito': 'Python', 'nome': 'Ola'}
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="3" %}
+partecipante.pop('numeri_preferiti')
+partecipante
+{'paese': 'Germania', 'linguaggio_preferito': 'Python', 'nome': 'Ola'}
+{% endpre %}
 
 Come puoi vedere, il valore della chiave `'paese'` è stato cambiato da `'Polonia'` a `'Germania'`. :) Eccitante, vero? Evviva! Hai già imparato un'altra cosa fantastica.
 
