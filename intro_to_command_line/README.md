@@ -40,7 +40,7 @@ Probabilmente è sotto Applicazioni → Accessori → Terminal, ma quello potreb
 
 Ora dovresti essere in grado di vedere una finestra bianca o nera che è in attesa di ricevere un comando.
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="OS X e Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 Se sei su Mac o Linux, probabilmente vedi `$`, proprio come questo:
 
@@ -74,7 +74,7 @@ Nel tutorial, quando dovrai scrivere qualche comando, noi lo mostreremo con incl
 
 Cominciamo con qualcosa di veramente semplice. Digita questo comando:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="OS X e Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$ ", language="term" %}
@@ -113,7 +113,7 @@ Ogni sistema operativo ha un insieme di comandi leggermente diverso per la comma
 
 Sarebbe bello sapere dove siamo adesso, vero? Vediamo. Digita questo commando e premi `invio`:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="OS X e Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$ ", language="term", output="2" %}
@@ -145,7 +145,7 @@ Probabilmente vedrai qualcosa di simile sul tuo computer. Quando apri la command
 
 Cosa c'è dentro? Sarebbe bello scoprirlo. Vediamo come:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="OS X e Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$ ", language="term", output="2-6" %}
@@ -183,7 +183,7 @@ Ora, andiamo nella nostra directory Desktop:
 
     $ cd Desktop
     
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+<!--sec data-title="OS X e Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$ ", language="term" %}
@@ -204,7 +204,7 @@ cd Desktop
 Controlla ora se ti sei veramente spostata:
 
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="OS X e Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$ ", language="term", output="2" %}
@@ -234,7 +234,7 @@ Ecco fatto!
 
 Che ne dici di creare una directory di pratica sul tuo desktop? Puoi farlo in questo modo:
 
-<!--sec data-title="OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="OS X e Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="term" %}
@@ -256,31 +256,40 @@ Questo breve comando creerà una cartella con il nome `practice` sul tuo desktop
 
 > Suggerimento PRO: se non vuoi digitare lo stesso comando tutte le volte, prova a premere ` freccia in su ` e `freccia in giù` sulla tua tastiera per scorrere tutti i comandi che hai usato fin ora.
 
-* * *
+---
 
 ### Esercizio!
 
 Piccola sfida per te: nella tua directory appena creata `practice` crea una directory chiamata `test`. usa i comandi `cd` e `mkdir`.
 
 #### Soluzione:
+<!--sec data-title="OS X e Linux" data-id="OSX_Linux_es" data-collapse=true ces-->
 
-    $ cd practice
-    $ mkdir test
-    $ ls
-    test
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="term", output="4" %}
+cd practice
+mkdir test
+ls
+test
+{% endpre %}
 
-Windows:
+<!--endsec-->
 
-    > cd practice
-    > mkdir test
-    > dir
-    05/08/2014 07:28 PM <DIR>      test
-    
+<!--sec data-title="Windows" data-id="windows_es" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt=">", language="term", output="4" %}
+cd practice
+mkdir test
+dir
+05/08/2014 07:28 PM <DIR>      test
+{% endpre %}
+
+<!--endsec-->
 
 Congratulazioni! :)
 
-* * *
+---
 
 ### Facciamo ordine
 
@@ -288,62 +297,110 @@ Non vogliamo lasciare un pasticcio, per cui rimuoviamo tutto quello che abbiamo 
 
 Per prima cosa dobbiamo tornare al Desktop:
 
-    $ cd ..
-    
+<!--sec data-title="OS X e Linux" data-id="OSX_Linux_desktop" data-collapse=true ces-->
 
-Windows:
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="term" %}
+cd ..
+{% endpre %}
 
-    > cd ..
-    
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_desktop" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt=">", language="term" %}
+cd ..
+{% endpre %}
+
+<!--endsec-->
 
 Usando `..` con il comando `cd` cambierai la tua directory attuale alla directory padre (si tratta della cartella che contiene la tua directory attuale).
 
 Controlla dove ti trovi ora:
 
-    $ pwd
-    /Users/olasitarska/Desktop
-    
+<!--sec data-title="OS X e Linux" data-id="OSX_Linux_desktop_pwd" data-collapse=true ces-->
 
-Windows:
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="term", output="2" %}
+pwd
+/Users/olasitarska/Desktop
+{% endpre %}
 
-    > cd
-    C:\Users\olasitarska\Desktop
-    
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_desktop_pwd" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt=">", language="term", output="2" %}
+cd
+C:\Users\olasitarska\Desktop
+{% endpre %}
+
+<!--endsec-->
 
 Adesso è l'ora di cancellare la directory `practice`:
 
 > **Attenzione**: cancellare un file usando `del`, `rmdir` o `rm` è irreversibile, *i file cancellati andranno perduti per sempre*! Per cui sii molto prudente nell'utilizzare questi comandi.
 
-    $ rm -r practice
-    
+<!--sec data-title="OS X e Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
-Windows:
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="term" %}
+rm -r practice
+{% endpre %}
 
-    > rmdir /S practice
-    practice, Are you sure <Y/N>? Y
-    
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_rm" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt=">", language="term", output="2" %}
+rmdir /S practice
+practice, Are you sure <Y/N>? Y
+{% endpre %}
+
+<!--endsec-->
 
 Fatto! Per essere sicuri che sia stato effettivamente cancellato, controlliamo:
 
-    $ ls
-    
+<!--sec data-title="OS X e Linux" data-id="OSX_Linux_check" data-collapse=true ces-->
 
-Windows:
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="term" %}
+ls
+{% endpre %}
 
-    > dir
-    
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_check" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt=">", language="term" %}
+dir
+{% endpre %}
+
+<!--endsec-->
 
 ### Uscire dalla command line
 
-Questo è tutto per ora! puoi tranquillamente chiudere la tua command line. Facciamolo alla maniera degli hacker, va bene?:)
+<!--sec data-title="OS X e Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
-    $ exit
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="term" %}
+exit
+{% endpre %}
 
-Windows:
+<!--endsec-->
 
-    > exit
-    
+<!--sec data-title="Windows" data-id="windows_exit" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt=">", language="term" %}
+exit
+{% endpre %}
+
+<!--endsec-->
 
 Figo, eh?:)
 
@@ -351,15 +408,17 @@ Figo, eh?:)
 
 Questo è un riepilogo di alcuni comandi utili:
 
-| Comandi(Windows) | Comandi (Mac OS / Linux) | Descrizione                 | Esempio                                           |
-| ---------------- | ------------------------ | --------------------------- | ------------------------------------------------- |
-| exit             | exit                     | chiudi la finestra          | **exit**                                          |
-| cd               | cd                       | cambiare directory          | **cd test**                                       |
-| dir              | ls                       | elenco directory/file       | **dir**                                           |
-| copy             | cp                       | copia un file               | **copy c:\test\test.txt c:\windows\test.txt** |
-| move             | mv                       | spostare un file            | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir            | mkdir                    | creare una nuova directory  | **mkdir testdirectory**                           |
-| del              | rm                       | eliminare un file/directory | **del c:\test\test.txt**                        |
+| Comandi(Windows)  | Comandi (Mac OS / Linux) | Descrizione                 | Esempio                                           |
+| ----------------  | ------------------------ | --------------------------- | ------------------------------------------------- |
+| `exit`            | `exit`                   | chiudi la finestra          | **exit**                                          |
+| `cd`              | `cd`                     | cambiare directory          | **cd test**                                       |
+| `cd`              | `pwd`                    | mostra la cartella attuale  | **cd test**                                       |
+| `dir`             | `ls`                     | elenco directory/file       | **dir**                                           |
+| `copy`            | `cp`                     | copia un file               | **copy c:\test\test.txt c:\windows\test.txt**     |
+| `move`            | `mv`                     | spostare un file            | **move c:\test\test.txt c:\windows\test.txt**     |
+| `mkdir`           | `mkdir`                  | creare una nuova directory  | **mkdir testdirectory**                           |
+| `rmdir` (o `del`) | `rm`                     | eliminare un file           | **del c:\test\test.txt**                          |
+| `rmdir /S`        | `rm -r`                  | eliminare una directory     | **rm -r testdirectory**                           |
 
 Questi sono solo alcuni dei comandi che puoi eseguire sulla tua command line, ma non ne userai altri oltre a quelli spiegati oggi.
 
