@@ -453,17 +453,19 @@ Sei emozionato/a per la prossima parte? :)
 
 Larga parte della programmazione include il confrontare le cose. Qual è la cosa più semplice da confrontare? I numeri, senza dubbio. Vediamo come funziona:
 
-    >>> 5 > 2
-    True
-    >>> 3 < 1
-    False
-    >>> 5 > 2 * 2
-    True
-    >>> 1 == 1
-    True
-    >>> 5 != 2
-    True
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2,4,6,8,10" %}
+5 > 2
+True
+3 < 1
+False
+5 > 2 * 2
+True
+1 == 1
+True
+5 != 2
+True
+{% endpre %}
 
 Abbiamo dato a Python alcuni numeri da mettere a confronto. Come puoi vedere, Python può mettere a confronto non solo numeri, ma anche i risultati dei metodi. Forte, eh?
 
@@ -471,11 +473,13 @@ Ti sei chiesta perché abbiamo messo due simboli di uguale `==` uno vicino all'a
 
 Dai a Python altri due compiti:
 
-    >>> 6 >= 12 / 2
-    True
-    >>> 3 <= 2
-    False
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2,4" %}
+6 >= 12 / 2
+True
+3 <= 2
+False
+{% endpre %}
 
 `>` e `<` sono facili, ma cosa significano `>=` e `<=`? Leggili così:
 
@@ -486,13 +490,15 @@ Dai a Python altri due compiti:
 
 Fantastico! Vuoi farne due o tre? prova questo:
 
-    >>> 6 > 2 and 2 < 3
-    True
-    >>> 3 > 2 and 2 < 1
-    False
-    >>> 3 > 2 or 2 < 1
-    True
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2,4,6" %}
+6 > 2 and 2 < 3
+True
+3 > 2 and 2 < 1
+False
+3 > 2 or 2 < 1
+True
+{% endpre %}
 
 Puoi dare a Python tutti i numeri da confrontare che vuoi, ti darà sempre una risposta! Molto intelligente, vero?
 
@@ -501,11 +507,14 @@ Puoi dare a Python tutti i numeri da confrontare che vuoi, ti darà sempre una r
 
 Hai sentito parlare dell'espressione "comparare mele e arance"? Proviamo l'equivalente in Python:
 
-    >>> 1 > 'django'
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    TypeError: unorderable types: int() > str()
-    
+
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2-4" %}
+1 > 'django'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unorderable types: int() > str()
+{% endpre %}
 
 Dall'espressione puoi capire che Python non è in grado di mettere a confronto un numero (`int`) e una stringa (`str`). Ci mostra invece un **TypeError** e ci dice che i due tipi non possono essere messi a confronto.
 
