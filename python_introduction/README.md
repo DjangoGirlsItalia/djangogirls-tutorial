@@ -507,7 +507,6 @@ Puoi dare a Python tutti i numeri da confrontare che vuoi, ti darà sempre una r
 
 Hai sentito parlare dell'espressione "comparare mele e arance"? Proviamo l'equivalente in Python:
 
-
 {% filename %}python{% endfilename %}
 {% pre prompt=">>>", language="python", output="2-4" %}
 1 > 'django'
@@ -523,24 +522,28 @@ Dall'espressione puoi capire che Python non è in grado di mettere a confronto u
 Accidentalmente, hai appena imparato un nuovo tipo di oggetto in Python. Si chiama **Boolean** e probabilmente è il tipo più facile che ci sia.
 
 Ci sono solo due oggetti Boolean:
-- True
-- False
+- `True`
+- `False`
 
 Ma perché Python possa capirlo, bisogna sempre scrivere True (prima lettera maiuscola, le altre minuscole). **true, TRUE, tRUE non funzionano -- solo True è corretto.** (Lo stesso vale per False, ovviamente.)
 
 I Boolean possono anche essere variabili! Guarda qui:
 
-    >>> a = True
-    >>> a
-    True
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="3" %}
+a = True
+a
+True
+{% endpre %}
 
 Lo puoi fare anche in questa forma:
 
-    >>> a = 2 > 5
-    >>> a
-    False
-    
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="3" %}
+a = 2 > 5
+a
+False
+{% endpre %}
 
 Fai pratica e divertiti con i Boolean provando ad eseguire i seguenti comandi:
 
@@ -560,29 +563,33 @@ Finora abbiamo scritto il codice python nell'interprete, che ci permette di inse
 *   Salvare un po' di codice in un file python
 *   Eseguirlo!
 
-Per uscire dall'interprete di Python che è quello che stavamo utilizzando, digita la funzione ```exit()``` :
+Per uscire dall'interprete di Python che è quello che stavamo utilizzando, digita la funzione `exit()` :
 
-    >>> exit()
-    $
-    
 
-Questo ti immetterà nel prompt dei comandi.
+{% filename %}python{% endfilename %}
+{% pre prompt=">>>", language="python", output="2" %}
+exit()
+$
+{% endpre %}
 
-Prima, abbiamo preso un editore di codice dalla sezione [code editor][2]. Dovremo aprire l'editor ora e scrivere un po' di codice in un nuovo file:
+Questo ti farà tornare nel prompt dei comandi.
 
- [2]: ../code_editor/README.md
+Prima, abbiamo installato un editor di codice alla sezione [installazione][2]. Dovremo aprire l'editor ora e scrivere un po' di codice in un nuovo file:
 
-```python
+ [2]: ../installation/README.md
+
+{% filename %}code editor{% endfilename %}
+{% pre language="python", output="2" %}
 print('Ciao, Django girls!')
-```
-
-> **Nota** Dovresti notare una delle cose più belle degli editori di codice: i colori! Nella console Python ogni cosa era dello stesso colore, mentre ora dovresti visualizzare la funzione `print` di un colore differente rispetto alla stringa che la segue. Questa viene chiamata "sintassi evidenziata", ed è veramente utile quando si scrive codice. Il colore serve come suggerimento, ad esempio per una stringa che non è chiusa, o un errore di digitazione di una keyword (come la `def` per le funzioni, che vedremo più avanti). Questo è uno dei motivi per cui usiamo un editor di codice :)
+{% endpre %}
 
 Ovviamente a questo punto sei una programmatrice Python senior, quindi sentiti libera di scrivere un po' del codice che hai imparato oggi.
 
 Ora dobbiamo salvare il file e dargli un nome descrittivo. Chiama il file **python_intro.py** e salvalo sulla tua scrivania. Puoi chiamare il file come vuoi, ma è importante assicurarsi che finisca con **.py**. L'estensione **.py** dice al Sistema Operativo che questo è un **file eseguibile python** e che Python può eseguirlo.
 
-È ora di eseguire il file! Usando le nozioni che hai imparato nella sezione command line, usa il terminal per **cambiare cartella** alla scrivania.
+> **Nota** Dovresti notare una delle cose più belle degli editori di codice: i colori! Nella console Python ogni cosa era dello stesso colore, mentre ora dovresti visualizzare la funzione `print` di un colore differente rispetto alla stringa che la segue. Questa viene chiamata "sintassi evidenziata", ed è veramente utile quando si scrive codice. Il colore serve come suggerimento, ad esempio per una stringa che non è chiusa, o un errore di digitazione di una keyword (come la `def` per le funzioni, che vedremo più avanti). Questo è uno dei motivi per cui usiamo un editor di codice :)
+
+È ora di eseguire il file! Usando le nozioni che hai imparato nella sezione **command line**, usa il prompt per **cambiare cartella** alla scrivania.
 
 Su un Mac, il comando assomiglierà a questo:
 
