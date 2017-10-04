@@ -21,7 +21,7 @@ Vogliamo aprire una console Python, quindi digita `python` su Windows o `python3
 python3
 Python 3.6.1 (...)
 Type "help", "copyright", "credits" or "license" for more information.
-\>\>\>
+>>>
 {% endpre %}
 
 <!--endsec-->
@@ -33,7 +33,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 python
 Python 3.6.1 (...)
 Type "help", "copyright", "credits" or "license" for more information.
-\>\>\>
+>>>
 {% endpre %}
 
 <!--endsec-->
