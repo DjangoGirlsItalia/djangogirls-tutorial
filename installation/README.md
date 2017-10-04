@@ -70,7 +70,7 @@ Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più av
 È molto probabile che tu abbia Python già installato di default. Per controllare se ce l'hai già installato (e quale versione è), apri linea di comando e digita il seguente comando:
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="bash", output="2" %}
+{% pre prompt="$", language="bash", output="2" %}
 python3 --version
 Python 3.6.2
 {% endpre %}
@@ -82,7 +82,7 @@ Se non hai Python installato o se vuoi una versione diversa, puoi installarla co
 Digita questo comando nella tua console:
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="bash" %}
+{% pre prompt="$", language="bash" %}
 sudo apt-get install python3.6
 {% endpre %}
 
@@ -91,7 +91,7 @@ sudo apt-get install python3.6
 Usa questo comando nella tua console:
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="bash" %}
+{% pre prompt="$", language="bash" %}
 sudo dnf install python3.6
 {% endpre %}
 
@@ -100,7 +100,7 @@ sudo dnf install python3.6
 Usa questo comando nella tua console:
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="bash" %}
+{% pre prompt="$", language="bash" %}
 sudo zypper install python3
 {% endpre %}
 
@@ -109,7 +109,7 @@ sudo zypper install python3
 Verifica che l'installazione sia andata a buon fine aprendo la command line e scrivi il comando `python3`:
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="bash", output="2" %}
+{% pre prompt="$", language="bash", output="2" %}
 python3 --version
 Python 3.6.2
 {% endpre %}
@@ -131,7 +131,7 @@ Se hai dubbi o se qualcosa è andato storto e non hai idea di cosa fare dopo - c
 Per questo tutorial useremo una nuova directory `djangogirls` dalla tua home directory, quindi apri una nuova linea di comando e digita:
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="bash" %}
+{% pre prompt="$", language="bash" %}
 mkdir djangogirls
 cd djangogirls
 {% endpre %}
@@ -141,7 +141,7 @@ Non ti preoccupare se non sai cosa vogliano dire questi comandi, più avanti nel
 Ora che siamo nella cartella giusta, puoi installare Django usando `pip`. Nella console, esegui `pip install --user django~=1.11.0` (nota che usiamo una tilde seguita da un simbolo di uguale: `~=`).
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="bash", output="2-5" %}
+{% pre prompt="$", language="bash", output="2-5" %}
 pip install --user django~=1.11.0Collecting django~=1.11.0
 Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
 Installing collected packages: django
@@ -238,7 +238,7 @@ Scarica Git da [git-scm.com](https://git-scm.com/) e segui le istruzioni.
 data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="term" %}
+{% pre prompt="$", language="bash" %}
 sudo apt-get install git
 {% endpre %}
 
@@ -248,7 +248,7 @@ sudo apt-get install git
 data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="term" %}
+{% pre prompt="$", language="bash" %}
 sudo dnf install git
 {% endpre %}
 
@@ -258,7 +258,7 @@ sudo dnf install git
 data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="term" %}
+{% pre prompt="$", language="bash" %}
 sudo zypper install git
 {% endpre %}
 
@@ -290,7 +290,7 @@ Per controllare che tutto sia andato a buon fine e per finire la configurazione 
 Apri la linea di comando e digita:
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="term", output="2-5" %}
+{% pre prompt="$", language="bash", output="2-5" %}
 heroku login
 Enter your Heroku credentials.
 Email: adam@example.com

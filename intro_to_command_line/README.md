@@ -77,7 +77,7 @@ Cominciamo con qualcosa di veramente semplice. Digita questo comando:
 <!--sec data-title="OS X e Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="term" %}
+{% pre prompt="$", language="bash" %}
 whoami
 {% endpre %}
 
@@ -87,7 +87,7 @@ whoami
 <!--sec data-title="Windows" data-id="windows_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="> ", language="term" %}
+{% pre prompt=">", language="powershell" %}
 whoami
 {% endpre %}
 
@@ -96,7 +96,7 @@ whoami
 Premi `invio`. Questo è il nostro risultato:
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="term", output="2" %}
+{% pre prompt="$", language="bash", output="2" %}
 whoami
 olasitarska
 {% endpre %}
@@ -116,7 +116,7 @@ Sarebbe bello sapere dove siamo adesso, vero? Vediamo. Digita questo commando e 
 <!--sec data-title="OS X e Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="term", output="2" %}
+{% pre prompt="$", language="bash", output="2" %}
 pwd
 /Users/olasitarska
 {% endpre %}
@@ -128,7 +128,7 @@ pwd
 <!--sec data-title="Windows" data-id="windows_cd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="> ", language="term", output="2" %}
+{% pre prompt=">", language="powershell", output="2" %}
 cd
 C:\Users\olasitarska
 {% endpre %}
@@ -148,7 +148,7 @@ Cosa c'è dentro? Sarebbe bello scoprirlo. Vediamo come:
 <!--sec data-title="OS X e Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="term", output="2-6" %}
+{% pre prompt="$", language="bash", output="2-6" %}
 ls
 Applications
 Desktop
@@ -162,7 +162,7 @@ Music
 <!--sec data-title="Windows" data-id="windows_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="> ", language="term", output="2-7" %}
+{% pre prompt=">", language="powershell", output="2-7" %}
 dir
 Directory of C:\Users\olasitarska
 05/08/2014 07:28 PM <DIR>      Applications
@@ -184,7 +184,7 @@ Ora, andiamo nella nostra directory Desktop:
 <!--sec data-title="OS X e Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="term" %}
+{% pre prompt="$", language="bash" %}
 cd Desktop
 {% endpre %}
 
@@ -193,7 +193,7 @@ cd Desktop
 <!--sec data-title="Windows" data-id="windows_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="> ", language="term" %}
+{% pre prompt=">", language="powershell" %}
 cd Desktop
 {% endpre %}
 
@@ -205,7 +205,7 @@ Controlla ora se ti sei veramente spostata:
 <!--sec data-title="OS X e Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$ ", language="term", output="2" %}
+{% pre prompt="$", language="bash", output="2" %}
 pwd
 /Users/olasitarska/Desktop
 {% endpre %}
@@ -215,7 +215,7 @@ pwd
 <!--sec data-title="Windows" data-id="windows_cd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="> ", language="term", output="2" %}
+{% pre prompt=">", language="powershell", output="2" %}
 cd
 C:\Users\olasitarska\Desktop
 {% endpre %}
@@ -235,7 +235,7 @@ Che ne dici di creare una directory di pratica sul tuo desktop? Puoi farlo in qu
 <!--sec data-title="OS X e Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$", language="term" %}
+{% pre prompt="$", language="bash" %}
 mkdir practice
 {% endpre %}
 
@@ -244,7 +244,7 @@ mkdir practice
 <!--sec data-title="Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt=">", language="term" %}
+{% pre prompt=">", language="powershell" %}
 mkdir practice
 {% endpre %}
 
@@ -264,7 +264,7 @@ Piccola sfida per te: nella tua directory appena creata `practice` crea una dire
 <!--sec data-title="OS X e Linux" data-id="OSX_Linux_es" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$", language="term", output="4" %}
+{% pre prompt="$", language="bash", output="4" %}
 cd practice
 mkdir test
 ls
@@ -276,7 +276,7 @@ test
 <!--sec data-title="Windows" data-id="windows_es" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt=">", language="term", output="4" %}
+{% pre prompt=">", language="powershell", output="4" %}
 cd practice
 mkdir test
 dir
@@ -298,7 +298,7 @@ Per prima cosa dobbiamo tornare al Desktop:
 <!--sec data-title="OS X e Linux" data-id="OSX_Linux_desktop" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$", language="term" %}
+{% pre prompt="$", language="bash" %}
 cd ..
 {% endpre %}
 
@@ -307,7 +307,7 @@ cd ..
 <!--sec data-title="Windows" data-id="windows_desktop" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt=">", language="term" %}
+{% pre prompt=">", language="powershell" %}
 cd ..
 {% endpre %}
 
@@ -320,7 +320,7 @@ Controlla dove ti trovi ora:
 <!--sec data-title="OS X e Linux" data-id="OSX_Linux_desktop_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$", language="term", output="2" %}
+{% pre prompt="$", language="bash", output="2" %}
 pwd
 /Users/olasitarska/Desktop
 {% endpre %}
@@ -330,7 +330,7 @@ pwd
 <!--sec data-title="Windows" data-id="windows_desktop_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt=">", language="term", output="2" %}
+{% pre prompt=">", language="powershell", output="2" %}
 cd
 C:\Users\olasitarska\Desktop
 {% endpre %}
@@ -344,7 +344,7 @@ Adesso è l'ora di cancellare la directory `practice`:
 <!--sec data-title="OS X e Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$", language="term" %}
+{% pre prompt="$", language="bash" %}
 rm -r practice
 {% endpre %}
 
@@ -353,7 +353,7 @@ rm -r practice
 <!--sec data-title="Windows" data-id="windows_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt=">", language="term", output="2" %}
+{% pre prompt=">", language="powershell", output="2" %}
 rmdir /S practice
 practice, Are you sure <Y/N>? Y
 {% endpre %}
@@ -365,7 +365,7 @@ Fatto! Per essere sicuri che sia stato effettivamente cancellato, controlliamo:
 <!--sec data-title="OS X e Linux" data-id="OSX_Linux_check" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$", language="term" %}
+{% pre prompt="$", language="bash" %}
 ls
 {% endpre %}
 
@@ -374,7 +374,7 @@ ls
 <!--sec data-title="Windows" data-id="windows_check" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt=">", language="term" %}
+{% pre prompt=">", language="powershell" %}
 dir
 {% endpre %}
 
@@ -385,7 +385,7 @@ dir
 <!--sec data-title="OS X e Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$", language="term" %}
+{% pre prompt="$", language="bash" %}
 exit
 {% endpre %}
 
@@ -394,7 +394,7 @@ exit
 <!--sec data-title="Windows" data-id="windows_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt=">", language="term" %}
+{% pre prompt=">", language="powershell" %}
 exit
 {% endpre %}
 

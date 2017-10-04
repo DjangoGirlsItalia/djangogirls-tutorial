@@ -17,7 +17,7 @@ Vogliamo aprire una console Python, quindi digita `python` su Windows o `python3
 <!--sec data-title="OS X e Linux" data-id="OSX_Linux_python" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$", language="term", output="2-4" %}
+{% pre prompt="$", language="bash", output="2-4" %}
 python3
 Python 3.6.1 (...)
 Type "help", "copyright", "credits" or "license" for more information.
@@ -29,7 +29,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 <!--sec data-title="Windows" data-id="windows_python" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt=">", language="term", output="2-4" %}
+{% pre prompt=">", language="powershell", output="2-4" %}
 python
 Python 3.6.1 (...)
 Type "help", "copyright", "credits" or "license" for more information.
