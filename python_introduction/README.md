@@ -6,14 +6,12 @@ Scriviamo un pò codice!
 
 ## La linea di comando di Python
 
-Per iniziare a giocare con Python, devi avviare sul tuo computer una *linea di comando*. Dovresti già sapere come farlo -- l'hai imparato nel capitolo [Introduzione a Command Line][1].
-
- [1]: ../intro_to_command_line/README.md
+Per iniziare a giocare con Python, devi avviare sul tuo computer una *linea di comando*. Dovresti già sapere come farlo -- l'hai imparato nel capitolo [Introduzione a Command Line](../intro_to_command_line/README.md).
 
 Una volta pronta, segui le istruzioni riportate di seguito.
 
 Vogliamo aprire una console Python, quindi digita `python` su Windows o `python3` su Mac OS/Linux e premi `invio`.
-    
+
 <!--sec data-title="OS X e Linux" data-id="OSX_Linux_python" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
@@ -140,10 +138,10 @@ Ti stai chiedendo perché certe volte chiami una funzione con un `.` alla fine d
 
 OK, basta con le stringhe. Ecco fino ad ora quanto hai imparato:
 
-*   **il prompt** - digitare i comandi (codice) nel prompt di Python restituisce risposte in Python
-*   **numeri e stringhe** - in Python i numeri vengono utilizzati per la matematica e le stringhe per oggetti testuali
-*   **operatori** - come + e *, combinano i valori per produrne di nuovi
-*   **funzioni** - come upper() e len(), eseguono azioni su oggetti.
+- **il prompt** - digitare i comandi (codice) nel prompt di Python restituisce risposte in Python
+- **numeri e stringhe** - in Python i numeri vengono utilizzati per la matematica e le stringhe per oggetti testuali
+- **operatori** - come + e *, combinano i valori per produrne di nuovi
+- **funzioni** - come upper() e len(), eseguono azioni su oggetti.
 
 Queste sono le basi di ogni linguaggio di programmazione che impari. Pronta per qualcosa di più complicato? Scommetto che lo sei!
 
@@ -169,8 +167,8 @@ len(str(304023))
 
 Ha funzionato! Usiamo la funzione `str` all'interno della funzione `len`. `str()` converte tutto in stringhe.
 
-*   La funzione `str` converte le cose in **stringhe**
-*   La funzione `int` converte le cose in **numeri interi**
+- La funzione `str` converte le cose in **stringhe**
+- La funzione `int` converte le cose in **numeri interi**
 
 > Importante: possiamo convertire i numeri in testo, ma non possiamo convertire il testo in numeri - cosa potrebbe mai essere `int('hello')`?
 
@@ -229,7 +227,7 @@ Ma cosa succede se utilizziamo il nome sbagliato? Riesci a immaginare cosa succe
 city = "Tokyo"
 ctiy
 Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
+  File "<stdin>", line 1, in <module>
 NameError: name 'ctiy' is not defined
 {% endpre %}
 
@@ -368,9 +366,9 @@ partecipante = {'nome': 'Ola', 'paese': 'Polonia', 'numeri_preferiti': [7, 42, 9
 
 Con questo comando hai appena creato una variabile chiamata `partecipante` con tre coppie di chiavi-valori:
 
-*   La chiave `nome` va a indicare il valore `'Ola'` (un oggetto `stringa`),
-*   `paese` indica `'Polonia'` (un'altra `stringa`),
-*   e `numeri_preferiti` indica `[7, 42, 92]` (una `lista` con tre numeri al suo interno).
+- La chiave `nome` va a indicare il valore `'Ola'` (un oggetto `stringa`),
+- `paese` indica `'Polonia'` (un'altra `stringa`),
+- e `numeri_preferiti` indica `[7, 42, 92]` (una `lista` con tre numeri al suo interno).
 
 Puoi controllare il contenuto di chiavi individuali con questa sintassi:
 
@@ -396,8 +394,8 @@ Guarda, un altro errore! Questo qua è un **KeyError**. Python è utile e ti dic
 
 Quando usare un dizionario o una lista? Bella domanda. Prova a formulare una soluzione mentalmente prima di vedere la risposta nella prossima riga.
 
-*   Ha bisogno di una sequenza ordinata di elementi? Fai una lista.
-*   Hai bisogno di associare i valori alle chiavi, così che potrai cercarle agilmente (per chiave) dopo? Usa un dizionario.
+- Ha bisogno di una sequenza ordinata di elementi? Fai una lista.
+- Hai bisogno di associare i valori alle chiavi, così che potrai cercarle agilmente (per chiave) dopo? Usa un dizionario.
 
 I dizionari, come le liste, sono *mutable*, significa che possono essere cambiati dopo che sono stati creati. Si possono aggiugere nuove coppie chiave/valore ad un dizionario dopo averlo creato:
 
@@ -431,7 +429,7 @@ Puoi anche cambiare un valore associato ad una chiave già creata nel dizionario
 
 {% filename %}python{% endfilename %}
 {% pre prompt=">>>", language="python", output="3" %}
-partecipante.pop('numeri_preferiti')
+partecipante['paese'] = 'Germania'
 partecipante
 {'paese': 'Germania', 'linguaggio_preferito': 'Python', 'nome': 'Ola'}
 {% endpre %}
@@ -442,10 +440,10 @@ Come puoi vedere, il valore della chiave `'paese'` è stato cambiato da `'Poloni
 
 Fantastico! ora sai molto sulla programmazione. In questa ultima parte hai imparato:
 
-*   **errori** - ora sai come leggere e capire gli errori che appaiono se Python non comprende un comando che gli hai dato
-*   **variabili** - nomi per oggetti. Ti permettono di scrivere codice più semplice e di renderlo più leggibile
-*   **liste** - liste di oggetti archiviati in un ordine particolare
-*   **dizionari** - oggetti archiviati come coppie di chiave-valore
+- **errori** - ora sai come leggere e capire gli errori che appaiono se Python non comprende un comando che gli hai dato
+- **variabili** - nomi per oggetti. Ti permettono di scrivere codice più semplice e di renderlo più leggibile
+- **liste** - liste di oggetti archiviati in un ordine particolare
+- **dizionari** - oggetti archiviati come coppie di chiave-valore
 
 Sei emozionato/a per la prossima parte? :)
 
@@ -483,10 +481,10 @@ False
 
 `>` e `<` sono facili, ma cosa significano `>=` e `<=`? Leggili così:
 
-*   x `>` y significa: x è maggiore di y
-*   x `<` y significa: x è minore di y
-*   x `<=` y significa: x è minore o uguale a y
-*   x `>=` y significa: x è maggiore o uguale a y
+- x `>` y significa: x è maggiore di y
+- x `<` y significa: x è minore di y
+- x `<=` y significa: x è minore o uguale a y
+- x `>=` y significa: x è maggiore o uguale a y
 
 Fantastico! Vuoi farne due o tre? prova questo:
 
@@ -502,8 +500,8 @@ True
 
 Puoi dare a Python tutti i numeri da confrontare che vuoi, ti darà sempre una risposta! Molto intelligente, vero?
 
-*   **and** - se usi l'operatore `e`, entrambe le cose confrontate devono essere True in modo tale che l'intero comando sia True
-*   **or** - se usi l'operatore `o`, solo una delle cose messe a confronto deve essere True in modo tale che l'intero comando sia True
+- **and** - se usi l'operatore `e`, entrambe le cose confrontate devono essere True in modo tale che l'intero comando sia True
+- **or** - se usi l'operatore `o`, solo una delle cose messe a confronto deve essere True in modo tale che l'intero comando sia True
 
 Hai sentito parlare dell'espressione "comparare mele e arance"? Proviamo l'equivalente in Python:
 
@@ -547,10 +545,10 @@ False
 
 Fai pratica e divertiti con i Boolean provando ad eseguire i seguenti comandi:
 
-*   `True and True`
-*   `False and True`
-*   `True or 1 == 1`
-*   `1 != 2`
+- `True and True`
+- `False and True`
+- `True or 1 == 1`
+- `1 != 2`
 
 Congratulazioni! I valori Boolean sono tra le cose più interessanti della programmazione e tu hai appena imparato ad utilizzarli!
 
@@ -558,13 +556,12 @@ Congratulazioni! I valori Boolean sono tra le cose più interessanti della progr
 
 Finora abbiamo scritto il codice python nell'interprete, che ci permette di inserire una linea di codice per volta. I programmi vengono salvati in file ed eseguiti dall'**interpreter** del nostro linguaggio di programmazione o dal **compiler**. Fino ad ora abbiamo eseguito i nostri programmi una riga per volta nell' **interprete** di Python. Avremo bisogno di più di una riga di codice per i prossimi compiti, quindi dovremo fare queste cose velocemente:
 
-*   Uscire dall'interprete di Python
-*   Aprire l'editor di codice che abbiamo scelto
-*   Salvare un po' di codice in un file python
-*   Eseguirlo!
+- Uscire dall'interprete di Python
+- Aprire l'editor di codice che abbiamo scelto
+- Salvare un po' di codice in un file python
+- Eseguirlo!
 
 Per uscire dall'interprete di Python che è quello che stavamo utilizzando, digita la funzione `exit()` :
-
 
 {% filename %}python{% endfilename %}
 {% pre prompt=">>>", language="python", output="2" %}
@@ -574,12 +571,10 @@ $
 
 Questo ti farà tornare nel prompt dei comandi.
 
-Prima, abbiamo installato un editor di codice alla sezione [installazione][2]. Dovremo aprire l'editor ora e scrivere un po' di codice in un nuovo file:
-
- [2]: ../installation/README.md
+Prima, abbiamo installato un editor di codice alla sezione [installazione](../installation/README.md). Dovremo aprire l'editor ora e scrivere un po' di codice in un nuovo file:
 
 {% filename %}code editor{% endfilename %}
-{% pre language="python", output="2" %}
+{% pre language="python" %}
 print('Ciao, Django girls!')
 {% endpre %}
 
@@ -591,28 +586,77 @@ Ora dobbiamo salvare il file e dargli un nome descrittivo. Chiama il file **pyth
 
 È ora di eseguire il file! Usando le nozioni che hai imparato nella sezione **command line**, usa il prompt per **cambiare cartella** alla scrivania.
 
+<!--sec data-title="Cambiare Cartella: OS X" data-id="python_OSX"
+data-collapse=true ces-->
+
 Su un Mac, il comando assomiglierà a questo:
 
-    $ cd ~/Desktop
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash" %}
+cd ~/Desktop
+{% endpre %}
 
-Su Linux, sarà come questo (la parola "Desktop" potrebbe essere tradotta nella tua lingua):
+<!--endsec-->
 
-    $ cd ~/Desktop
-    
+<!--sec data-title="Cambiare Cartella: Linux" data-id="python_linux"
+data-collapse=true ces-->
 
-E su windows, sara come questo:
+Su Linux, sarà come questo (la parola `Desktop` potrebbe essere tradotta nella tua lingua ad es `Scrivania`):
 
-    > cd %HomePath%\Desktop
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash" %}
+cd ~/Desktop
+{% endpre %}
+
+<!--endsec-->
+
+<!--sec data-title="Cambiare Cartella: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
+
+Sul prompt di Windows, sara come questo:
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt=">", language="powershell" %}
+cd %HomePath%\Desktop
+{% endpre %}
+
+<!--endsec-->
+
+<!--sec data-title="Cambiare Cartella: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
+
+E su Powershell di Windows, sara come questo:
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt=">", language="powershell" %}
+cd $Home\Desktop
+{% endpre %}
+
+<!--endsec-->
 
 Se rimani bloccata, chiedi aiuto.
 
 Ora usa Python per eseguire il codice nel file:
 
-    $ python3 python_intro.py
-    Ciao, Django girls!
-    
+<!--sec data-title="OS X e Linux" data-id="OSX_Linux_python_intro" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2" %}
+python3 python_intro.py
+Ciao, Django girls!
+{% endpre %}
+
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_python_intro" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt=">", language="powershell", output="2" %}
+python python_intro.py
+Ciao, Django girls!
+{% endpre %}
+
+> Nota: ricordati che su Windows, `python3` non è riconosciuto come comando. Quindi quando vedi esempi che usano `python3` ricordati di usare `python` come comando per eseguire i file!
+
+<!--endsec-->
 
 Perfetto! Hai appena eseguito il tuo primo programma Python salvato su un file. Grande, no?
 
@@ -624,53 +668,63 @@ Molte cose dovrebbero essere eseguite soltanto quando si incontrano certe condiz
 
 Sostituisci il codice nel file **python_intro.py** con questo:
 
-```python
+{% filename %}code editor{% endfilename %}
+{% pre language="python" %}
 if 3 > 2:
-```
+{% endpre %}
 
 Se salviamo questo codice e lo eseguiamo, incontriamo un errore come questo:
 
-    $ python3 python_intro.py
-    File "python_intro.py", line 2
-             ^
-    SyntaxError: unexpected EOF while parsing
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2-4" %}
+python3 python_intro.py
+File "python_intro.py", line 2
+         ^
+SyntaxError: unexpected EOF while parsing
+{% endpre %}
 
 Python si aspetta che gli vengano fornite ulteriori istruzioni che saranno eseguite se la condizione `3 > 2` risulterà vera (o `True` se vogliamo). Proviamo a fare in modo che Python stampi "Funziona!". Modifica il tuo codice nel tuo file **python_intro.py** con questo:
 
-```python
+{% filename %}code editor{% endfilename %}
+{% pre language="python" %}
 if 3 > 2:
-     print('Funziona!')
-```
+    print('Funziona!')
+{% endpre %}
 
 Vedi come abbiamo indentato la riga successiva usando 4 spazi? Si deve fare così in modo tale che Python sappia quale codice eseguire se il risultato è True. Puoi fare uno spazio, ma circa tutti i programmatori di Python ne fanno 4 per far vedere le cose più ordinate. Anche un signolo `tab` conta come 4 spazi.
 
 Salvalo ed eseguilo di nuovo:
 
-    $ python3 python_intro.py
-    Funziona!
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2" %}
+python3 python_intro.py
+Funziona!
+{% endpre %}
 
 ### E se una condizione non è Vera?
 
 In esempi precedenti, il codice è stato eseguito solo quando le condizioni erano True. Ma Python ha anche gli `elif` e `else` statements:
 
-```python
+{% filename %}code editor{% endfilename %}
+{% pre language="python" %}
 if 5 > 2:
-     print('5 è infatti maggiore di 2') 
+    print('5 è infatti maggiore di 2') 
 else:
-     print('5 non è maggiore di 2')
-```
+    print('5 non è maggiore di 2')
+{% endpre %}
 
 Quando viene lanciato, mostrerà:
 
-    $ python3 python_intro.py
-    5 è infatti maggiore di 2
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2" %}
+python3 python_intro.py
+5 è infatti maggiore di 2
+{% endpre %}
 
 Se 2 fosse un numero maggiore di 5, allora andrebbe in esecuzione il secondo comando. Facile, vero? Andiamo a vedere come funziona `elif`:
 
-```python
+{% filename %}code editor{% endfilename %}
+{% pre language="python" %}
 nome = 'Sonja'
 if nome == 'Ola':
     print('Ciao Ola!')
@@ -678,19 +732,22 @@ elif nome == 'Sonja':
     print('Ciao Sonja!')
 else:
     print('Ciao anonimo!')
-```
+{% endpre %}
 
 ed eseguito:
 
-    $ python3 python_intro.py
-    Ciao Sonja!
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2" %}
+python3 python_intro.py
+Ciao Sonja!
+{% endpre %}
 
 Hai visto cosa è successo? `elif` ti consente di aggiungere condizioni supplementari che verranno eseguite se nessuna delle condizioni precedenti viene soddisfatta.
 
 Allo statement iniziale `if` puoi far seguire tutti gli statement `elif` che vuoi. Per esempio:
 
-```python
+{% filename %}code editor{% endfilename %}
+{% pre language="python" %}
 volume = 57
 if volume < 20:
     print("Piuttosto basso.")
@@ -704,38 +761,58 @@ elif 80 <= volume < 100:
     print("Un po' altino!")
 else:
     print("Oddio, le mie orecchie! :(")
-```
+{% endpre %}
 
 Python esegue ogni singolo test in sequenza e scrive:
 
-    $ python3 python_intro.py
-    Perfetto, posso apprezzare ogni dettaglio
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2" %}
+python3 python_intro.py
+Perfetto, posso apprezzare ogni dettaglio
+{% endpre %}
+
+## Commenti
+
+I commenti sono linee che iniziano con `#`. Puoi scrivere cosa vuoi dopo `#` e Python lo ignorerà. I commenti possono rendere il codice più semplice da capire per te e per gli altri.
+
+Vediamo come funzionano:
+
+{% filename %}code editor{% endfilename %}
+{% pre language="python" %}
+# Change the volume if it's too loud or too quiet
+if volume < 20 or volume > 80:
+    volume = 50
+    print("That's better!")
+{% endpre %}
+
+Non hai bisogno di scrivere i commenti per ogni singola riga di codice, ma sono molto utili per spiegare perchè il tuo codice sta facendo qualcosa o per semplificare qualcosa di complesso.
 
 ### Indice
 
 Nei tre esercizi precedenti hai imparato:
 
-*   come **confrontare le cose** - in Python puoi mettere a confronto le cose usando `>`, `>=`, `==`, `<=`, `<` e gli operatori `e`, `o`
-*   i **Boolean** - una tipologia di oggetto che può avere solo uno di questi due valori: `True` o `False`
-*   come **Salvare file** - archiviare codice nei file in modo da poter eseguire programmi più lunghi.
-*   **if...elif...else** - affermazioni che ti permettono di eseguire codice solo quando vengono incontrate certe condizioni.
+- come **confrontare le cose** - in Python puoi mettere a confronto le cose usando `>`, `>=`, `==`, `<=`, `<` e gli operatori `and`, `or`
+- i **Booleani** - una tipologia di oggetto che può avere solo uno di questi due valori: `True` o `False`
+- come **Salvare file** - archiviare codice nei file in modo da poter eseguire programmi più lunghi.
+- **if...elif...else** - affermazioni che ti permettono di eseguire codice solo quando vengono incontrate certe condizioni.
+* **Commenti** - Linee che Python non esegue che permettono di documentare il codice
 
 È ora dell'ultima parte del capitolo!
 
-## Le funzioni personalizzate!
+## Le tue funzioni!
 
 Ti ricordi quelle funzioni che puoi eseguire in Python come `len()`? Beh, buone notizie, ora imparerai a scrivere delle funzioni tutte tue!
 
 Una funzione è una sequenza di istruzioni che Python dovrebbe eseguire. Ogni funzione in Python inizia con la parola chiave `def`, viene assegnato un nome e può avere alcuni parametri. Iniziamo con una facile. Sostituisci il codice nel file **python_intro.py** con il seguente:
 
-```python
+{% filename %}code editor{% endfilename %}
+{% pre language="python" %}
 def ciao():
     print('Ciao!')
     print('Come stai?')
 
 ciao()
-```
+{% endpre %}
 
 Okay, la nostra prima funzione è pronta!
 
@@ -743,20 +820,24 @@ Ti starai chiedendo perché abbiamo scritto il nome della funzione alla fine del
 
 Eseguiamolo e vediamo cosa succede:
 
-    $ python3 python_intro.py
-    Ciao!
-    Come stai?
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2-3" %}
+python3 python_intro.py
+Ciao!
+Come stai?
+{% endpre %}
 
 È stato facile! Costruiamo la nostra prima funzione con parametri. Useremo l'esempio precedente - una funzione che dice 'ciao' alla persona che lo esegue - aggiungendo il nome:
 
-```python
+{% filename %}code editor{% endfilename %}
+{% pre language="python" %}
 def ciao(nome):
-```
+{% endpre %}
 
 Come puoi vedere, abbiamo dato alla nostra funzione un parametro chiamato `nome`:
 
-```python
+{% filename %}code editor{% endfilename %}
+{% pre language="python" %}
 def ciao(nome):
     if nome == 'Ola':
         print('Ciao Ola!')
@@ -766,62 +847,76 @@ def ciao(nome):
         print('Ciao anonimo!')
 
 ciao()
-```
+{% endpre %}
 
 Ricorda: La funzione `print` è rientrata di 4 spazi rispetto allo statement `if`. Infatti, la funzione viene eseguita quando la condizione viene soddisfatta. Vediamo ora come funziona:
 
-    $ python3 python_intro.py
-    Traceback (most recent call last):
-    File "python_intro.py", line 10, in <module>
-      ciao()
-    TypeError: ciao() missing 1 required positional argument: 'nome'
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2-4" %}
+python3 python_intro.py
+Traceback (most recent call last):
+File "python_intro.py", line 10, in <module>
+    ciao()
+TypeError: ciao() missing 1 required positional argument: 'nome'
+{% endpre %}
 
 Ops, un errore. Fortunatamente, Python ci fornisce un messaggio di errore che ci può servire. Ci dice che la funzione `ciao()` (quella che abbiamo definito) ha un argomento richiesto (chiamato `nome`) e che ci siamo dimenticati di metterlo quando abbiamo chiamato la funzione. Sistemiamolo alla fine del file:
 
-```python
+{% filename %}code editor{% endfilename %}
+{% pre language="python" %}
 ciao("Ola")
-```
+{% endpre %}
 
 Ed eseguiamo di nuovo:
 
-    $ python3 python_intro.py
-    Ciao Ola!
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2" %}
+python3 python_intro.py
+Ciao Ola!
+{% endpre %}
 
 E se cambiamo il nome?
 
-```python
+{% filename %}code editor{% endfilename %}
+{% pre language="python" %}
 ciao("Sonja")
-```
+{% endpre %}
 
 Ed eseguilo:
 
-    $ python3 python_intro.py
-    Ciao Sonja!
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2" %}
+python3 python_intro.py
+Ciao Sonja!
+{% endpre %}
 
 Ora, cosa pensi che succederà se scrivi un altro nome? (non Ola o Sonja) Provaci e vedi se la tua ipotesi è giusta. Dovrebbe stampare questo:
 
-    Ciao anonimo!
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2" %}
+python3 python_intro.py
+Ciao anonimo!
+{% endpre %}
 
 Fantastico, vero? In questo modo non devi ripetere tutto ogni volta che vuoi modificare il nome della persona che la funzione dovrebbe salutare. Ed è esattamente per questo che abbiamo bisogno delle funzioni - non vuoi ripetere il tuo codice!
 
 Facciamo una cosa più intelligente -- ci sono più di due nomi, e scrivere una condizione per ognuno sarebbe complicato, vero?
 
-```python
+{% filename %}code editor{% endfilename %}
+{% pre language="python" %}
 def ciao(nome):
     print('Ciao ' + nome + '!')
 
 ciao("Rachel")
-```
+{% endpre %}
 
 Ora chiamiamo il codice:
 
-    $ python3 python_intro.py
-    Ciao Rachel!
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2" %}
+python3 python_intro.py
+Ciao Rachel!
+{% endpre %}
 
 Congratulazioni! Hai appena imparato a scrivere delle funzioni :)
 
@@ -833,21 +928,24 @@ I programmatori non amano ripetere ciò che scrivono. La programmazione mira a a
 
 Ti ricordi ancora delle liste? Facciamo una lista di ragazze:
 
-```python
+{% filename %}code editor{% endfilename %}
+{% pre language="python" %}
 ragazze = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Tu']
-```
+{% endpre %}
 
 Vogliamo salutare tutte loro per nome. Abbiamo la funzione `ciao` per farlo, quindi usiamola in loop:
 
-```python
+{% filename %}code editor{% endfilename %}
+{% pre language="python" %}
 for nome in ragazze:
-```
+{% endpre %}
 
 Lo statement `for` si comporta in modo simile allo statement `if`; il codice sottostante deve essere rientrato di quattro spazi.
 
 Qua c'è l'intero codice che sarà nel file:
 
-```python
+{% filename %}code editor{% endfilename %}
+{% pre language="python" %}
 def ciao(nome):
     print('Ciao ' + nome + '!') 
 
@@ -855,40 +953,45 @@ ragazze = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Tu']
 for nome in ragazze:
     ciao(nome)
     print('Prossima ragazza')
-```
+{% endpre %}
 
 E quando lo eseguiamo:
 
-    $ python3 python_intro.py
-    Ciao Rachel!
-    Prossima ragazza
-    Ciao Monica!
-    Prossima ragazza
-    Ciao Phoebe!
-    Prossima ragazza
-    Ciao Ola!
-    Prossima ragazza
-    Ciao You!
-    Prossima ragazza
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2-11" %}
+python3 python_intro.py
+Ciao Rachel!
+Prossima ragazza
+Ciao Monica!
+Prossima ragazza
+Ciao Phoebe!
+Prossima ragazza
+Ciao Ola!
+Prossima ragazza
+Ciao You!
+Prossima ragazza
+{% endpre %}
 
 Come puoi vedere, tutto quello che metti all'interno di un `for` statement con una spaziatura si ripeterà per ogni elemento della lista `girls`.
 
 Puoi anche utilizzare `for` su numeri usando la funzione `range`:
 
-```python
+{% filename %}code editor{% endfilename %}
+{% pre language="python" %}
 for i in range(1, 6):
     print(i)
-```
+{% endpre %}
 
 Che stamperà:
 
-    1
-    2
-    3
-    4
-    5
-    
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2-11" %}
+1
+2
+3
+4
+5
+{% endpre %}
 
 `range` è una funzione che crea una lista di numeri che si seguono uno dopo l'altro (questi numeri vengono forniti da te come parametri).
 

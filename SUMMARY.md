@@ -7,7 +7,6 @@
 * [Python](python_installation/README.md)
 * [Introduzione a Python](python_introduction/README.md)
 * [Che cos'è Django?](django/README.md)
-* [Installazione di Django](django_installation/README.md)
 * [Il tuo primo progetto Django!](django_start_project/README.md)
 * [I modelli di Django](django_models/README.md)
 * [L'admin di Django](django_admin/README.md)

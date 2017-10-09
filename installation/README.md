@@ -53,8 +53,8 @@ data-collapse=true ces-->
 
 Devi andare sul sito https://www.python.org/downloads/mac-osx/. Fai click sul link "Latest Python 3 Release - Python x.x.x" e scarica il programma d'installazione di Python:
 
-* Scarica *Mac OS X 64-bit/32-bit installer*,
-* Fai doppio click sul file appena scaricato per iniziare l'installazione.
+- Scarica *Mac OS X 64-bit/32-bit installer*,
+- Fai doppio click sul file appena scaricato per iniziare l'installazione.
 
 Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più avanti nel tutorial). Per adesso, se hai bisogno di aprirla, vai nel `Launchpad` e apri l'app `Terminale`. Puoi anche tenere premere contemporanemente il tasto `mela + spazio` e comparirà la barra di ricerca. Per aprire la linea di comando ti basterà scrivere `Terminale` e premere `enter`.
 
@@ -142,7 +142,8 @@ Ora che siamo nella cartella giusta, puoi installare Django usando `pip`. Nella 
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2-5" %}
-pip install --user django~=1.11.0Collecting django~=1.11.0
+pip install --user django==1.11.6 whitenoise==3.3.1
+Collecting django~=1.11.0
 Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
 Installing collected packages: django
 Successfully installed django-1.11.3
@@ -302,13 +303,13 @@ Authentication successful.
 
 Complimenti, ora sei pronta! Se hai un po' di tempo prima del workshop, potrebbe essere utile cominciare a leggere i capitoli iniziali:
 
-  * [Come funziona Internet](../how_the_internet_works/README.md)
+- [Come funziona Internet](../how_the_internet_works/README.md)
 
-  * [Introduzione alla command line](../intro_to_command_line/README.md)
+- [Introduzione alla command line](../intro_to_command_line/README.md)
 
-  * [Introduzione a Python](../python_introduction/README.md)
+- [Introduzione a Python](../python_introduction/README.md)
 
-  * [Che cos'è Django?](../django/README.md)
+- [Che cos'è Django?](../django/README.md)
 
 # Enjoy the workshop!
 
