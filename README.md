@@ -28,7 +28,7 @@ Una volta che avrai terminato il tutorial, avrai a disposizione una semplice app
 
 Assomiglierà \(più o meno\) a questo:
 
-![](images/application.png)
+![Il tuo blog](images/application.png)
 
 > Se lavori da sola al tutorial e non hai un coach che ti possa aiutare nel caso avessi qualche problema, abbiamo una chat per te: [![DjangoGirls It](https://img.shields.io/badge/telegram-%40djangogirls__it-blue.svg)](https://t.me/djangogirls_ita). Abbiamo chiesto ai nostri coach e alle partecipanti precedenti di esserci di volta in volta, ed aiutare gli altri con il tutorial! Non aver paura di fare domande!
 
