@@ -2,7 +2,7 @@
 
 Abbiamo completato i passi necessari per la creazione del nostro sito: sappiamo come scrivere un modello, una url, una view ed un template. Sappiamo anche come far diventare carino il nostro sito.
 
-Ora di far pratica!
+È ora di far pratica!
 
 La prima cosa di cui abbiamo bisogno nel nostro blog è, ovviamente, una pagina per rendere visibile un post, vero?
 
@@ -12,7 +12,9 @@ Abbiamo già un modello dei `Post`, quindi non abbiamo bisogno di aggiungere nie
 
 Cominceremo aggiungendo un link all'interno del file `blog/templates/blog/post_list.html`. Per ora dovrebbe avere questo aspetto:
 
-```html
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% pre language="html" %}
+{% raw %}
 {% extends 'blog/base.html' %}
 
 {% block content %}
@@ -25,55 +27,62 @@ Cominceremo aggiungendo un link all'interno del file `blog/templates/blog/post_l
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
-{% endblock content %}
-```
+{% endblock %}
+{% endraw %}
+{% endpre %}
 
 
-{% raw %}Vogliamo creare un link che dal titolo di un post facente parte dell'elenco di articoli porti alla pagina di dettaglio. Cambiamo `<h1><a href="">{{ post.title }}</a></h1>` così che linki alla pagina di dettaglio del post:{% endraw %}
+Vogliamo creare un link che dal titolo di un post facente parte dell'elenco di articoli porti alla pagina di dettaglio. Cambiamo `<h1><a href="">{{ post.title }}</a></h1>` così che linki alla pagina di dettaglio del post:
 
-```html
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% pre language="html" %}
+{% raw %}
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-```
+{% endraw %}
+{% endpre %}
 
-{% raw %}È arrivata l'ora di spiegare il misterioso `{% url 'post_detail' pk=post.pk %}`. Come avrai capito, il simbolo `{% %}` significa che stiamo usando i tag del template di Django. Questa volta ne useremo uno che creerà una URL per noi!{% endraw %}
+È arrivata l'ora di spiegare il misterioso `{% url 'post_detail' pk=post.pk %}`. Come avrai capito, il simbolo `{% %}` significa che stiamo usando i template tag di Django. Questa volta ne useremo uno che creerà una URL per noi!
 
-`blog.views.post_detail` è un percorso per arrivare alla `post_detail` *view* che vogliamo creare. Nota bene: `blog` è il nome della nostra applicazione (la directory `blog`), `views` viene dal nome del file `views.py` e l'ultima cosa - `post_detail` - è il nome della *view*.
+La parte `post_detail` significa che Django si aspetterà un URL in `blog/urls.py` con `name='post_detail'` 
 
-Adesso quando andremo all'indirizzo: http://127.0.0.1:8000/ avremo un errore (come sapevamo, dal momento che non abbiamo una URL oppure una *view* per `post_detail`). Avrà questo aspetto:
+E invece `pk=post.pk`? `pk` è un abbreviazione per **primary key**, che è un nome univoco per ogni oggetto presente nel database. Siccome non abbiamo creato una primary key nel nostro modello di Post, Django ne crea una per noi (di default è un numero che viene incrementato di uno per ogni record: es. 1, 2, 3) e la aggiunge come un campo del chiamato `pk` per ogniuno dei nostri post. Possiamo usare la primary key scrivendo `post.pk`, esattamente come facciamo per tutti gli altri campi (`title`, `autore`, ecc.) nel nostro oggetto Post.
 
-![Errore: nessuna corrispondenza inversa][1]
+Adesso quando andremo all'indirizzo: http://127.0.0.1:8000/ avremo un errore (come sapevamo, dal momento che non abbiamo una URL e neppure una **view** per `post_detail`). Avrà questo aspetto:
 
- [1]: images/no_reverse_match2.png
+![Errore: nessuna corrispondenza inversa](images/no_reverse_match2.png)
 
 ## Crea una URL per i dettagli di un post
 
-Creiamo una URL in `urls.py` per il nostro `post_detail` *view*!
+Creiamo una URL in `urls.py` per la nostra __view__ `post_detail`!
 
-Vogliamo che il nostro primo post venga visualizzato a questo **URL **: http://127.0.0.1:8000/post/1/
+Vogliamo che il nostro primo post venga visualizzato a questo **URL**: http://127.0.0.1:8000/post/1/
 
 Facciamo sì che l'URL nel file `blog/urls.py` punti Django ad una *view* chiamata `post_detail`, che mostrerà un intero post. Aggiungi la riga `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` al file `blog/urls.py`. Il file dovrebbe assomigliare a questo:
 
-```python
+{% filename %}blog/urls.py{% endfilename %}
+{% pre language="python" %}
 from django.conf.urls import url
 from . import views
 
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),
+    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
 ]
-```
+{% endpre %}
 
-Questa parte `^post/(?P<pk>[0-9]+)/$` sembra spaventosa, ma non preoccuparti - te la spiegheremo: - inizia ancora con `^` -- "l'inizio" - `post/` semplicemente significa che dopo l'inizio, l'URL dovrebbe contenere la parola **post** e **/**. Fin qui tutto bene. - `(?P<pk>[0-9]+)` - questa parte è più complicata. Significa che Django prenderà tutto quello che hai messo qui e lo trasferirà ad una view come variabile denominata `pk`. `[0-9]` ci dice anche che la variabile può essere solo un numero, non una lettera (quindi tutto tra 0 e 9). `+` significa che ci devono essere una o più cifre. Quindi qualcosa di simile a `http://127.0.0.1:8000/post//` non è valido, ma `http://127.0.0.1:8000/post/1234567890/` è perfetto! - `/` Quindi ci serve **/** di nuovo - `$` - "fine"!
+Questa parte `^post/(?P<pk>[0-9]+)/$` sembra spaventosa, ma non preoccuparti - te la spiegheremo:
 
-Ciò significa che se digiti `http://127.0.0.1:8000/post/5/` nel tuo browser, Django capirà che stai cercando una *view* chiamata `post_detail` e trasferirà l'informazione che `pk` è uguale a `5` a quella *view*.
+- inizia ancora con `^` -- "l'inizio" 
+- `post/` semplicemente significa che dopo l'inizio, l'URL dovrebbe contenere la parola `post` **e** `/`. Fin qui tutto bene. 
+- `(?P<pk>\d+)` - questa parte è più complicata. Significa che Django prenderà tutto quello che hai messo qui e lo trasferirà ad una view come variabile denominata `pk` (nota che è lo stesso nome che abbiamo usato in `blog/templates/blog/post_list.html!`). `\d` ci dice anche che la variabile può essere solo un numero, non una lettera (quindi tutto tra 0 e 9). `+` significa che ci devono essere una o più cifre. Quindi qualcosa di simile a `http://127.0.0.1:8000/post//` non è valido, ma `http://127.0.0.1:8000/post/1234567890/` è perfetto! 
+- `/` - Quindi ci serve `/` di nuovo 
+- `$` - "fine"!
 
-`pk` è un diminutivo di `primary key`. Questo nome viene frequentemente utilizzato nei progetti Django. Ma puoi chiamare la tua variabile come vuoi (ricorda: minuscole e `_` invece degli spazi!). Per esempio invece di `(?P<pk>[0-9]+)` potremmo avere la variabile `post_id`quindi questo pezzettino dovrebbe assomigliare a: `(?P<post_id>[0-9]+)`.
+Ciò significa che se digiti `http://127.0.0.1:8000/post/5/` nel tuo browser, Django capirà che stai cercando una __view__ chiamata `post_detail` e trasferirà l'informazione che "`pk` è uguale a `5`" a quella __view__.
 
 Ok, abbiamo aggiunto un nuovo schema di URL a `blog/urls.py`! Aggiorniamo la pagina: http://127.0.0.1:8000/ Boom! Ancora un altro errore! Come previsto!
 
-![Errore attributo][2]
-
- [2]: images/attribute_error2.png
+![Errore attributo](images/attribute_error2.png)
 
 Ti ricordi di quale è il prossimo passo? Ma certo: aggiungere una view!
 
@@ -83,39 +92,44 @@ Questa volta alla nostra *view* viene data un altro parametro `pk`. La nostra *v
 
 Ora, noi vogliamo ottenere un unico post. Per farlo possiamo utilizzare le queryset così:
 
-    Post.objects.get(pk=pk)
+{% filename %}blog/views.py{% endfilename %}
+{% pre language="python" %}
+Post.objects.get(pk=pk)
+{% endpre %}
 
+Ma questo codice presenta un problema. Se non c'è `Post` con la `primary key` (`pk`) data, otterremo un errore bruttissimo!
 
-Ma questo codice presenta un problema. Se non c'è `Post` con `primary key` (`pk`) otterremo un errore bruttissimo!
-
-![Errore: non esiste][3]
-
- [3]: images/does_not_exist2.png
+![Errore: non esiste](images/does_not_exist2.png)
 
 Noi non lo vogliamo! Ma, senza dubbio, Django ha qualcosa che si occuperà del problema per noi: `get_object_or_404`. Nel caso in cui non ci sia `Post` con la data `pk` mostrerà una pagina molto più carina (chiamata `Page Not Found 404`).
 
-![Pagina non trovata][4]
-
- [4]: images/404_2.png
+![Pagina non trovata](images/404_2.png)
 
 La buona notizia è che in realtà puoi creare la tua pagina `Page not found` modificarla come vuoi e darle un bell'aspetto. Ma non è importantissimo in questo momento, quindi salteremo questa parte.
 
 Ok, è arrivata l'ora di aggiungere una *view* al nostro file `views.py`!
 
-Dovremo aprire `blog/views.py` ed aggiungere il seguente codice:
+In blog/urls.py we created a URL rule named post_detail that refers to a view called views.post_detail. This means that Django will be expecting a view function called post_detail inside blog/views.py.
 
-    from django.shortcuts import render, get_object_or_404
+In `blog/urls.py` abbiamo creato un URL chiamata `post_detail` che si riferisce ad una view chiamata `views.post_detail`. Questo significa che django si aspetta una view chiamata `post_detail` nel file `blog/views.py`.
 
+Dovremo aprire `blog/views.py` ed aggiungere il seguente codice vicino alle altre linee che iniziano con `from`:
 
-Vicino ad altre righe `from` ed alla fine del file aggiungeremo la nostra *view*:
+{% filename %}blog/views.py{% endfilename %}
+{% pre language="python" %}
+from django.shortcuts import render, get_object_or_404
+{% endpre %}
 
-```python
-    def post_detail(request, pk):
-        post = get_object_or_404(Post, pk=pk)
-        return render(request, 'blog/post_detail.html', {'post': post})
-```
+Alla fine del file aggiungeremo la nostra *view*:
 
-Si, è giunta l'ora di aggiornare la pagina: http://127.0.0.1:8000/
+{% filename %}blog/views.py{% endfilename %}
+{% pre language="python" %}
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', {'post': post})
+{% endpre %}
+
+Si. È giunta l'ora di aggiornare la pagina: http://127.0.0.1:8000/
 
 ![Visualizzazione elenco post][5]
 
@@ -123,9 +137,7 @@ Si, è giunta l'ora di aggiornare la pagina: http://127.0.0.1:8000/
 
 Ha funzionato! Ma cosa succede se clicchi su un link nel titolo del post?
 
-![Errore: il template non esiste][6]
-
- [6]: images/template_does_not_exist2.png
+![Errore: il template non esiste](images/template_does_not_exist2.png)
 
 Oh no! Un altro errore! Ma sappiamo già come occuparcene, giusto? Dobbiamo aggiungere un template!
 
@@ -135,7 +147,9 @@ Creeremo un file in `blog/templates/blog` chiamato `post_detail.html`.
 
 Il risultato somiglierà a questo:
 
-```html
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% pre language="html" %}
+{% raw %}
 {% extends 'blog/base.html' %}
 
 {% block content %}
@@ -149,45 +163,33 @@ Il risultato somiglierà a questo:
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
-```
+{% endraw %}
+{% endpre %}
 
 Stiamo estendendo ancora una volta il template di base. `base.html`. Nel blocco `content` vogliamo mostrare una published_date del post (se esiste), un titolo ed il testo. Ma dovremmo discutere di alcune cose importanti, vero?
 
-{% raw %}`{% if ... %} ... {% endif %}` è un tag di template che possiamo utilizzare quando vogliamo controllare qualcosa (ricordi `if ... else ..` dal capitolo **Introduzione a Python**?). In questo caso vogliamo controllare che la `published_date` di un post non sia vuota. {% endraw %}
+`{% if ... %} ... {% endif %}` è un tag di template che possiamo utilizzare quando vogliamo controllare qualcosa (ricordi `if ... else ..` dal capitolo **Introduzione a Python**?). In questo caso vogliamo controllare che la `published_date` di un post non sia vuota.
 
 Ok, possiamo aggiornare la nostra pagina e vedere se `Page not found` non c'è più.
 
-![Pagina di dettaglio del post][7]
-
- [7]: images/post_detail2.png
+![Pagina di dettaglio del post](images/post_detail2.png)
 
 Si! Ha funzionato!
 
 ## Ultima cosa: ora di fare il deploy!
 
-Sarebbe bello vedere se il tuo sito Web sarà ancora funzionante in PythonAnywhere, vero? Proviamo a fare un alrto deploy.
+Sarebbe bello vedere se il tuo sito Web sarà ancora funzionante in Heroku, vero? Proviamo a fare un alrto deploy.
 
-    $ git status
-    $ git add --all .
-    $ git status
-    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
-    $ git push
-
-
-*   Poi, in una [console PythonAnywhere Bash][8]:
-
- [8]: https://www.pythonanywhere.com/consoles/
-
-    $ cd my-first-blog
-    $ source myvenv/bin/activate
-    (myvenv)$ git pull
-    [...]
-    (myvenv)$ python manage.py collectstatic
-    [...]
-
-
-*   Infine, vai su il [Web tab][9] e premi **Reload**.
-
- [9]: https://www.pythonanywhere.com/web_app_setup/
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2,5,7" %}
+git status
+[...]
+git add --all .
+git status
+[...]
+git commit -m "Aggiungiamo la vista e il template per il singolo post e il CSS per il sito"
+[...]
+git push heroku master
+{% endpre %}
 
 Fatto! Congratulazioni :)

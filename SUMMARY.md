@@ -14,7 +14,7 @@
 * [Django URL](django_urls/README.md)
 * [Le views di Django - è arrivata l'ora di creare!](django_views/README.md)
 * [Introduzione all'HTML](html/README.md)
-* [ORM di Django \(Querysets\)](django_orm/README.md)
+* [ORM di Django (Querysets)](django_orm/README.md)
 * [I dati dinamici in templates](dynamic_data_in_templates/README.md)
 * [I templates di Django](django_templates/README.md)
 * [CSS - dagli un bell'aspetto](css/README.md)
