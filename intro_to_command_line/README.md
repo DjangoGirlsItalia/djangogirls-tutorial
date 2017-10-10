@@ -6,11 +6,11 @@ Eccitante, vero? Scriverai la tua prima riga di codice in pochi minuti :)
 
 I prossimi passaggi ti mostreranno come utilizzare quella 'finestra nera' che tutti gli hacker utilizzano. Ti potrà sembrare un po' allarmante all'inizio, ma è solamente un prompt in attesa dei tuoi comandi.
 
-> **Nota** Nota bene: in tutto questo tutorial usiamo sia il termine 'directory' che 'cartella' ma sono la stessa cosa.
+> **Nota bene** : in tutto questo tutorial usiamo sia il termine *directory* che *cartella* ma sono la stessa cosa.
 
-## Cos'è la command line?
+## Cos'è la command-line?
 
-La finestra solitamente chiamata **comand-line** o **interfaccia della command-line**, è un'applicazione basata su testo che ti permette di visualizzare, gestire e manipolare i file sul tuo computer. Molto simile a Windows Explorer o al Finder su Mac, ma senza l'interfaccia grafica. Altri nomi per la command line sono: *cmd*, *CLI*, *prompt*, *console* o *terminal*.
+La finestra solitamente chiamata **command-line** o **interfaccia della command-line** è un'applicazione basata su testo che ti permette di visualizzare, gestire e manipolare i file sul tuo computer. Molto simile a Windows Explorer o al Finder su Mac, ma senza l'interfaccia grafica. Altri nomi per la command line sono: *cmd*, *CLI*, *prompt*, *console* o *terminal*.
 
 ## Aprire l'interfaccia di command-line
 
@@ -24,9 +24,9 @@ Vai in Start menu → Windows System → Command Prompt.
 
 <!--endsec-->
 
-<!--sec data-title="OS X" data-id="OSX_prompt" data-collapse=true ces-->
+<!--sec data-title="macOS" data-id="OSX_prompt" data-collapse=true ces-->
 
-Vai in Applicazioni → utilità → terminal.
+Vai in Applicazioni → Utilità → Terminale.
 
 <!--endsec-->
 
@@ -40,7 +40,7 @@ Probabilmente è sotto Applicazioni → Accessori → Terminal, ma quello potreb
 
 Ora dovresti essere in grado di vedere una finestra bianca o nera che è in attesa di ricevere un comando.
 
-<!--sec data-title="OS X e Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
+<!--sec data-title="macOS e Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 Se sei su Mac o Linux, probabilmente vedi `$`, proprio come questo:
 
@@ -74,7 +74,7 @@ Nel tutorial, quando dovrai scrivere qualche comando, noi lo mostreremo con incl
 
 Cominciamo con qualcosa di veramente semplice. Digita questo comando:
 
-<!--sec data-title="OS X e Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
+<!--sec data-title="macOS e Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
@@ -113,7 +113,7 @@ Ogni sistema operativo ha un insieme di comandi leggermente diverso per la comma
 
 Sarebbe bello sapere dove siamo adesso, vero? Vediamo. Digita questo commando e premi `invio`:
 
-<!--sec data-title="OS X e Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="macOS e Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2" %}
@@ -133,7 +133,7 @@ cd
 C:\Users\olasitarska
 {% endpre %}
 
-> Note: `cd` sta per 'change directory'. Con powershell puoi usare `pwd` esattamente come su Linux o su Mac OS X.
+> Note: `cd` sta per 'change directory'. Con powershell puoi usare `pwd` esattamente come su Linux o su macOS.
 
 <!--endsec-->  
 
@@ -145,7 +145,7 @@ Probabilmente vedrai qualcosa di simile sul tuo computer. Quando apri la command
 
 Cosa c'è dentro? Sarebbe bello scoprirlo. Vediamo come:
 
-<!--sec data-title="OS X e Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
+<!--sec data-title="macOS e Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2-6" %}
@@ -158,7 +158,7 @@ Music
 {% endpre %}
 
 <!--endsec-->
-    
+
 <!--sec data-title="Windows" data-id="windows_dir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
@@ -172,7 +172,7 @@ Directory of C:\Users\olasitarska
 ...
 {% endpre %}
 
-> Nota: In powershell puoi anche usare 'ls' come su Linux e Mac OS X.
+> Nota: In powershell puoi anche usare 'ls' come su Linux e macOS.
 <!--endsec-->
 
 ---
@@ -180,8 +180,8 @@ Directory of C:\Users\olasitarska
 ### Cambiare cartella corrente
 
 Ora, andiamo nella nostra directory Desktop:
-    
-<!--sec data-title="OS X e Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+
+<!--sec data-title="macOS e Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
@@ -202,7 +202,7 @@ cd Desktop
 Controlla ora se ti sei veramente spostata:
 
 
-<!--sec data-title="OS X e Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="macOS e Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2" %}
@@ -211,7 +211,7 @@ pwd
 {% endpre %}
 
 <!--endsec-->
-    
+
 <!--sec data-title="Windows" data-id="windows_cd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
@@ -232,7 +232,7 @@ Ecco fatto!
 
 Che ne dici di creare una directory di pratica sul tuo desktop? Puoi farlo in questo modo:
 
-<!--sec data-title="OS X e Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
+<!--sec data-title="macOS e Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
@@ -258,10 +258,10 @@ Questo breve comando creerà una cartella con il nome `practice` sul tuo desktop
 
 ### Esercizio!
 
-Piccola sfida per te: nella tua directory appena creata `practice` crea una directory chiamata `test`. usa i comandi `cd` e `mkdir`.
+Piccola sfida per te: nella tua directory appena creata `practice` crea una directory chiamata `test`. Usa i comandi `cd` e `mkdir`.
 
 #### Soluzione:
-<!--sec data-title="OS X e Linux" data-id="OSX_Linux_es" data-collapse=true ces-->
+<!--sec data-title="macOS e Linux" data-id="OSX_Linux_es" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="4" %}
@@ -295,7 +295,7 @@ Non vogliamo lasciare un pasticcio, per cui rimuoviamo tutto quello che abbiamo 
 
 Per prima cosa dobbiamo tornare al Desktop:
 
-<!--sec data-title="OS X e Linux" data-id="OSX_Linux_desktop" data-collapse=true ces-->
+<!--sec data-title="macOS e Linux" data-id="OSX_Linux_desktop" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
@@ -317,7 +317,7 @@ Usando `..` con il comando `cd` cambierai la tua directory attuale alla director
 
 Controlla dove ti trovi ora:
 
-<!--sec data-title="OS X e Linux" data-id="OSX_Linux_desktop_pwd" data-collapse=true ces-->
+<!--sec data-title="macOS e Linux" data-id="OSX_Linux_desktop_pwd" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2" %}
@@ -341,7 +341,7 @@ Adesso è l'ora di cancellare la directory `practice`:
 
 > **Attenzione**: cancellare un file usando `del`, `rmdir` o `rm` è irreversibile, *i file cancellati andranno perduti per sempre*! Per cui sii molto prudente nell'utilizzare questi comandi.
 
-<!--sec data-title="OS X e Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
+<!--sec data-title="macOS e Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
@@ -360,9 +360,9 @@ practice, Are you sure <Y/N>? Y
 
 <!--endsec-->
 
-Fatto! Per essere sicuri che sia stato effettivamente cancellato, controlliamo:
+Fatto! Per essere sicuri che sia stata effettivamente cancellata, controlliamo:
 
-<!--sec data-title="OS X e Linux" data-id="OSX_Linux_check" data-collapse=true ces-->
+<!--sec data-title="macOS e Linux" data-id="OSX_Linux_check" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
@@ -382,7 +382,7 @@ dir
 
 ### Uscire dalla command line
 
-<!--sec data-title="OS X e Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
+<!--sec data-title="macOS e Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
@@ -400,13 +400,13 @@ exit
 
 <!--endsec-->
 
-Figo, eh?:)
+Figo, eh? :)
 
 ## Indice
 
 Questo è un riepilogo di alcuni comandi utili:
 
-| Comandi(Windows)  | Comandi (Mac OS / Linux) | Descrizione                 | Esempio                                           |
+| Comandi (Windows)  | Comandi (macOS / Linux) | Descrizione                 | Esempio                                           |
 | ----------------  | ------------------------ | --------------------------- | ------------------------------------------------- |
 | `exit`            | `exit`                   | chiudi la finestra          | **exit**                                          |
 | `cd`              | `cd`                     | cambiare directory          | **cd test**                                       |
