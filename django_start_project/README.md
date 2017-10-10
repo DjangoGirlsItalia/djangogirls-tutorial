@@ -10,9 +10,9 @@ Il primo passo è quello di iniziare un nuovo progetto di Django. Fondamentalmen
 
 I nomi di alcuni file e cartelle sono molto importanti per Django. Non dovresti modificare i nomi dei file che stiamo per creare. Neanche spostarli in un altro posto è una buona idea. Django deve mantenere una determinata struttura per essere in grado di trovare le cose importanti.
 
-<!--sec data-title="Creare un Progetto: OS X o Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
+<!--sec data-title="Creare un Progetto: macOS o Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-Dovresti eseguire nella tua console MacOS o Linux il seguente comando **(non dimenticarti di aggiungere il punto `.` alla fine)**:
+Dovresti eseguire nella tua console macOS o Linux il seguente comando **(non dimenticarti di aggiungere il punto `.` alla fine)**:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
@@ -21,11 +21,11 @@ django-admin startproject --template=https://github.com/simobasso/startproject/a
 
 > Il punto `.` è criuciale perchè dice allo script di installare Django nella cartella corrente (della quale il periodo `.` è una comoda reference).
 
-> **Nota** Quamdo scrivi il comando qui sopra, ricordati di scrivere solo quello che c'è dopo il simbolo `$`.
+> **Nota** Quando scrivi il comando qui sopra, ricordati di scrivere solo quello che c'è dopo il simbolo `$`.
 
 <!--endsec-->
 
-<!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
+<!--sec data-title="Creare un Progetto: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
 
 Su Windows devi lanciare il comando che segue. **(non dimenticarti di aggiungere il punto `.` alla fine)**:
@@ -38,7 +38,7 @@ django-admin startproject --template=https://github.com/simobasso/startproject/a
 
 > Il punto `.` è criuciale perchè dice allo script di installare Django nella cartella corrente (della quale il periodo `.` è una comoda reference).
 
-> **Nota** Quamdo scrivi il comando qui sopra, ricordati di scrivere solo quello che c'è dopo il simbolo `>`.
+> **Nota** Quando scrivi il comando qui sopra, ricordati di scrivere solo quello che c'è dopo il simbolo `>`.
 
 <!--endsec-->
 
@@ -62,7 +62,7 @@ djangogirls
 
 `LICENSE` contiene la licenza con la quale condividi il tuo codice sorgente online. Questo file è molto importante perché indica alle altre programmatrici come possono utilizzare il codice che **tu** hai scritto.
 
-`Procfile` e `runtime.txt` sono 2 configurazioni importanti per Heroku e indicano rispettivamente come il nostro blog deve essere avviato e sotto quale versione di python deve girare. Sentiti libera di curiosarci dentro e chiedere maggiori informazioni al tuo coach.
+`Procfile` e `runtime.txt` sono 2 configurazioni importanti per Heroku e indicano rispettivamente come il nostro blog deve essere avviato e sotto quale versione di Python deve girare. Sentiti libera di curiosarci dentro e chiedere maggiori informazioni al tuo coach.
 
 I file come `requirements.txt` contengono le dipendenze del nostro blog, come ad esempio Django.
 
@@ -165,12 +165,10 @@ Congratulazioni! Hai appena creato il tuo primo sito e l'hai avviato usando un w
 
 ![Ha funzionato!!](images/it_worked2.png)
 
-While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
-
 Mentre il web server gira, non vedrai nuovi prompt della command line per inserire nuovi comandi. Il terminale accetterà il testo ma non eseguirà i nuovi comandi. Questo perché il web server deve continuare a girare in continuzione per rimanere in ascolto di nuove richieste.
 
-> Abbiamo visto come funzionano i web server nel capitolo **Come funziona interner**. Se non ti ricordi torna a dare un'occhiata.
+> Abbiamo visto come funzionano i web server nel capitolo **Come funziona internet**. Se non ti ricordi torna a dare un'occhiata.
 
-Per fermare il server web, torna alla finestra dove è in esecuzione e premi i pulsanti CTRL+C - Control e C insieme (su Windows, è probabile che tu deva premere Ctrl+Break).
+Per fermare il server web, torna alla finestra dove è in esecuzione e premi i pulsanti CTRL+C insieme (su Windows, è probabile che tu deva premere Ctrl+Break).
 
 Pronta per il prossimo passo? È ora di creare un po' di contenuti!
