@@ -37,3 +37,5 @@ OK, [cominciamo dall'inizio...](./how_the_internet_works/README.md)
 ## Informazioni e contribuzioni
 
 Questo tutorial è mantenuto da [DjangoGirls](https://djangogirls.org/). Se trovi errori o se vuoi aggiornare questo tutorial, [segui le linee guida per i collaboratori](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+
+
