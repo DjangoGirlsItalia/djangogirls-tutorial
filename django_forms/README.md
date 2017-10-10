@@ -120,14 +120,14 @@ Dopo aver aggiornato il sito, vedremo un `AttributeError` dal momento che non ab
 
 Apri il file `blog/views.py` e aggiungi quanto segue con il resto delle importazioni `from`:
 
-{% filename %}blog/views.py`{% endfilename %}
+{% filename %}blog/views.py{% endfilename %}
 {% pre language="python" %}
 from .forms import PostForm
 {% endpre %}
 
 e la nostra *view*:
 
-{% filename %}blog/views.py`{% endfilename %}
+{% filename %}blog/views.py{% endfilename %}
 {% pre language="python" %}
 def post_new(request):
     form = PostForm()
@@ -140,10 +140,10 @@ Per creare un nuovo `Post` form, dobbiamo chiamare il metodo `PostForm()` e pass
 
 All'interno della cartella `blog/templates/blog` dobbiamo creare il file `post_edit.html`. Per far si che il nostro form funzioni abbiamo bisogno di diverse cose:
 
-- dobbiamo rendere il form visibile. Per farlo possiamo usare semplicemente `{{ form.as_p }}`.
+- dobbiamo rendere il form visibile. Per farlo possiamo usare semplicemente {% raw %}`{{ form.as_p }}`{% endraw %}.
 - le righe scritte sopra hanno bisogno di 'essere avvolte' da un HTML tag: `<form method="POST">...</form>`
 - ci serve un `Save` pulsante. Possiamo fare ciò con HTML button: `<button type="submit">Save</button>`
-- infine, subito dopo l'apertura del tag `<form ...>`, dobbiamo aggiungere `{% csrf_token %}`. Questo passaggio è molto importante dal momento che rende il nostro form sicuro! Django si lamenterà se ti dimentichi di inserire questa parte e provi comunque a salvare ciò che è contenuto nel form:
+- infine, subito dopo l'apertura del tag `<form ...>`, dobbiamo aggiungere {% raw %}`{% csrf_token %}`{% endraw %}. Questo passaggio è molto importante dal momento che rende il nostro form sicuro! Django si lamenterà se ti dimentichi di inserire questa parte e provi comunque a salvare ciò che è contenuto nel form:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
@@ -178,7 +178,7 @@ La risposta è: nulla. Dobbiamo solo fare un po' di lavoro in più nella nostra 
 
 Apri `blog/views.py` di nuovo. Attualmente tutto ciò che abbiamo nella view `post_new` è:
 
-{% filename %}blog/views.py`{% endfilename %}
+{% filename %}blog/views.py{% endfilename %}
 {% pre language="python" %}
 def post_new(request):
     form = PostForm()
@@ -189,7 +189,7 @@ Quando inviamo il form, veniamo riportati alla stessa view, ma questa volta abbi
 
 Per cui nella nostra *view* abbiamo due diverse situazioni da gestire. Prima: quando accediamo alla pagina per la prima volta e vogliamo un form che sia vuoto. Seconda: quando torniamo alla *view* con tutti i dati appena inseriti nel form. Per cui dobbiamo aggiungere una condizione(useremo `if`).
 
-{% filename %}blog/views.py`{% endfilename %}
+{% filename %}blog/views.py{% endfilename %}
 {% pre language="python" %}
 if request.method == "POST":
     [...]
@@ -199,7 +199,7 @@ else:
 
 È ora di completare i puntini `[...]`. Se il `method` è `POST` allora vogliamo costruire il nostro `PostForm` con i dati appena inseriti dall'utente, giusto? Raggiungeremo questo risultato con:
 
-{% filename %}blog/views.py`{% endfilename %}
+{% filename %}blog/views.py{% endfilename %}
 {% pre language="python" %}
 form = PostForm(request.POST)
 {% endpre %}
@@ -208,7 +208,7 @@ Facile! Come prossima cosa dobbiamo controllare se il form è corretto (per cui 
 
 Se il form viene ritenuto valido verrà salvato!
 
-{% filename %}blog/views.py`{% endfilename %}
+{% filename %}blog/views.py{% endfilename %}
 {% pre language="python" %}
 if form.is_valid():
     post = form.save(commit=False)
@@ -221,14 +221,14 @@ In pratica, ci sono due cose da fare: salviamo il form con `form.save` e aggiung
 
 Infine, non sarebbe fantastico se potessimo immediatamente essere indirizzati alla pagina `post_detail` del nuovo blog post appena creato? Per fare ciò dobbiamo importare:
 
-{% filename %}blog/views.py`{% endfilename %}
+{% filename %}blog/views.py{% endfilename %}
 {% pre language="python" %}
 from django.shortcuts import redirect
 {% endpre %}
 
 Aggiungilo all'inizio del file. E ora possiamo dire: vai alla pagina `post_detail` per il post appena creato.
 
-{% filename %}blog/views.py`{% endfilename %}
+{% filename %}blog/views.py{% endfilename %}
 {% pre language="python" %}
 return redirect('post_detail', pk=post.pk)
 {% endpre %}
@@ -237,7 +237,7 @@ return redirect('post_detail', pk=post.pk)
 
 Ok, abbiamo parlato abbastanza ora e forse sei curioso/a di vedere l'aspetto della nostra *view*, giusto?
 
-{% filename %}blog/views.py`{% endfilename %}
+{% filename %}blog/views.py{% endfilename %}
 {% pre language="python" %}
 def post_new(request):
     if request.method == "POST":
@@ -377,7 +377,7 @@ Vai al tuo `blog/templates/blog/base.html` e trova il `page-header` `div` con il
 {% endraw %}
 {% endpre %}
 
-Vogliamo aggiungere qui un altro tag del tipo `{% if %}` che farà comparire il link solo per gli utenti connessi come admin. Per ora, solo tu! Cambia il tag `<a>` in modo che risulti così:
+Vogliamo aggiungere qui un altro tag del tipo {% raw %}`{% if %}`{% endraw %} che farà comparire il link solo per gli utenti connessi come admin. Per ora, solo tu! Cambia il tag `<a>` in modo che risulti così:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 {% pre language="html" %}
@@ -388,7 +388,7 @@ Vogliamo aggiungere qui un altro tag del tipo `{% if %}` che farà comparire il 
 {% endraw %}
 {% endpre %}
 
-Grazie a questo `{% if %}`, il link verrà inviato al browser solo se l'utente che prova ad accedere alla pagina è loggato. Con questa condizione non ci siamo protetti del tutto dalla creazione di nuovi post, ma abbiamo fatto un buon passo avanti. Nelle lezioni estensione ci occuperemo di più della sicurezza.
+Grazie a questo {% raw %}`{% if %}`{% endraw %}, il link verrà inviato al browser solo se l'utente che prova ad accedere alla pagina è loggato. Con questa condizione non ci siamo protetti del tutto dalla creazione di nuovi post, ma abbiamo fatto un buon passo avanti. Nelle lezioni estensione ci occuperemo di più della sicurezza.
 
 Ricordi l'icona di edit che abbiamo appena aggiunto alla nostra `post_detail`? Dobbiamo fare la stessa modifica anche li, così le altre persone non saranno in grado di modificare i post esistenti.
 
