@@ -80,7 +80,7 @@ Poi nel `base.html`, rimpiazza tutto il tuo `<body>` (tutto quello che si trova 
 {% endraw %}
 {% endpre %}
 
-Abbiamo praticamente rimpiazzato tutto quello da `{% for post in posts %}` a `{% endfor %}` con:
+Abbiamo praticamente rimpiazzato tutto quello da {% raw %}`{% for post in posts %}`{% endraw %} a {% raw %}`{% endfor %}`{% endraw %} con:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 {% pre language="html" %}
@@ -90,11 +90,11 @@ Abbiamo praticamente rimpiazzato tutto quello da `{% for post in posts %}` a `{%
 {% endraw %}
 {% endpre %}
 
-You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (base.html). We will show you how to do this in a moment.
+You used the template tag {% raw %}`{% block %}`{% endraw %} to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (base.html). We will show you how to do this in a moment.
 
-Ma... Perchè? Hai appena creato un `blocco`! Hai usato il **template tag** `{% block %}` per creare una zona che avrà dell'HTML al suo interno. Quell'HTML arriverà da __un altro__ template che estende questo template (`base.html`). Verdemo come tra un momento.
+Ma... Perchè? Hai appena creato un `blocco`! Hai usato il **template tag** {% raw %}`{% block %}`{% endraw %} per creare una zona che avrà dell'HTML al suo interno. Quell'HTML arriverà da __un altro__ template che estende questo template (`base.html`). Verdemo come tra un momento.
 
-Ora salva `blog/templates/blog/base.html` e apri il tuo `blog/templates/blog/post_list.html` di nuovo. Cancella tutto quello sta prima di `{% for post in posts %}` and below `{% endfor %}`.
+Ora salva `blog/templates/blog/base.html` e apri il tuo `blog/templates/blog/post_list.html` di nuovo. Cancella tutto quello sta prima di {% raw %}`{% for post in posts %}`{% endraw %} and below {% raw %}`{% endfor %}`{% endraw %}.
 
 Quando hai finito il tuo file dovrebbe essere così:
 
@@ -113,9 +113,9 @@ Quando hai finito il tuo file dovrebbe essere così:
 {% endraw %}
 {% endpre %}
 
-Vogliamo usare questo template come contenuto del nostro `{% block content %}` creato prima. Quindi dobbiamo aggiungere il template tag `block` a questo file.
+Vogliamo usare questo template come contenuto del nostro {% raw %}`{% block content %}`{% endraw %} creato prima. Quindi dobbiamo aggiungere il template tag `block` a questo file.
 
-Dobbiamo fare in modo che il template tag `block` in questo file combaci con quello in `base.html`. Dobbiamo anche far in modo che tutto il codice sia all'interno del nostro template tag `block`. Per farlo, metti tutto tra `{% block content %}` and `{% endblock %}`. Così:
+Dobbiamo fare in modo che il template tag `block` in questo file combaci con quello in `base.html`. Dobbiamo anche far in modo che tutto il codice sia all'interno del nostro template tag `block`. Per farlo, metti tutto tra {% raw %}`{% block content %}`{% endraw %} and {% raw %}`{% endblock %}`{% endraw %}. Così:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 {% pre language="html" %}

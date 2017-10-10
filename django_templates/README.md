@@ -21,7 +21,7 @@ Per stampare una variabile nel template Django, usiamo doppie parentesi graffe c
 {% endraw %}
 {% endpre %}
 
-Prova questo nel tuo template `blog/templates/blog/post_list.html`. Sostituisci tutto dal secondo `<div>` al terzo `</div>` con `{{ posts }}`. Salva il file e aggiorna la pagina per vedere i risultati:
+Prova questo nel tuo template `blog/templates/blog/post_list.html`. Sostituisci tutto dal secondo `<div>` al terzo `</div>` con {% raw %}`{{ posts }}`{% endraw %}. Salva il file e aggiorna la pagina per vedere i risultati:
 
 ![Figura 13.1](images/step1.png)
 
@@ -66,11 +66,11 @@ Funziona! Ma noi vogliamo che vengano mostrate come i post statici che abbiamo c
 {% endraw %}
 {% endpre %}
 
-Tutto quello che hai messo tra `{% for %}` e `{% endfor %}` Sarà ripetuto per ciascun oggetto della lista. Aggiorna la tua pagina:
+Tutto quello che hai messo tra {% raw %}`{% for %}`{% endraw %} e {% raw %}`{% endfor %}`{% endraw %} Sarà ripetuto per ciascun oggetto della lista. Aggiorna la tua pagina:
 
 ![Figura 13.3](images/step3.png)
 
-Ti sei accorto che abbiamo utilizzato una notazione leggermente diversa questa volta `{{ post.title }}` oppure `{{ post.text }}`? Stiamo introducendo i dati in ciascuno dei campi definiti nel nostro modello `Post`. Inoltre le `|linebreaksbr` stanno spingendo il testo dei post attraverso un filtro per trasformare le line-breaks in paragrafi.
+Ti sei accorto che abbiamo utilizzato una notazione leggermente diversa questa volta {% raw %}`{{ post.title }}`{% endraw %} oppure {% raw %}`{{ post.text }}`{% endraw %}? Stiamo introducendo i dati in ciascuno dei campi definiti nel nostro modello `Post`. Inoltre le `|linebreaksbr` stanno spingendo il testo dei post attraverso un filtro per trasformare le line-breaks in paragrafi.
 
 ## Un' ultima cosa
 

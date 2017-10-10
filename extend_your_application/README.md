@@ -41,7 +41,7 @@ Vogliamo creare un link che dal titolo di un post facente parte dell'elenco di a
 {% endraw %}
 {% endpre %}
 
-È arrivata l'ora di spiegare il misterioso `{% url 'post_detail' pk=post.pk %}`. Come avrai capito, il simbolo `{% %}` significa che stiamo usando i template tag di Django. Questa volta ne useremo uno che creerà una URL per noi!
+È arrivata l'ora di spiegare il misterioso {% raw %}`{% url 'post_detail' pk=post.pk %}`{% endraw %}. Come avrai capito, il simbolo {% raw %}`{% %}`{% endraw %} significa che stiamo usando i template tag di Django. Questa volta ne useremo uno che creerà una URL per noi!
 
 La parte `post_detail` significa che Django si aspetterà un URL in `blog/urls.py` con `name='post_detail'` 
 
@@ -168,7 +168,7 @@ Il risultato somiglierà a questo:
 
 Stiamo estendendo ancora una volta il template di base. `base.html`. Nel blocco `content` vogliamo mostrare una published_date del post (se esiste), un titolo ed il testo. Ma dovremmo discutere di alcune cose importanti, vero?
 
-`{% if ... %} ... {% endif %}` è un tag di template che possiamo utilizzare quando vogliamo controllare qualcosa (ricordi `if ... else ..` dal capitolo **Introduzione a Python**?). In questo caso vogliamo controllare che la `published_date` di un post non sia vuota.
+{% raw %}`{% if ... %} ... {% endif %}`{% endraw %} è un tag di template che possiamo utilizzare quando vogliamo controllare qualcosa (ricordi `if ... else ..` dal capitolo **Introduzione a Python**?). In questo caso vogliamo controllare che la `published_date` di un post non sia vuota.
 
 Ok, possiamo aggiornare la nostra pagina e vedere se `Page not found` non c'è più.
 
