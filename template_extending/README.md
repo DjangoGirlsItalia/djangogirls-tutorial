@@ -90,7 +90,7 @@ Abbiamo praticamente rimpiazzato tutto quello da `{% for post in posts %}` a `{%
 {% endraw %}
 {% endpre %}
 
-You used the template tag {% block %} to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (base.html). We will show you how to do this in a moment.
+You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (base.html). We will show you how to do this in a moment.
 
 Ma... Perchè? Hai appena creato un `blocco`! Hai usato il **template tag** `{% block %}` per creare una zona che avrà dell'HTML al suo interno. Quell'HTML arriverà da __un altro__ template che estende questo template (`base.html`). Verdemo come tra un momento.
 

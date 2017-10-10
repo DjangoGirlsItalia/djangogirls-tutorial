@@ -192,11 +192,13 @@ E ora aggiungi una classe `post` al tuo `div` che contiene un articolo del blog.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 {% pre language="html" %}
+{% raw %}
 <div class="post">
     <p>published: {{ post.published_date }}</p>
     <h1><a href="">{{ post.title }}</a></h1>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
+{% endraw %}
 {% endpre %}
 
 Ora aggiungiamo dei blocchi di codice ai nostri nuovi selettori. I selettori che iniziano con `.` indicano una classe. Online ci sono molti tutorial e spiegazioni sul CSS che possono aiutarti a comprendere il codice che stiamo per scrivere. Per ora, copia e incolla quanto segue nel tuo file `mysite/static/css/blog.css`:
