@@ -6,7 +6,7 @@
 
 ## Benvenuta {#welcome}
 
-Benvenuta al tutorial di Django Girls! Siamo felici di vederti :\) 
+Benvenuta al tutorial di Django Girls! Siamo felici di vederti :\)
 
 In questo tutorial ti faremo vedere cosa succede sotto il cofano di un sito web, mostrandoti tutti i pezzi che compongono il web per come lo consciamo.
 
@@ -14,7 +14,7 @@ Ci saranno un sacco di cose che non hai mai visto e sarà come vivere un'avventu
 
 ## Introduzione
 
-Hai mai sentito che il mondo sta diventando sempre più tecnologico e sei in qualche modo rimasta indietro? ti sei mai chiesta come creare un sito web ma non hai mai avuto abbastanza motivazione per iniziare? Hai mai pensato che il mondo del software è troppo complicato per te persino per provare a fare qualcosa per conto tuo?
+Hai mai sentito che il mondo sta diventando sempre più tecnologico e sei in qualche modo rimasta indietro? Ti sei mai chiesta come creare un sito web ma non hai mai avuto abbastanza motivazione per iniziare? Hai mai pensato che il mondo del software è troppo complicato per te persino per provare a fare qualcosa per conto tuo?
 
 Beh, abbiamo buone notizie per te! La programmazione non è così complicata come sembra e vogliamo dimostrati quanto può essere divertente.
 
@@ -37,4 +37,3 @@ OK, [cominciamo dall'inizio...](./how_the_internet_works/README.md)
 ## Informazioni e contribuzioni
 
 Questo tutorial è mantenuto da [DjangoGirls](https://djangogirls.org/). Se trovi errori o se vuoi aggiornare questo tutorial, [segui le linee guida per i collaboratori](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
-
