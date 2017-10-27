@@ -133,7 +133,7 @@ Post.objects.filter(title__contains='title')
 <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 {% endpre %}
 
-> **Nota** ci sono due caratteri di sottolineatura (`_`) tra `titolo` e `contains`. L'ORM di Django usa questa sintassi per separare i nomi dei campi ("titolo") ed operazioni o filtri ("contiene"). Se usi solo un carattere di sottolineatura, otterrai un errore come "FieldError: non è possibile risolvere la parola chiave title_contains".
+> **Note** ci sono due caratteri di sottolineatura (`_`) tra `titolo` e `contains`. L'ORM di Django usa questa sintassi per separare i nomi dei campi ("titolo") ed operazioni o filtri ("contiene"). Se usi solo un carattere di sottolineatura, otterrai un errore come "FieldError: non è possibile risolvere la parola chiave title_contains".
 
 Puoi anche ottenere una lista di tutti i post pubblicati. Lo facciamo filtrando tutti i post che hanno una `published_date` impostata in passato:
 
