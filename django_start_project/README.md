@@ -21,7 +21,7 @@ django-admin startproject --template=https://github.com/simobasso/startproject/a
 
 > Il punto `.` è criuciale perchè dice allo script di installare Django nella cartella corrente (della quale il periodo `.` è una comoda reference).
 
-> **Nota** Quando scrivi il comando qui sopra, ricordati di scrivere solo quello che c'è dopo il simbolo `$`.
+> **Note** Quando scrivi il comando qui sopra, ricordati di scrivere solo quello che c'è dopo il simbolo `$`.
 
 <!--endsec-->
 
@@ -38,7 +38,7 @@ django-admin startproject --template=https://github.com/simobasso/startproject/a
 
 > Il punto `.` è criuciale perchè dice allo script di installare Django nella cartella corrente (della quale il periodo `.` è una comoda reference).
 
-> **Nota** Quando scrivi il comando qui sopra, ricordati di scrivere solo quello che c'è dopo il simbolo `>`.
+> **Note** Quando scrivi il comando qui sopra, ricordati di scrivere solo quello che c'è dopo il simbolo `>`.
 
 <!--endsec-->
 

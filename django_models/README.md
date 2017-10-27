@@ -172,7 +172,7 @@ Se c'è qualcosa di poco chiaro sui modelli, sentiti libera di chiedere al tuo c
 
 L'ultimo passo è quello di aggiungere un nuovo modello al nostro database. Prima dobbiamo far sapere a Django che ci sono alcuni cambiamenti nel nostro modello (l'abbiamo appena creato!).
 
-**Nota:** Ricordati di salvare i file che hai appena modificato. Altrimenti il tuo computer eseguirà la versione precedente e potresti ottenere degli errori.
+**Note** Ricordati di salvare i file che hai appena modificato. Altrimenti il tuo computer eseguirà la versione precedente e potresti ottenere degli errori.
 
 Digita `python manage.py makemigrations blog`. Il risultato somiglierà a questo:
 

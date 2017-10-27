@@ -1,6 +1,6 @@
 # Deploy!
 
-> **Nota** Il seguente capitolo può essere difficile in alcuni passaggi. Non mollare e cerca di portarlo a termine; deployment (termine abbastanza complicato da tradurre, ma indica tutto ciò che tu rendi LIVE, accessibile sul web e non più solo dal tuo computer) è una parte importante nel processo di costruzione di un sito web. Questo capitolo è inserito a metà del tutorial per far sì che il tuo tutor possa aiutarti con il processo leggermente più complesso di messa online del sito. Questo significa che puoi ancora finire il tutorial da sola se sei a corto di tempo.
+> **Note** Il seguente capitolo può essere difficile in alcuni passaggi. Non mollare e cerca di portarlo a termine; deployment (termine abbastanza complicato da tradurre, ma indica tutto ciò che tu rendi LIVE, accessibile sul web e non più solo dal tuo computer) è una parte importante nel processo di costruzione di un sito web. Questo capitolo è inserito a metà del tutorial per far sì che il tuo tutor possa aiutarti con il processo leggermente più complesso di messa online del sito. Questo significa che puoi ancora finire il tutorial da sola se sei a corto di tempo.
 
 Fino ad ora il tuo sito è accessibile solo dal tuo computer, ma ora imparerai come metterlo online! Deploying è il processo di pubblicazione online del tuo progetto in modo tale che sia visibile anche da altre persone :).
 
@@ -14,7 +14,7 @@ Git è un "sistema di controllo versione" utilizzato da un sacco di programmator
 
 Git tiene traccia delle modifiche a un particolare insieme di file in quello che è chiamato repository di codice (o "repo" in breve). Iniziamone uno per il nostro progetto. Apri la console ed esegui questi comandi nella directory `djangogirls`:
 
-> **Nota:** controlla la directory su cui stai lavorando adesso con il comando `pwd`(OSX/Linux) oppure `cd`(Windows) prima di iniziare il repository. Dovresti essere nella cartella `djangogirls`.
+> **Note** controlla la directory su cui stai lavorando adesso con il comando `pwd`(OSX/Linux) oppure `cd`(Windows) prima di iniziare il repository. Dovresti essere nella cartella `djangogirls`.
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2" %}
@@ -40,9 +40,9 @@ db.sqlite3
 
 E salvalo come `.gitignore` all'interno della cartella "djangogirls".
 
-> **Nota:** Il punto all'inizio del nome del file è importante! Se hai difficoltà nel crearlo (ad esempio, ai Mac non piace quando crei file che iniziano con un punto tramite il Finder), allora usa la funzionalità "Salva con nome" nel tuo editor, è a prova di bomba.
+> **Note** Il punto all'inizio del nome del file è importante! Se hai difficoltà nel crearlo (ad esempio, ai Mac non piace quando crei file che iniziano con un punto tramite il Finder), allora usa la funzionalità "Salva con nome" nel tuo editor, è a prova di bomba.
 
-> **Nota:** Uno dei file che hai inserito nel tuo `.gitignore` è `db.sqlite3`. Quello è il tuo database locale dove tutti i tuoi post sono salvati. Non lo vogliamo aggiungere al tuo repository perchè Heroku userà un altro database. Il database può essere SQLite, come sulla tua macchina locale, ma generalmente usarai uno chiamato PostgreSQL che può gestire molti più visitatori di SQLite. In ogni caso, ignorando il tuo database SQLite per la copia remota, ogni post che hai creato fino a questo punto continuerà ad essere visibile in locale, ma dovrai aggiungerne di nuovi in produzione. Devi pernsare al tuo database locale come un posto sicuro dove testare cose nuove senza dover proccuparti di eliminare i tuoi veri post dal tuo blog.
+> **Note** Uno dei file che hai inserito nel tuo `.gitignore` è `db.sqlite3`. Quello è il tuo database locale dove tutti i tuoi post sono salvati. Non lo vogliamo aggiungere al tuo repository perchè Heroku userà un altro database. Il database può essere SQLite, come sulla tua macchina locale, ma generalmente usarai uno chiamato PostgreSQL che può gestire molti più visitatori di SQLite. In ogni caso, ignorando il tuo database SQLite per la copia remota, ogni post che hai creato fino a questo punto continuerà ad essere visibile in locale, ma dovrai aggiungerne di nuovi in produzione. Devi pernsare al tuo database locale come un posto sicuro dove testare cose nuove senza dover proccuparti di eliminare i tuoi veri post dal tuo blog.
 
 È una buona idea usare il comando `git status` prima di `git add` oppure ogni volta che non sei sicura di cosa sia cambiato. Questo aiuterà ad evitare eventuali brutte sorprese, come file sbagliati che vengono aggiunti o a cui viene fatto il commit. Il comando `git status` restituisce informazioni riguardanti qualsiasi file non tracciato/modificato/in staging, lo stato del branch e molto altro. L'output dovrebbe essere simile a:
 
@@ -100,7 +100,7 @@ heroku create <nome-del-blog>
 Creating app... done, ⬢ <nome-del-blog>
 {% endpre %}
 
-> **Nota:** Sostituisci a <nome-del-blog> un nome per il tuo blog considerando che sarà quello che apparirà nella url come ad esempio `https://<nome-del-blog>.herokuapp.com`
+> **Note** Sostituisci a <nome-del-blog> un nome per il tuo blog considerando che sarà quello che apparirà nella url come ad esempio `https://<nome-del-blog>.herokuapp.com`
 
 L'ultima cosa che ci rimane da fare è caricare il nostro codice su Heroku e per farlo utilizzeremo `git`. Il prossimo comando che digiterai oltre a caricare il nostro codice sulla nostra app installerà Python, installerà per noi le dipendenze, raccoglierà i file statici e avvierà la nostra applicazione.
 

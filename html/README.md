@@ -168,7 +168,7 @@ Assicurati di essere nella directory `djangogirls` e diciamo a `git` di includer
 git add --all .
 {% endpre %}
 
-> **Nota** `--all` significa che `git` riconoscerà anche il fatto che hai cancellato dei file (di default, `git` riconosce soltanto i file nuovi o modificati). Ricorda anche (dal capitolo **Introduzione alla command line**) che il `.` significa la directory attuale.
+> **Note** `--all` significa che `git` riconoscerà anche il fatto che hai cancellato dei file (di default, `git` riconosce soltanto i file nuovi o modificati). Ricorda anche (dal capitolo **Introduzione alla command line**) che il `.` significa la directory attuale.
 
 Prima di caricare tutti i file, proviamo a controllare cosa caricherà `git` (tutti i file che caricherà `git` ora appariranno in verde):
 
@@ -184,7 +184,7 @@ Ci siamo quasi, ora è il momento di dirgli di salvare questa modifica nella cro
 git commit -m "Ho cambiato l'HTML per questo sito."
 {% endpre %}
 
-> **Nota** Assicurati di usare doppie virgolette attorno al messaggio di commit.
+> **Note** Assicurati di usare doppie virgolette attorno al messaggio di commit.
 
 Quando hai finito, caricheremo (push) le nostre modifiche su Github:
 
