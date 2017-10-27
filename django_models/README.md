@@ -8,9 +8,9 @@ Esiste un concetto nella programmazione chiamato `programmazione orientata agli 
 
 Quindi cos'è un oggetto? È un insieme di proprietà ed azioni. Suona strano, ma ti faremo un esempio.
 
-Se vogliamo modellare un gatto creeremo un oggetto `Gatto` che ha qualche proprietà, i.e. `colore`, `età`, `umore` (i.e. bravo, cattivo, sonnolento ;)), `padrone` (che è un oggetto `Persona` oppure, nel caso di un gatto randagio, questa proprietà è vuota).
+Se vogliamo modellare un gatto creeremo un oggetto `Gatto` che ha qualche proprietà, per esempio `colore`, `età`, `umore` (es. bravo, cattivo, sonnolento ;) ), `padrone` (che è un oggetto `Persona` oppure, nel caso di un gatto randagio, questa proprietà è vuota).
 
-E poi il `Gatto` ha alcune azioni: `fusa`, `graffiare` oppure `mangiare` (nella quale daremo al gatto un po' di `Cibo per gatti`, che potrebbe essere un oggetto diverso con delle proprietà, i.e. `gusto`).
+E poi il `Gatto` ha alcune azioni: `fusa`, `graffiare` oppure `mangiare` (nella quale daremo al gatto un po' di `Cibo per gatti`, che potrebbe essere un oggetto diverso con delle proprietà, per esempio `gusto`).
 
 ```
 Gatto
@@ -25,14 +25,14 @@ mangiare(CiboPerGatti)
 ```
 
 ```
-CatFood
+CiboPerGatti
 --------
-taste
+gusto
 ```
 
 Quindi in pratica l'idea è quella di descrivere cose vere in codice con delle proprietà (chiamate `proprietà di oggetti`) e azioni (chiamate `metodi`).
 
-Quindi come faremo a modellare i post del blog? vogliamo costruire un blog, giusto?
+Quindi come faremo a modellare i post del blog? Vogliamo costruire un blog, giusto?
 
 Dobbiamo rispondere alla domanda: cos'è un post? Quali proprietà dovrebbe avere?
 
@@ -48,7 +48,7 @@ data_creazione
 data_pubblicazione
 ```
 
-Che tipo di cose si potrebbero fare con un post? Sarebbe bello avere qualche `metodo` che pubblica il post, vero?
+Che tipo di cose si potrebbero fare con un post? Sarebbe bello avere qualche metodo che pubblica il post, vero?
 
 Quindi avremo bisogno di un metodo `pubblicare`.
 
@@ -109,7 +109,7 @@ INSTALLED_APPS = [
 
 ### Creazione di un modello blog post
 
-Nel file `blog/models.py` definiamo tutti gli oggetti chiamati `Models` - Questo è il posto dove definiremo il nostro blog post.
+Nel file `blog/models.py` definiamo tutti gli oggetti chiamati `Models` - questo è il posto dove definiremo il nostro blog post.
 
 Apriamo `blog/models.py`, cancella tutto quello che è lì e scrivi un codice come questo:
 
@@ -141,7 +141,7 @@ class Post(models.Model):
 
 > Ricontrolla se stai utilizzando due underscore (`_`) su ciascun lato di `str`. Questa convenzione viene utilizzata spesso in Python e a volte li chiamiamo anche "dunder" (abbreviazione di "doppio underscore").
 
-Sembra spaventoso, vero? ma non ti preoccupare, ti spiegheremo cosa significano queste righe!
+Sembra spaventoso, vero? Ma non ti preoccupare, ti spiegheremo cosa significano queste righe!
 
 Tutte le righe che iniziano con `from` oppure con `import` sono righe che aggiungono alcuni pezzi da altri file. Quindi invece di copiare e incollare le stesse cose in ogni file, possiamo includere alcune parti con `from ... import ...`.
 
@@ -151,20 +151,20 @@ Tutte le righe che iniziano con `from` oppure con `import` sono righe che aggiun
 - `Post` è il nome del nostro modello. Possiamo dargli un nome diverso (ma dobbiamo evitare caratteri speciali e spazi). Inizia sempre il nome di una classe con un lettera maiuscola.
 - `models.Model` significa che il Post è un modello Django, quindi Django sa che dovrebbe essere salvato nel database.
 
-Ora definiamo le proprietà di cui stavamo parlando: `titolo`, `testo`, `data_creazione`, `data_pubblicazione` e `autore`. Per fare ciò dobbiamo definire un tipo per ogni campo (è un testo? Un numero? Una data? Una relazione con un altro oggetto, i.e. un utente?).
+Ora definiamo le proprietà di cui stavamo parlando: `titolo`, `testo`, `data_creazione`, `data_pubblicazione` e `autore`. Per fare ciò dobbiamo definire un tipo per ogni campo (è un testo? Un numero? Una data? Una relazione con un altro oggetto, per esempio un utente?).
 
 - `models.CharField` - così si definisce un testo con un numero limitato di lettere.
 - `models.TextField` - questo è il codice per definire un testo senza un limite. Sembra l'ideale per i contenuti di un post, vero?
-- `models.DateTimeField` - questo per la data ed l'ora.
-- `models.ForeignKey` - questo è un link a un altro modello.
+- `models.DateTimeField` - questo per la data e l'ora.
+- `models.ForeignKey` - questo è un link ad un altro modello.
 
 Non spiegheremo ogni pezzo di codice perchè ci vorrebbre troppo tempo. Dovresti dare un'occhiata alla documentazione di Django se vuoi saperne di più sui campi di un modello e come definire altre cose rispetto a quelle descritte sopra (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
 Che dire di `def publish(self):`? È esattamente il metodo `pubblicare` di cui stavamo parlando prima. `def` significa che questa è una funzione/metodo e `publish` è il nome del metodo. Puoi modificare il nome del metodo, se vuoi. La regola per la denominazione è usare lettere minuscole e caratteri di sottolineatura al posto degli spazi. Per esempio, un metodo che calcola il prezzo medio potrebbe essere chiamato `calculate_average_price`.
 
-I metodi spesso `restituiscono` qualcosa. C'è un esempio nel metodo `__str__`. In questo caso, quando chiamiamo `__str__()` otterremo un testo (**stringa**) con il titolo del Post.
+I metodi spesso *restituiscono* qualcosa. C'è un esempio nel metodo `__str__`. In questo caso, quando chiamiamo `__str__()` otterremo un testo (**stringa**) con il titolo del Post.
 
-Nota che entrambi `def publish(self):` e `def __str__(self):` sono indentati all'interno della nostra classe. Dato che Python è sensibile agli spazi, dobbiamo indentare i nostri metodi all'interno della classe. Altrimenti, i metodi non faranno parte della nostra classe e potresti ottenere dei comportamenti strani.
+> Nota che entrambi `def publish(self):` e `def __str__(self):` sono indentati all'interno della nostra classe. Dato che Python è sensibile agli spazi, dobbiamo indentare i nostri metodi all'interno della classe. Altrimenti, i metodi non faranno parte della nostra classe e potresti ottenere dei comportamenti strani.
 
 Se c'è qualcosa di poco chiaro sui modelli, sentiti libera di chiedere al tuo coach! Sappiamo che è complicato, soprattutto quando impari cosa sono gli oggetti e le funzioni allo stesso tempo. Ma speriamo che sembri un po' meno magico per te per adesso!
 
@@ -172,7 +172,7 @@ Se c'è qualcosa di poco chiaro sui modelli, sentiti libera di chiedere al tuo c
 
 L'ultimo passo è quello di aggiungere un nuovo modello al nostro database. Prima dobbiamo far sapere a Django che ci sono alcuni cambiamenti nel nostro modello (l'abbiamo appena creato!).
 
-**Nota:** Ricordati di salvare i file che hai appena modificato. Altrimenti il tuo compurter eseguira la versione precedente e potresti ottenere degli errori.
+**Nota:** Ricordati di salvare i file che hai appena modificato. Altrimenti il tuo computer eseguirà la versione precedente e potresti ottenere degli errori.
 
 Digita `python manage.py makemigrations blog`. Il risultato somiglierà a questo:
 

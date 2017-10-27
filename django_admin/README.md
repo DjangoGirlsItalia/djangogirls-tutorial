@@ -12,7 +12,7 @@ from .models import Post
 admin.site.register(Post)
 {% endpre %}
 
-Come puoi vedere, stiamo importando (include) il modello di Post che abbiamo definito nel capitolo precedente. Per far si che il nostro modello sia visibile nella pagina di admin, dobbiamo registrare questo modello con `admin.site.register(Post)`.
+Come puoi vedere, stiamo importando il modello di Post che abbiamo definito nel capitolo precedente. Per far sì che il nostro modello sia visibile nella pagina di admin, dobbiamo registrare questo modello con `admin.site.register(Post)`.
 
 OK, è tempo di guardare il nostro modello Post. Ricorda di eseguire `python manage.py runserver` nella console per avviare il web server. Vai nel browser e scrivi l'indirizzo `http://127.0.0.1:8000/admin/` Vedrai una pagina di login come questa:
 
@@ -39,7 +39,7 @@ Torna nel tuo browser e fai il log in con le credenziali di superuser che hai sc
 
 ![Django admin](images/django_admin3.png)
 
-Vai su Post ed sperimenta un po'. Aggiungi cinque o sei post. Non preoccuparti del contenuto - puoi semplicemente fare il copia-incolla di parti di testo da questo tutorial per risparmiare tempo :).
+Vai su Post e sperimenta un po'. Aggiungi cinque o sei post. Non preoccuparti del contenuto - puoi semplicemente fare il copia-incolla di parti di testo da questo tutorial per risparmiare tempo :).
 
 Assicurati che almeno due o tre post (ma non tutti) abbiano la data in cui sono stati pubblicati. Ti sarà utile più tardi.
 
