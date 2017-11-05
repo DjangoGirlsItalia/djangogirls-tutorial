@@ -1,6 +1,6 @@
 # Estendi la tua applicazione
 
-Abbiamo completato i passi necessari per la creazione del nostro sito: sappiamo come scrivere un modello, una url, una view ed un template. Sappiamo anche come far diventare carino il nostro sito.
+Abbiamo completato i passi necessari per la creazione del nostro sito: sappiamo come scrivere un modello, un URL, una view ed un template. Sappiamo anche come far diventare carino il nostro sito.
 
 È ora di far pratica!
 
@@ -41,7 +41,7 @@ Vogliamo creare un link che dal titolo di un post facente parte dell'elenco di a
 {% endraw %}
 {% endpre %}
 
-È arrivata l'ora di spiegare il misterioso {% raw %}`{% url 'post_detail' pk=post.pk %}`{% endraw %}. Come avrai capito, il simbolo {% raw %}`{% %}`{% endraw %} significa che stiamo usando i template tag di Django. Questa volta ne useremo uno che creerà una URL per noi!
+È arrivata l'ora di spiegare il misterioso {% raw %}`{% url 'post_detail' pk=post.pk %}`{% endraw %}. Come avrai capito, il simbolo {% raw %}`{% %}`{% endraw %} significa che stiamo usando i template tag di Django. Questa volta ne useremo uno che creerà un URL per noi!
 
 La parte `post_detail` significa che Django si aspetterà un URL in `blog/urls.py` con `name='post_detail'` 
 
@@ -72,7 +72,7 @@ urlpatterns = [
 
 Questa parte `^post/(?P<pk>[0-9]+)/$` sembra spaventosa, ma non preoccuparti - te la spiegheremo:
 
-- inizia ancora con `^` -- "l'inizio" 
+- inizia ancora con `^` - "l'inizio" 
 - `post/` semplicemente significa che dopo l'inizio, l'URL dovrebbe contenere la parola `post` **e** `/`. Fin qui tutto bene. 
 - `(?P<pk>\d+)` - questa parte è più complicata. Significa che Django prenderà tutto quello che hai messo qui e lo trasferirà ad una view come variabile denominata `pk` (nota che è lo stesso nome che abbiamo usato in `blog/templates/blog/post_list.html!`). `\d` ci dice anche che la variabile può essere solo un numero, non una lettera (quindi tutto tra 0 e 9). `+` significa che ci devono essere una o più cifre. Quindi qualcosa di simile a `http://127.0.0.1:8000/post//` non è valido, ma `http://127.0.0.1:8000/post/1234567890/` è perfetto! 
 - `/` - Quindi ci serve `/` di nuovo 
@@ -109,9 +109,7 @@ La buona notizia è che in realtà puoi creare la tua pagina `Page not found` mo
 
 Ok, è arrivata l'ora di aggiungere una *view* al nostro file `views.py`!
 
-In blog/urls.py we created a URL rule named post_detail that refers to a view called views.post_detail. This means that Django will be expecting a view function called post_detail inside blog/views.py.
-
-In `blog/urls.py` abbiamo creato un URL chiamata `post_detail` che si riferisce ad una view chiamata `views.post_detail`. Questo significa che django si aspetta una view chiamata `post_detail` nel file `blog/views.py`.
+In `blog/urls.py` abbiamo creato un URL chiamata `post_detail` che si riferisce ad una view chiamata `views.post_detail`. Questo significa che Django si aspetta una view chiamata `post_detail` nel file `blog/views.py`.
 
 Dovremo aprire `blog/views.py` ed aggiungere il seguente codice vicino alle altre linee che iniziano con `from`:
 
@@ -166,7 +164,7 @@ Il risultato somiglierà a questo:
 {% endraw %}
 {% endpre %}
 
-Stiamo estendendo ancora una volta il template di base. `base.html`. Nel blocco `content` vogliamo mostrare una published_date del post (se esiste), un titolo ed il testo. Ma dovremmo discutere di alcune cose importanti, vero?
+Stiamo estendendo ancora una volta il template di base `base.html`. Nel blocco `content` vogliamo mostrare una published_date del post (se esiste), un titolo ed il testo. Ma dovremmo discutere di alcune cose importanti, vero?
 
 {% raw %}`{% if ... %} ... {% endif %}`{% endraw %} è un tag di template che possiamo utilizzare quando vogliamo controllare qualcosa (ricordi `if ... else ..` dal capitolo **Introduzione a Python**?). In questo caso vogliamo controllare che la `published_date` di un post non sia vuota.
 
@@ -178,7 +176,7 @@ Si! Ha funzionato!
 
 ## Ultima cosa: ora di fare il deploy!
 
-Sarebbe bello vedere se il tuo sito Web sarà ancora funzionante in Heroku, vero? Proviamo a fare un alrto deploy.
+Sarebbe bello vedere se il tuo sito Web sarà ancora funzionante in Heroku, vero? Proviamo a fare un altro deploy.
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2,5,7" %}
