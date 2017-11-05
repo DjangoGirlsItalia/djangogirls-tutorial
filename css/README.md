@@ -1,4 +1,4 @@
-# CSS - dagli un bel aspetto!
+# CSS - dagli un bell'aspetto!
 
 Il nostro blog sembra ancora un pochino brutto, vero? È arrivato il momento di abbellirlo! Per fare ciò useremo CSS.
 
@@ -32,13 +32,13 @@ Sembra già più carino!
 
 ## File statici in Django
 
-Infine, daremo uno sguardo più approfondito a quelli che abbiamo chiamato **file statici**. I file statici sono tutti i tuoi CSS e le immagini -- file che non sono dinamici, il loro contenuto non dipende dal contesto della richiesta e sarà lo stesso per ogni utente.
+Infine, daremo uno sguardo più approfondito a quelli che abbiamo chiamato **file statici**. I file statici sono tutti i tuoi CSS e le immagini - file che non sono dinamici, il loro contenuto non dipende dal contesto della richiesta e sarà lo stesso per ogni utente.
 
 ### Dove mettere i file statici in Django
 
 Django sa già dove trovare i file statici per l'app "admin". Ora dobbiamo solo aggiungere alcuni file statici per la nostra app, `blog`.
 
-Lo facciamo creando una cartella denominata `static` all'interno dela nostra app blog:
+Lo facciamo creando una cartella denominata `static` all'interno della nostra app blog:
 
 {% pre language="bash", output="1-5" %}
 djangogirls
@@ -66,7 +66,7 @@ djangogirls
 
 Non ci dilungheremo troppo sul come personalizzare e imparare CSS in questo momento, dal momento che è abbastanza facile e puoi impararlo da sola alla fine di questo workshop. Troverai alcuni corsi gratuiti dove imparare di più al fondo di questa pagina.
 
-Facciamo comunque un esempio. Perchè non cambiare il colore del nostro header? Per decifrare i colori, i computer usano dei codici speciali. Questi codici cominciano con `#` a cui fanno seguito 6 caratteri, sia lettere (A-F) che numeri (0-9). For example, the code for blue is `#0000FF`. Puoi trovare vari esempi di codici colore qui: http://www.colorpicker.com/. Puoi anche usare [colori predefiniti](http://www.w3schools.com/cssref/css_colornames.asp) come ad esempio `red` e `green`.
+Facciamo comunque un esempio. Perché non cambiare il colore della nostra intestazione? Per decifrare i colori, i computer usano dei codici speciali. Questi codici cominciano con `#` a cui fanno seguito 6 caratteri, sia lettere (A-F) che numeri (0-9). Per esempio, il codice per il blu è `#0000FF`. Puoi trovare vari esempi di codici colore qui: http://www.colorpicker.com/. Puoi anche usare [colori predefiniti](http://www.w3schools.com/cssref/css_colornames.asp) come ad esempio `red` e `green`.
 
 Aggiungi il seguente codice nel tuo file `blog/static/css/blog.css`:
 
@@ -85,7 +85,7 @@ In un file CSS definiamo lo stile degli elementi presenti nel file HTML. Dovrest
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 {% endpre %}
 
-Per saperne di più puoi leggere [CSS Selectors in w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+Per saperne di più puoi leggere [CSS Selectors in W3Schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
 Infine, dobbiamo anche far sapere al nostro template in HTML che abbiamo effettivamente aggiunto un po' di CSS. Apri il file `blog/templates/blog/post_list.html` e aggiungi la seguente riga di testo:
 
@@ -96,7 +96,7 @@ Infine, dobbiamo anche far sapere al nostro template in HTML che abbiamo effetti
 {% endraw %}
 {% endpre %}
 
-Per ora stiamo solamente caricando tutti i nostri static files :). Aggiungi questa riga di testo tra `<head>` e `</head>`, subito dopo il link al file CSS di Bootstrap aggiungi:
+Per ora stiamo solamente caricando tutti i nostri file statici :). Aggiungi questa riga di testo tra `<head>` e `</head>`, subito dopo il link al file CSS di Bootstrap aggiungi:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 {% pre language="html" %}
@@ -137,7 +137,7 @@ Il tuo file dovrebbe avere questo aspetto:
 {% endraw %}
 {% endpre %}
 
-OK, salviamo il file e ricarichiamo la pagina web!
+Ok, salviamo il file e ricarichiamo la pagina web!
 
 ![Figura 14.2](images/color2.png)
 
@@ -154,7 +154,7 @@ Aggiungi questo al tuo CSS, salva il file e guarda il risultato!
 
 ![Figura 14.3](images/margin2.png)
 
-Potremmo anche personalizzare lo stile calligrafico nel nostro header. Incolla quanto segue all'interno del tag `<head>` che si trova nel file `blog/templates/blog/post_list.html`:
+Potremmo anche personalizzare lo stile calligrafico nella nostra intestazione. Incolla quanto segue all'interno del tag `<head>` che si trova nel file `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 {% pre language="html" %}
@@ -177,7 +177,7 @@ h1 a {
 
 Grandioso!
 
-Come già accennato, il CSS utilizza il concetto di 'classe' che in pratica ti permette di assegnare uno specifico nome ad una parte del tuo documento HTML e di applicare uno stile solo a questa parte senza cambiare il resto. È di grande aiuto quando hai due div che hanno funzioni differenti (ad esempio uno è un header e l'altro un post), e non vuoi che appaiano uguali.
+Come già accennato, il CSS utilizza il concetto di 'classe' che in pratica ti permette di assegnare uno specifico nome ad una parte del tuo documento HTML e di applicare uno stile solo a questa parte senza cambiare il resto. È di grande aiuto quando hai due `div` che hanno funzioni differenti (ad esempio uno è un header e l'altro un post), e non vuoi che appaiano uguali.
 
 Prova a dare dei nomi ad alcune parti dell'HTML. Aggiungi una classe chiamta `page-header` al tuo `div` che contiene l'intestazione così:
 
@@ -201,7 +201,7 @@ E ora aggiungi una classe `post` al tuo `div` che contiene un articolo del blog.
 {% endraw %}
 {% endpre %}
 
-Ora aggiungiamo dei blocchi di codice ai nostri nuovi selettori. I selettori che iniziano con `.` indicano una classe. Online ci sono molti tutorial e spiegazioni sul CSS che possono aiutarti a comprendere il codice che stiamo per scrivere. Per ora, copia e incolla quanto segue nel tuo file `mysite/static/css/blog.css`:
+Ora aggiungiamo dei blocchi di codice ai nostri nuovi selettori. I selettori che iniziano con `.` indicano una classe. Online ci sono molti tutorial e spiegazioni su CSS che possono aiutarti a comprendere il codice che stiamo per scrivere. Per ora, copia e incolla quanto segue nel tuo file `mysite/static/css/blog.css`:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 {% pre language="css" %}
@@ -253,7 +253,7 @@ h1, h2, h3, h4 {
 }
 {% endpre %}
 
-Ora aggiungi all'esterno del codice HTML riguardante i posts all'interno del blog alcuni elementi con definizione di classi. Sostituisci questo:
+Ora aggiungi all'esterno del codice HTML riguardante i post all'interno del blog alcuni elementi con definizione di classi. Sostituisci questo:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 {% pre language="html" %}
@@ -295,10 +295,10 @@ Salva entrambi i file e ricarica la pagina web.
 
 ![Figura 14.4](images/final.png)
 
-Woohoo! È fantastico, vero? Guarda il codice che hai appena incollato per cercare dove abbiamo aggiunto le classi nell'HTML e come le abbiamo usate nel CSS. Dove dovresti fare qualche cambiamento per avere le in turchese?
+Woohoo! È fantastico, vero? Guarda il codice che hai appena incollato per cercare dove abbiamo aggiunto le classi nell'HTML e come le abbiamo usate nel CSS. Dove dovresti fare qualche cambiamento per avere le date in turchese?
 
 Non farti spaventare, sperimenta con i CSS e prova a cambiare alcune cose. Se rompi qualcosa, non ti preoccupare, puoi sempre farlo tornare come era prima!
 
-Ti consigliamo caldamente di seguire [il corso su HTML & CSS di Codeacademy][2]. Così potrai imparare tutto ciò di cui hai bisogno per rendere i tuoi siti web più belli con CSS.
+Ti consigliamo caldamente di seguire [il corso su HTML & CSS di Codeacademy](https://www.codecademy.com/tracks/web). Così potrai imparare tutto ciò di cui hai bisogno per rendere i tuoi siti web più belli con CSS.
 
 Pronta per il prossimo capitolo?! :)
