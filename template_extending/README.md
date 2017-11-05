@@ -90,11 +90,9 @@ Abbiamo praticamente rimpiazzato tutto quello da {% raw %}`{% for post in posts 
 {% endraw %}
 {% endpre %}
 
-You used the template tag {% raw %}`{% block %}`{% endraw %} to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (base.html). We will show you how to do this in a moment.
+Ma... Perchè? Hai appena creato un `blocco`! Hai usato il **template tag** {% raw %}`{% block %}`{% endraw %} per creare una zona che avrà dell'HTML al suo interno. Quell'HTML arriverà da __un altro__ template che estende questo template (`base.html`). Vedremo come fare tra un momento.
 
-Ma... Perchè? Hai appena creato un `blocco`! Hai usato il **template tag** {% raw %}`{% block %}`{% endraw %} per creare una zona che avrà dell'HTML al suo interno. Quell'HTML arriverà da __un altro__ template che estende questo template (`base.html`). Verdemo come tra un momento.
-
-Ora salva `blog/templates/blog/base.html` e apri il tuo `blog/templates/blog/post_list.html` di nuovo. Cancella tutto quello sta prima di {% raw %}`{% for post in posts %}`{% endraw %} and below {% raw %}`{% endfor %}`{% endraw %}.
+Ora salva `blog/templates/blog/base.html` e apri il tuo `blog/templates/blog/post_list.html` di nuovo. Cancella tutto quello che sta prima di {% raw %}`{% for post in posts %}`{% endraw %} e dopo {% raw %}`{% endfor %}`{% endraw %}.
 
 Quando hai finito il tuo file dovrebbe essere così:
 
@@ -133,8 +131,6 @@ Dobbiamo fare in modo che il template tag `block` in questo file combaci con que
 {% endblock %}
 {% endraw %}
 {% endpre %}
-
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
 
 Rimane solo una cosa da fare. Dobbiamo collegare questi due template tra loro. Questo è esattamente ciò che significa estendere i template! Lo faremo usando un nuovo **template tag** chiamato `extend` e lo metteremo all'inizio del file. 
 
