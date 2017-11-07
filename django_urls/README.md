@@ -4,11 +4,11 @@ Stiamo per costruire la nostra pagina web: una homepage per il tuo blog! Ma prim
 
 ## Che cos'è un URL?
 
-Una URL è semplicemente un indirizzo web. Puoi vedere una URL ogni volta che visiti un sito web - si vede nella barra degli indirizzi del tuo browser. (sì! `127.0.0.1:8000` is a URL! Anche `https://djangogirls.org` è una URL):
+Un URL è semplicemente un indirizzo web. Puoi vedere un URL ogni volta che visiti un sito web - si vede nella barra degli indirizzi del tuo browser. (sì! `127.0.0.1:8000` è un URL! Anche `https://djangogirls.org` è un URL):
 
 ![Url](images/url.png)
 
-Ogni pagina internet ha bisogno della sua URL. In questo modo la tua applicazione sa cosa deve mostrare a un utente che visita una URL. In Django usiamo qualcosa chiamato `URLconf` ( configurazione dell'URL). URLconf è un insieme di modelli che Django cercherà di far corrispondere con l'URL ricevuta per trovare la view giusta.
+Ogni pagina internet ha bisogno del suo URL. In questo modo la tua applicazione sa cosa deve mostrare ad un utente che visita una URL. In Django usiamo qualcosa chiamato `URLconf` (configurazione dell'URL). `URLconf` è un insieme di modelli che Django cercherà di far corrispondere con l'URL ricevuto per trovare la view giusta.
 
 ## Come funzionano le URL in Django?
 
@@ -30,9 +30,9 @@ urlpatterns = [
 
 Come puoi vedere, Django ha già predisposto qualcosa per noi in questo file.
 
-Le righe che iniziano con i tripli apici (`'''` or `"""`) sono chiamati docstring e funzionano come i commenti, puoi scriverli all'inizio del file, delle classi o delle funzioni per descriverne il funzionamento e non verranno lette da Python. Comodo, non è vero?
+Le righe che iniziano con i tripli apici (`'''` or `"""`) sono chiamate docstring e funzionano come i commenti, puoi scriverli all'inizio del file, delle classi o delle funzioni per descriverne il funzionamento e non verranno lette da Python. Comodo, non è vero?
 
-L'admin URL , che hai visto nel capitolo precedente è già qui:
+L'admin URL, che hai visto nel capitolo precedente è già qui:
 
 {% filename %}mysite/urls.py{% endfilename %}
 {% pre language="python" %}
@@ -43,7 +43,7 @@ Questo significa che per ogni URL che comincia con `admin/` Django troverà la c
 
 ## Regex
 
-Per caso ti stai chiedendo come fa Python a far corrispondere URL e view? Beh, questa parte è difficile. Django usa `regex`, abbreviazione di "espressioni regolari". Regex ha molte, (moltissime!) regole che costituiscono un modello di ricerca. Dal momento che i regex sono un argomento avanzato, non analizzeremo nel dettaglio come funzionano.
+Per caso ti stai chiedendo come fa Python a far corrispondere URL e view? Django usa `regex`, abbreviazione di "espressioni regolari". Regex ha molte (moltissime!) regole che costituiscono un modello di ricerca. Dal momento che le regex sono un argomento avanzato, non analizzeremo nel dettaglio come funzionano.
 
 Se vuoi capire come abbiamo creato i patterns, eccoti un esempio del procedimento - ci servirà solo un sottoinsieme limitato di regole per esprimere il modello che stiamo cercando, vale a dire:
 
@@ -124,6 +124,6 @@ Tutto fatto? Apri `http://127.0.0.1:8000/` nel tuo browser per vedere il risulta
 
 Non funziona, vero? Non ti preoccupare, è solo una pagina di errore, niente di cui spaventarsi! In realtà sono molto utili:
 
-Leggerai che **non c'è un attributo 'post_list**. il *post_list* ti ricorda qualcosa? Abbiamo chiamato la nostra view proprio così! Questo significa che è tutto a posto. Semplicemente non abbiamo ancora creato la nostra *view*. Non ti preoccupare, ci arriveremo.
+Leggerai che **non c'è un attributo `post_list`**. Il `post_list` ti ricorda qualcosa? Abbiamo chiamato la nostra view proprio così! Questo significa che è tutto a posto. Semplicemente non abbiamo ancora creato la nostra *view*. Non ti preoccupare, ci arriveremo.
 
 > Se vuoi sapere di più sulla configurazione di URL Django, vai alla documentazione ufficiale: https://docs.djangoproject.com/en/1.11/topics/http/urls/

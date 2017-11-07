@@ -9,8 +9,8 @@ Prenditi una pausa e rilassati. Hai veramente fatto un passo da gigante!
 Dopo di che, assicurati di:
 
 * Seguire Django Girls su [Facebook](http://facebook.com/djangogirls) o [Twitter](https://twitter.com/djangogirls)
-* Segiure Django Girls Italia su [Facebook](https://www.facebook.com/djangogirlsIT/) o [Twitter](https://twitter.com/djangogirlsIT) per rimanere aggiornata
-* Aggiungerti al canale telegram [![DjangoGirls It](https://img.shields.io/badge/telegram-%40djangogirls__it-blue.svg)](https://t.me/djangogirls_ita) per rimanere in contatto con i Coach: è il posto giusto se hai dubbi o se vuoi continuare questo percorso
+* Seguire Django Girls Italia su [Facebook](https://www.facebook.com/djangogirlsIT/) o [Twitter](https://twitter.com/djangogirlsIT) per rimanere aggiornata
+* Aggiungerti al gruppo Telegram [![DjangoGirls It](https://img.shields.io/badge/telegram-%40djangogirls__it-blue.svg)](https://t.me/djangogirls_ita) per rimanere in contatto con i Coach: è il posto giusto se hai dubbi o se vuoi continuare questo percorso.
 
 ### Mi puoi consigliare ulteriori risorse?
 
@@ -26,6 +26,3 @@ Più avanti potrai provare le risorse elencate qui sotto. Sono tutte molto consi
 * [Il libro "Learn Python The Hard Way"](http://learnpythonthehardway.org/book/)
 * [Lezioni video "Inizia con Django"](http://www.gettingstartedwithdjango.com/)
 * [Il libro "Two Scoops of Django: Best Practices for Django 1.11 book"](https://www.twoscoopspress.com/collections/frontpage/products/two-scoops-of-django-1-11)
-
-
-

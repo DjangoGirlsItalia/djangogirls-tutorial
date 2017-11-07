@@ -31,7 +31,7 @@ Come vedi, quello che abbiamo è:
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-Significa che Django lo vede come una lista di oggetti. Ricordi dalla **Introduzione a Python** come possiamo rendere visibili le liste? Sì, con for loops! In un template Django si fanno così:
+Significa che Django lo vede come una lista di oggetti. Ricordi dalla **Introduzione a Python** come possiamo rendere visibili le liste? Sì, con i cicli for! In un template Django si fanno così:
 
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
@@ -66,15 +66,15 @@ Funziona! Ma noi vogliamo che vengano mostrate come i post statici che abbiamo c
 {% endraw %}
 {% endpre %}
 
-Tutto quello che hai messo tra {% raw %}`{% for %}`{% endraw %} e {% raw %}`{% endfor %}`{% endraw %} Sarà ripetuto per ciascun oggetto della lista. Aggiorna la tua pagina:
+Tutto quello che hai messo tra {% raw %}`{% for %}`{% endraw %} e {% raw %}`{% endfor %}`{% endraw %} sarà ripetuto per ciascun oggetto della lista. Aggiorna la tua pagina:
 
 ![Figura 13.3](images/step3.png)
 
-Ti sei accorto che abbiamo utilizzato una notazione leggermente diversa questa volta {% raw %}`{{ post.title }}`{% endraw %} oppure {% raw %}`{{ post.text }}`{% endraw %}? Stiamo introducendo i dati in ciascuno dei campi definiti nel nostro modello `Post`. Inoltre le `|linebreaksbr` stanno spingendo il testo dei post attraverso un filtro per trasformare le line-breaks in paragrafi.
+Ti sei accorta che abbiamo utilizzato una notazione leggermente diversa questa volta {% raw %}`{{ post.title }}`{% endraw %} oppure {% raw %}`{{ post.text }}`{% endraw %}? Stiamo introducendo i dati in ciascuno dei campi definiti nel nostro modello `Post`. Inoltre le `|linebreaksbr` stanno spingendo il testo dei post attraverso un filtro per trasformare le line-breaks in paragrafi.
 
-## Un' ultima cosa
+## Un'ultima cosa
 
-Sarebbe bello vedere se il tuo sito funziona ancora su Internet, giusto? Proviamo a fare il deploy su Heroku di nuovo.
+Sarebbe bello vedere che il tuo sito funzionasse ancora su Internet, giusto? Proviamo a fare il deploy su Heroku di nuovo.
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2,5,7" %}
@@ -88,7 +88,7 @@ git commit -m "Modifica i template per mostrare i post dal database."
 git push heroku master
 {% endpre %}
 
-Congratulazioni! Ora vai avanti e prova ad aggiungere un nuovo post nel tuo Admin Django (ricorda di aggiungere una published_date!), sucessivamente aggiorna il tuo sito per vedere se il post compare.
+Congratulazioni! Ora vai avanti e prova ad aggiungere un nuovo post nel tuo Admin Django (ricorda di aggiungere una `published_date`!), sucessivamente aggiorna il tuo sito per vedere se il post compare.
 
 Funziona come un incantesimo? Ne siamo fieri! Staccati dal computer per un po', ti sei guadagnata una pausa. :)
 
