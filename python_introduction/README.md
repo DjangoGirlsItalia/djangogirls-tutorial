@@ -170,7 +170,7 @@ Ha funzionato! Usiamo la funzione `str()` all'interno della funzione `len()`. `s
 - La funzione `str` converte le cose in **stringhe**
 - La funzione `int` converte le cose in **numeri interi**
 
-> Importante: possiamo convertire i numeri in testo, ma non possiamo convertire il testo in numeri - cosa potrebbe mai essere `int('hello')`?
+> Importante: possiamo convertire i numeri in testo, ma non possiamo convertire il testo in numeri - in effetti, che numero potrebbe mai essere `int('hello')`?
 
 ## Variabili
 
@@ -571,7 +571,11 @@ $
 
 Questo ti farà tornare nel prompt dei comandi.
 
-Prima, abbiamo installato un editor di codice alla sezione [installazione](../installation/README.md). Dovremo aprire l'editor ora e scrivere un po' di codice in un nuovo file:
+## Apriamo l'editor di codice
+
+Prima, abbiamo installato un editor di codice alla sezione [installazione](../installation/README.md).
+
+Ora apri l'editor, crea un nuovo file e e comincia a scrivere un po' di codice:
 
 {% filename %}code editor{% endfilename %}
 {% pre language="python" %}
@@ -580,7 +584,7 @@ print('Ciao, Django girls!')
 
 Ovviamente a questo punto sei una programmatrice Python senior, quindi sentiti libera di scrivere un po' del codice che hai imparato oggi.
 
-Ora dobbiamo salvare il file e dargli un nome descrittivo. Chiama il file **python_intro.py** e salvalo sulla tua scrivania. Puoi chiamare il file come vuoi, ma è importante assicurarsi che finisca con **.py**. L'estensione **.py** dice al Sistema Operativo che questo è un **file eseguibile python** e che Python può eseguirlo.
+Ora dobbiamo **salvare il file** e dargli un nome descrittivo. Chiama il file **python_intro.py** e salvalo sulla tua scrivania. Puoi chiamare il file come vuoi, ma è importante assicurarsi che finisca con **.py**. L'estensione **.py** dice al Sistema Operativo che questo è un **file eseguibile python** e che Python può eseguirlo.
 
 > **Note** Dovresti notare una delle cose più belle degli editori di codice: i colori! Nella console Python ogni cosa era dello stesso colore, mentre ora dovresti visualizzare la funzione `print` di un colore differente rispetto alla stringa che la segue. Questa viene chiamata "sintassi evidenziata", ed è veramente utile quando si scrive codice. Il colore serve come suggerimento, ad esempio per una stringa che non è chiusa, o un errore di digitazione di una keyword (come la `def` per le funzioni, che vedremo più avanti). Questo è uno dei motivi per cui usiamo un editor di codice. :)
 
@@ -701,6 +705,8 @@ python3 python_intro.py
 Funziona!
 {% endpre %}
 
+> Ricordati di **salvare il file** (anche nel seguito del tutorial) ogni volta che cambi qualcosa, altrimenti python non potrà vedere le modifiche che hai fatto.
+
 ### E se una condizione non è Vera?
 
 In esempi precedenti, il codice è stato eseguito solo quando le condizioni erano True. Ma Python ha anche gli `elif` e `else` statements:
@@ -803,7 +809,7 @@ Nei tre esercizi precedenti hai imparato:
 
 Ti ricordi quelle funzioni che puoi eseguire in Python come `len()`? Beh, buone notizie, ora imparerai a scrivere delle funzioni tutte tue!
 
-Una funzione è una sequenza di istruzioni che Python dovrebbe eseguire. Ogni funzione in Python inizia con la parola chiave `def`, viene assegnato un nome e può avere alcuni parametri. Iniziamo con una facile. Sostituisci il codice nel file **python_intro.py** con il seguente:
+Una funzione è una sequenza di istruzioni che Python dovrebbe eseguire. Per creare una funzione in Python devi inserire la parola chiave `def` all'inizio, seguita da un nome e puoi aggiungere anche dei parametri. Iniziamo con una facile. Sostituisci il codice nel file **python_intro.py** con il seguente:
 
 {% filename %}code editor{% endfilename %}
 {% pre language="python" %}
