@@ -74,6 +74,17 @@ Ricordi quando abbiamo parlato di un postino che controlla dove rilasciare la le
 
 Ignoriamo gli altri file per ora dal momento che non li modificheremo. L'unica cosa da ricordare è di non cancellarli per sbaglio!
 
+## Installare i pacchetti
+
+Per poter lanciare il nostro nuovo progetto Django abbiamo però bisogno di installare altre librerie.
+
+Per fortuna abbiamo tutte le informazioni che ci servono raccolte nel file `requirements_base.txt` e quindi ci è sufficiente usare il comando `pip` per installare le librerie:
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash" %}
+pip install --user -r requirements_base.txt
+{% endpre %}
+
 ## Modificare le impostazioni
 
 Facciamo qualche cambiamento in `mysite/settings.py`. Apri il file usando il code editor che hai installato prima.
