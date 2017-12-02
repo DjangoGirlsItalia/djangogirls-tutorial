@@ -142,7 +142,7 @@ Ora che siamo nella cartella giusta, puoi installare Django usando `pip`. Nella 
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2-5" %}
-pip install --user django==1.11.6 whitenoise==3.3.1
+pip install --user django~=1.11.0 whitenoise~=3.3.0
 Collecting django~=1.11.0
 Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
 Installing collected packages: django
@@ -163,7 +163,7 @@ data-collapse=true ces-->
 >
 >{% filename %}command-line{% endfilename %}
 >{% pre prompt="C:\Users\Name\djangogirls> ", output="2-5" %}
-python -m pip install django~=1.11.0
+python -m pip install django~=1.11.0 whitenoise~=3.3.0
 {% endpre %}
 
 <!--endsec-->
