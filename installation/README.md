@@ -162,7 +162,7 @@ data-collapse=true ces-->
 > La tua linea di comando potrebbe andare in freeze quando provi ad installare Django, se così fosse prova questo comando invece di quello sopra
 >
 >{% filename %}command-line{% endfilename %}
->{% pre prompt="C:\Users\Name\djangogirls> ", output="2-5" %}
+>{% pre prompt="C:\\Users\\Name\\djangogirls> ", output="2-5" %}
 python -m pip install django~=1.11.0 whitenoise~=3.3.0
 {% endpre %}
 
