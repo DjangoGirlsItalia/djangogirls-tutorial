@@ -8,17 +8,17 @@ I prossimi passaggi ti mostreranno come utilizzare quella 'finestra nera' che tu
 
 > **Nota bene** : in tutto questo tutorial usiamo sia il termine *directory* che *cartella* ma sono la stessa cosa.
 
-## Cos'è la command-line?
+## Cos'è la linea di comando?
 
-La finestra solitamente chiamata **command-line** o **interfaccia della command-line** è un'applicazione basata su testo che ti permette di visualizzare, gestire e manipolare i file sul tuo computer. Molto simile a Windows Explorer o al Finder su Mac, ma senza l'interfaccia grafica. Altri nomi per la command line sono: *cmd*, *CLI*, *prompt*, *console* o *terminal*.
+La finestra solitamente chiamata **linea di comando** o **interfaccia della linea di comando** è un'applicazione basata su testo che ti permette di visualizzare, gestire e manipolare i file sul tuo computer. Molto simile a Windows Explorer o al Finder su Mac, ma senza l'interfaccia grafica. Altri nomi per la command line sono: *cmd*, *CLI*, *prompt*, *console*, *command-line*, *prompt dei comandi*  o *terminale*.
 
-## Aprire l'interfaccia di command-line
+## Aprire l'interfaccia della linea di comando
 
-Per cominciare a sperimentare dobbiamo aprire l'interfaccia della nostra command-line.
+Per cominciare a sperimentare dobbiamo aprire l'interfaccia della nostra linea di comando.
 
 <!--sec data-title="Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Vai in Start menu → Windows System → Command Prompt.
+Vai in Start menu → Accessori → Prompt dei comandi.
 
 > Per le vecchie versioni di windows, guarda in Start menu → Windows System → Command Prompt.
 
@@ -355,7 +355,7 @@ rm -r practice
 {% filename %}command-line{% endfilename %}
 {% pre prompt=">", language="powershell", output="2" %}
 rmdir /S practice
-practice, Are you sure <Y/N>? Y
+practice, Procedere con l'operazione <S/N>? S
 {% endpre %}
 
 <!--endsec-->

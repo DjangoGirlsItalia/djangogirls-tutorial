@@ -80,7 +80,7 @@ Il tuo file `mysite/urls.py` ora dovrebbe avere questo aspetto:
 
 [...]
 """
-from django.conf.urls import url
+from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
@@ -95,7 +95,7 @@ Quando si scrivono espressioni regolari in Python lo si fa sempre con `r` davant
 
 ## blog.urls
 
-Crea un nuovo file `blog/urls.py`. Perfetto! Ora aggiungi queste prime due righe:
+Crea un nuovo file `urls.py` dentro la directory `blog`. Perfetto! Ora aggiungi queste prime due righe:
 
 {% filename %}blog/urls.py{% endfilename %}
 {% pre language="python" %}
@@ -125,5 +125,7 @@ Tutto fatto? Apri `http://127.0.0.1:8000/` nel tuo browser per vedere il risulta
 Non funziona, vero? Non ti preoccupare, è solo una pagina di errore, niente di cui spaventarsi! In realtà sono molto utili:
 
 Leggerai che **non c'è un attributo `post_list`**. Il `post_list` ti ricorda qualcosa? Abbiamo chiamato la nostra view proprio così! Questo significa che è tutto a posto. Semplicemente non abbiamo ancora creato la nostra *view*. Non ti preoccupare, ci arriveremo.
+
+> In alcuni casi l'errore potrebbe comparire nel prompt quando lanci il comando `runserver`. In ogni caso potremo correggerlo nel prossimo passo.
 
 > Se vuoi sapere di più sulla configurazione di URL Django, vai alla documentazione ufficiale: https://docs.djangoproject.com/en/1.11/topics/http/urls/

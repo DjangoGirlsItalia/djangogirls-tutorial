@@ -28,7 +28,7 @@ Una cosa a cui fare **attenzione**: in una schermata dell'installazione guidata,
 
 ![Non dimenticare di aggiungere Python al Path](./images/python-installation-options.png)
 
-Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più avanti nel tutorial). Per adesso, se hai bisogno di aprirla, vai nel menù Start → Windows System → Command Prompt. Puoi anche tenere premuto il tasto `Windows` e premere il pulsante `R` finché la finestra `Run` non compare. Per aprire la linea di comando ti basterà scrivere `cmd` e premere `enter` nella finestra `Run`.
+Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più avanti nel tutorial). Per adesso, se hai bisogno di aprirla, vai nel menù Start → Accessori → Prompt dei comandi . Puoi anche tenere premuto il tasto `Windows` e premere il pulsante `R` finché la finestra `Run` non compare. Per aprire la linea di comando ti basterà scrivere `cmd` e premere `enter` nella finestra `Run`.
 (Nelle nuove versioni di Windows potrebbe essere necessario cercare `Prompt dei comandi` perché a volte è nascosta.)
 
 ![Scrivi "cmd" nella finestra "Run"](/installation/images/windows-plus-r.png)
@@ -128,7 +128,7 @@ Se hai dubbi o se qualcosa è andato storto e non hai idea di cosa fare dopo, ch
 
 ## Installare Django
 
-Per questo tutorial useremo una nuova directory `djangogirls` dalla tua home directory, quindi apri una nuova linea di comando e digita:
+Per questo tutorial useremo una nuova directory `djangogirls` dalla tua home directory, ovvero la cartella principale del tuo utente, quindi apri una nuova linea di comando e digita:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
@@ -142,7 +142,7 @@ Ora che siamo nella cartella giusta, puoi installare Django usando `pip`. Nella 
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2-5" %}
-pip install --user django==1.11.6 whitenoise==3.3.1
+pip install --user django~=1.11.0 whitenoise~=3.3.0
 Collecting django~=1.11.0
 Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
 Installing collected packages: django
@@ -162,8 +162,8 @@ data-collapse=true ces-->
 > La tua linea di comando potrebbe andare in freeze quando provi ad installare Django, se così fosse prova questo comando invece di quello sopra
 >
 >{% filename %}command-line{% endfilename %}
->{% pre prompt="C:\Users\Name\djangogirls> ", output="2-5" %}
-python -m pip install django~=1.11.0
+>{% pre prompt="C:\\Users\\Name\\djangogirls> ", output="2-5" %}
+python -m pip install django~=1.11.0 whitenoise~=3.3.0
 {% endpre %}
 
 <!--endsec-->
