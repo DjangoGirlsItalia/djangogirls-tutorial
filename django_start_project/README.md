@@ -16,7 +16,7 @@ Dovresti eseguire nella tua console macOS o Linux il seguente comando **(non dim
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
-django-admin startproject --template=https://github.com/simobasso/startproject/archive/master.zip --name=Procfile mysite .
+python -m django startproject --template=https://github.com/simobasso/startproject/archive/master.zip --name=Procfile mysite .
 {% endpre %}
 
 > Il punto `.` è criuciale perchè dice allo script di installare Django nella cartella corrente (della quale il periodo `.` è una comoda reference).
@@ -32,7 +32,7 @@ Su Windows devi lanciare il comando che segue. **(non dimenticarti di aggiungere
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt=">", language="powershell" %}
-django-admin startproject --template=https://github.com/simobasso/startproject/archive/master.zip --name=Procfile mysite .
+python -m django startproject --template=https://github.com/simobasso/startproject/archive/master.zip --name=Procfile mysite .
 {% endpre %}
 
 
@@ -42,7 +42,7 @@ django-admin startproject --template=https://github.com/simobasso/startproject/a
 
 <!--endsec-->
 
-`django-admin.py` è uno script che creerà le cartelle ed i file per te. Adesso dovresti avere una struttura di directory simile a questa:
+`startproject` è uno script che creerà le cartelle ed i file per te. Adesso dovresti avere una struttura di directory simile a questa:
 
 {% filename %}command-line{% endfilename %}
 {% pre language="bash", output="1-7" %}
