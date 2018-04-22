@@ -1,7 +1,7 @@
 # Il tuo primo progetto Django!
 
 > Parte di questo capitolo è basato su esercitazioni di Geek Girls (https://github.com/ggcarrots/django-carrots).
-> 
+>
 > Parti di questo capitolo sono basate sul [django-marcador tutorial](http://django-marcador.keimlink.de/) sotto la licenza Creative Commons Attributions-ShareAlike 4.0 International License. Il tutorial di django-marcador è protetto da copyright di Markus Zapke-Gründemann et al.
 
 Creeremo un semplice blog!
@@ -9,6 +9,55 @@ Creeremo un semplice blog!
 Il primo passo è quello di iniziare un nuovo progetto di Django. Fondamentalmente, questo significa che eseguiremo alcuni script forniti da Django che creerà per noi lo scheletro di un progetto Django. Si tratta solo di un insieme di directory e file che verranno utilizzati dopo.
 
 I nomi di alcuni file e cartelle sono molto importanti per Django. Non dovresti modificare i nomi dei file che stiamo per creare. Neanche spostarli in un altro posto è una buona idea. Django deve mantenere una determinata struttura per essere in grado di trovare le cose importanti.
+
+La prima cosa è essere sicura di essrre nella cartella `djangogirls` che abbiamo creato prima.
+
+Per verificare puoi digitare un comando che ti dirà in quale directory sei attualmente:
+
+<!--sec data-title="macOS e Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2" %}
+pwd
+/Users/olasitarska/djangogirls
+{% endpre %}
+
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_cd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt=">", language="powershell", output="2" %}
+cd
+C:\Users\olasitarska\djangogirls
+{% endpre %}
+
+<!--endsec-->
+
+Se dovessi vedere un percorso diverso (a parte il nome `olasitarska`), puoi accedere alla cartella con questi comandi
+
+
+<!--sec data-title="macOS e Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2" %}
+cd
+cd djangogirls
+{% endpre %}
+
+<!--endsec-->
+
+<!--sec data-title="Windows" data-id="windows_cd2" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt=">", language="powershell", output="2" %}
+cd %HOME%
+cd djangogirls
+{% endpre %}
+
+<!--endsec-->
+
+Ecco fatto, ora puoi procedere a creare il tuo primo progetto Django:
 
 <!--sec data-title="Creare un Progetto: macOS o Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
@@ -19,7 +68,7 @@ Dovresti eseguire nella tua console macOS o Linux il seguente comando **(non dim
 python -m django startproject --template=https://github.com/simobasso/startproject/archive/master.zip --name=Procfile mysite .
 {% endpre %}
 
-> Il punto `.` è criuciale perchè dice allo script di installare Django nella cartella corrente (della quale il periodo `.` è una comoda reference).
+> Il punto `.` è cruciale perchè dice allo script di installare Django nella cartella corrente (della quale il periodo `.` è una comoda reference).
 
 > **Note** Quando scrivi il comando qui sopra, ricordati di scrivere solo quello che c'è dopo il simbolo `$`.
 
@@ -42,7 +91,9 @@ python -m django startproject --template=https://github.com/simobasso/startproje
 
 <!--endsec-->
 
-`startproject` è uno script che creerà le cartelle ed i file per te. Adesso dovresti avere una struttura di directory simile a questa:
+`django-admin.py` è uno script che creerà le cartelle ed i file per te.
+
+Se apri il programma di gestione file e apri la cartella `djangogirls`, dovresti vedere una struttura di directory simile a questa:
 
 {% filename %}command-line{% endfilename %}
 {% pre language="bash", output="1-7" %}
