@@ -198,4 +198,4 @@ git push heroku master
 https://<nome-del-blog>.herokuapp.com
 {% endpre %}
 
-Il tuo aggiornamento dovrebbe essere applicato! Vai avanti ed aggiorna il tuo sito nel brower. Le modifiche dovrebbero essere visibili :)
+Il tuo aggiornamento dovrebbe essere applicato! Vai avanti ed aggiorna il tuo sito nel browser. Le modifiche dovrebbero essere visibili :)
