@@ -4,6 +4,19 @@ Nel workshop costruirai un blog, e ci sono alcuni task dedicati all'Installazion
 
 Assicurati di avere il tuo coach a disposizione in caso di dubbi o problemi.
 
+I programmi che andremo a installare sono:
+
+* [Python](#installare-python)
+* [Django](#installare-django)
+* [Git](#installare-git)
+* [un editor di codice](#installare-un-editor-di-codice)
+* [Heroku](#heroku-toolbelt)
+
+Ricordati anche di creare due account:
+
+* [Github](#creare-un-account-su-github)
+* [Heroku](#heroku)
+
 Buona fortuna!
 
 # Installare Python
@@ -18,9 +31,9 @@ Per prima cosa bisogna controllare se la tua verisione di Windows è a 32-bit o 
 
 ![Tipo sitema](/installation/images/sistemtype.jpg)
 
-Puoi scaricare Python per Windows dal sito web https://www.python.org/downloads/windows/. Fai click sul link "Latest Python 3 Release - Python x.x.x".
+Puoi scaricare Python per Windows dal sito web ufficiale.
 
-Scorri la pagina fino al fondo e se la tua versione di Windows è **64-bit**, scarica **Windows x86-64 executable installer**. Altrimenti, scarica **Windows x86 executable installer**.
+Vai a [questo link](https://www.python.org/downloads/release/python-365/) e scorri la pagina fino al fondo e se la tua versione di Windows è **64-bit**, scarica **Windows x86-64 executable installer**. Altrimenti, scarica **Windows x86 executable installer**.
 
 Dopo aver scaricato l'installer, lo dovresti eseguire (cliccaci sopra due volte) e segui le istruzioni. È importante ricordare il percorso (la directory) dove ha installato Python. Più tardi sarà necessario!
 
