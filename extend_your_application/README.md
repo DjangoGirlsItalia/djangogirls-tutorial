@@ -43,7 +43,7 @@ Vogliamo creare un link che dal titolo di un post facente parte dell'elenco di a
 
 È arrivata l'ora di spiegare il misterioso {% raw %}`{% url 'post_detail' pk=post.pk %}`{% endraw %}. Come avrai capito, il simbolo {% raw %}`{% %}`{% endraw %} significa che stiamo usando i template tag di Django. Questa volta ne useremo uno che creerà un URL per noi!
 
-La parte `post_detail` significa che Django si aspetterà un URL in `blog/urls.py` con `name='post_detail'` 
+La parte `post_detail` significa che Django si aspetterà un URL in `blog/urls.py` con `name='post_detail'`
 
 E invece `pk=post.pk`? `pk` è un abbreviazione per **primary key**, che è un nome univoco per ogni oggetto presente nel database. Siccome non abbiamo creato una primary key nel nostro modello di Post, Django ne crea una per noi (di default è un numero che viene incrementato di uno per ogni record: es. 1, 2, 3) e la aggiunge come un campo del chiamato `pk` per ogniuno dei nostri post. Possiamo usare la primary key scrivendo `post.pk`, esattamente come facciamo per tutti gli altri campi (`title`, `autore`, ecc.) nel nostro oggetto Post.
 
@@ -72,10 +72,10 @@ urlpatterns = [
 
 Questa parte `^post/(?P<pk>[0-9]+)/$` sembra spaventosa, ma non preoccuparti - te la spiegheremo:
 
-- inizia ancora con `^` - "l'inizio" 
-- `post/` semplicemente significa che dopo l'inizio, l'URL dovrebbe contenere la parola `post` **e** `/`. Fin qui tutto bene. 
-- `(?P<pk>\d+)` - questa parte è più complicata. Significa che Django prenderà tutto quello che hai messo qui e lo trasferirà ad una view come variabile denominata `pk` (nota che è lo stesso nome che abbiamo usato in `blog/templates/blog/post_list.html!`). `\d` ci dice anche che la variabile può essere solo un numero, non una lettera (quindi tutto tra 0 e 9). `+` significa che ci devono essere una o più cifre. Quindi qualcosa di simile a `http://127.0.0.1:8000/post//` non è valido, ma `http://127.0.0.1:8000/post/1234567890/` è perfetto! 
-- `/` - Quindi ci serve `/` di nuovo 
+- inizia ancora con `^` - "l'inizio"
+- `post/` semplicemente significa che dopo l'inizio, l'URL dovrebbe contenere la parola `post` **e** `/`. Fin qui tutto bene.
+- `(?P<pk>\d+)` - questa parte è più complicata. Significa che Django prenderà tutto quello che hai messo qui e lo trasferirà ad una view come variabile denominata `pk` (nota che è lo stesso nome che abbiamo usato in `blog/templates/blog/post_list.html!`). `\d` ci dice anche che la variabile può essere solo un numero, non una lettera (quindi tutto tra 0 e 9). `+` significa che ci devono essere una o più cifre. Quindi qualcosa di simile a `http://127.0.0.1:8000/post//` non è valido, ma `http://127.0.0.1:8000/post/1234567890/` è perfetto!
+- `/` - Quindi ci serve `/` di nuovo
 - `$` - "fine"!
 
 Ciò significa che se digiti `http://127.0.0.1:8000/post/5/` nel tuo browser, Django capirà che stai cercando una __view__ chiamata `post_detail` e trasferirà l'informazione che "`pk` è uguale a `5`" a quella __view__.
@@ -145,7 +145,7 @@ Creeremo un file in `blog/templates/blog` chiamato `post_detail.html`.
 
 Il risultato somiglierà a questo:
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 {% pre language="html" %}
 {% raw %}
 {% extends 'blog/base.html' %}
