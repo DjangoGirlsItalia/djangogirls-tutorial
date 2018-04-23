@@ -10,7 +10,7 @@ Il primo passo è quello di iniziare un nuovo progetto di Django. Fondamentalmen
 
 I nomi di alcuni file e cartelle sono molto importanti per Django. Non dovresti modificare i nomi dei file che stiamo per creare. Neanche spostarli in un altro posto è una buona idea. Django deve mantenere una determinata struttura per essere in grado di trovare le cose importanti.
 
-La prima cosa è essere sicura di essrre nella cartella `djangogirls` che abbiamo creato prima.
+La prima cosa è assicurarsi di essere nella cartella `djangogirls` che abbiamo creato prima.
 
 Per verificare puoi digitare un comando che ti dirà in quale directory sei attualmente:
 
@@ -36,7 +36,6 @@ C:\Users\olasitarska\djangogirls
 
 Se dovessi vedere un percorso diverso (a parte il nome `olasitarska`), puoi accedere alla cartella con questi comandi
 
-
 <!--sec data-title="macOS e Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
@@ -51,7 +50,7 @@ cd djangogirls
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt=">", language="powershell", output="2" %}
-cd %HOME%
+cd %HOMEPATH%
 cd djangogirls
 {% endpre %}
 
