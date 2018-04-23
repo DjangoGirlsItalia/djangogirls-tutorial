@@ -100,7 +100,9 @@ heroku create <nome-del-blog>
 Creating app... done, ⬢ <nome-del-blog>
 {% endpre %}
 
-> **Note** Sostituisci a <nome-del-blog> un nome per il tuo blog considerando che sarà quello che apparirà nella url come ad esempio `https://<nome-del-blog>.herokuapp.com`
+> **Note** Sostituisci a <nome-del-blog> (**comprese le parentesi <>**) un nome per il tuo blog considerando che sarà quello che apparirà nella url come ad esempio `https://<nome-del-blog>.herokuapp.com`.
+
+> **Warning** Ricordati che il nome deve essere composto solo di caratteri minuscoli, numeri, caratteri `-` e `_`. Non sono ammessi altri caratteri, e in particolare non sono ammessi spazi nel nome.
 
 L'ultima cosa che ci rimane da fare è caricare il nostro codice su Heroku e per farlo utilizzeremo `git`. Il prossimo comando che digiterai oltre a caricare il nostro codice sulla nostra app installerà Python, installerà per noi le dipendenze, raccoglierà i file statici e avvierà la nostra applicazione.
 

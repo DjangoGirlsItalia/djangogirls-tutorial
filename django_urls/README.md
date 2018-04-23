@@ -122,10 +122,10 @@ Tutto fatto? Apri `http://127.0.0.1:8000/` nel tuo browser per vedere il risulta
 
 ![Errore](images/error1.png)
 
+> ** Note **: In alcuni casi l'errore potrebbe comparire nel prompt quando lanci il comando `runserver`. In ogni caso potremo correggerlo nel prossimo passo.
+
 Non funziona, vero? Non ti preoccupare, è solo una pagina di errore, niente di cui spaventarsi! In realtà sono molto utili:
 
 Leggerai che **non c'è un attributo `post_list`**. Il `post_list` ti ricorda qualcosa? Abbiamo chiamato la nostra view proprio così! Questo significa che è tutto a posto. Semplicemente non abbiamo ancora creato la nostra *view*. Non ti preoccupare, ci arriveremo.
-
-> In alcuni casi l'errore potrebbe comparire nel prompt quando lanci il comando `runserver`. In ogni caso potremo correggerlo nel prossimo passo.
 
 > Se vuoi sapere di più sulla configurazione di URL Django, vai alla documentazione ufficiale: https://docs.djangoproject.com/en/1.11/topics/http/urls/

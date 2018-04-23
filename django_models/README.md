@@ -71,7 +71,8 @@ Per mantenere tutto ordinato, creeremo un'applicazione diversa all'interno del n
 python3 manage.py startapp blog
 {% endpre %}
 
-Noterai che si è creata una nuova cartella `blog` e che ora contiene alcuni file. Le nostre cartelle ed i nostri file nel nostro progetto si dovrebbero vedere così:
+Aprendo il programma di gestione file, nella cartella `djangogirls`, noterai che si è creata una nuova cartella `blog` e che ora contiene alcuni file.
+Quelle sotto dovrebbero essere le cartelle e i file del nostro progetto:
 
 {% filename %}command-line{% endfilename %}
 {% pre language="bash", output="1-7" %}
@@ -184,7 +185,9 @@ Migrations for 'blog':
   - Create model Post
 {% endpre %}
 
-Django ci ha preparato un file di migrazione che dobbiamo applicare nel nostro database. Digita `python manage.py migrate blog` e l'output dovrebbe essere:
+Django ci ha preparato un file di migrazione che dobbiamo applicare nel nostro database.
+
+Digita `python manage.py migrate blog` e l'output dovrebbe essere:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2-6" %}
