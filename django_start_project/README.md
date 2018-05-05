@@ -36,7 +36,7 @@ C:\Users\olasitarska\djangogirls
 
 Se dovessi vedere un percorso diverso (a parte il nome `olasitarska`), puoi accedere alla cartella con questi comandi
 
-<!--sec data-title="macOS e Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
+<!--sec data-title="macOS e Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2" %}
@@ -46,7 +46,7 @@ cd djangogirls
 
 <!--endsec-->
 
-<!--sec data-title="Windows" data-id="windows_cd2" data-collapse=true ces-->
+<!--sec data-title="Windows" data-id="windows_cd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt=">", language="powershell", output="2" %}
