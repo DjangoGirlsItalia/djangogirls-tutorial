@@ -1,0 +1,4 @@
+[build]
+  base    = ""
+  publish = "_book"
+  command = "npm run build" 
