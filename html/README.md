@@ -152,7 +152,7 @@ Quello che vogliamo è visualizzare i veri post aggiunti nel nel nostro Django a
 
 Sarebbe bello vedere tutto questo live su Internet, giusto? Facciamo un altro deploy su Heroku:
 
-### Committa e pubblica il tuo codice su GitHub
+### Committa e pubblica il tuo codice su Heroku
 
 Prima di tutto, vediamo quali file sono cambiati dall'ultimo deploy:
 
@@ -186,7 +186,7 @@ git commit -m "Ho cambiato l'HTML per questo sito."
 
 > **Note** Assicurati di usare doppie virgolette attorno al messaggio di commit.
 
-Quando hai finito, caricheremo (push) le nostre modifiche su Github:
+Quando hai finito, caricheremo (push) le nostre modifiche su Heroku:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}

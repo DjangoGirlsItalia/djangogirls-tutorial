@@ -12,10 +12,7 @@ I programmi che andremo a installare sono:
 * [un editor di codice](#installare-un-editor-di-codice)
 * [Heroku](#heroku-toolbelt)
 
-Ricordati anche di creare due account:
-
-* [Github](#creare-un-account-su-github)
-* [Heroku](#heroku)
+Ricordati anche di creare un account su [Heroku](#heroku).
 
 Buona fortuna!
 
@@ -290,10 +287,6 @@ sudo zypper install git
 {% endpre %}
 
 <!--endsec-->
-
-# Creare un account su GitHub
-
-Vai su [GitHub.com](https://www.github.com) e iscriviti per un nuovo account gratuito.
 
 # Heroku
 
