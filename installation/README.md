@@ -148,6 +148,10 @@ Se hai dubbi o se qualcosa è andato storto e non hai idea di cosa fare dopo, ch
 >
 > Una parte di questo capitolo di basa sul [django-marcador tutorial](http://django-marcador.keimlink.de/) sotto licenza Creative Commons Attribution-ShareAlike 4.0 International License. Il tutorial di django-marcador è protetto da copyright di Markus Zapke-Gründemann et al.
 
+Ritroverai questo passaggio anche più avanti nel tutorial: puoi ignorarlo quando lo incontrerai di nuovo, se userai la stessa cartella durante la giornata del workshop.
+
+In questa fase ci serve per essere sicuri che sia tutto installato correttamente.
+
 ## Installare Django
 
 Per questo tutorial useremo una nuova directory `djangogirls` dalla tua home directory, ovvero la cartella principale del tuo utente, quindi apri una nuova linea di comando e digita:
@@ -160,15 +164,15 @@ cd djangogirls
 
 Non ti preoccupare se non sai cosa vogliano dire questi comandi, più avanti nel tutorial li guarderemo tutti.
 
-Ora che siamo nella cartella giusta, puoi installare Django usando `pip`. Nella console, esegui `pip install --user django~=1.11.0` (nota che usiamo una tilde seguita da un simbolo di uguale: `~=`).
+Ora che siamo nella cartella giusta, puoi installare Django usando `pip`. Nella console, esegui `pip install --user django~=2.1.0` (nota che usiamo una tilde seguita da un simbolo di uguale: `~=`).
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2-5" %}
-pip install --user django~=1.11.0 whitenoise~=3.3.0
-Collecting django~=1.11.0
-Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
+pip install --user django~=2.1 whitenoise~=4.1.0
+Collecting django~=2.1
+Downloading Django-2.1.7-py2.py3-none-any.whl (6.8MB)
 Installing collected packages: django
-Successfully installed django-1.11.3
+Successfully installed django-2.1.7
 {% endpre %}
 
 <!--sec data-title="Windows" data-id="django_err_windows"

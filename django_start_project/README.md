@@ -151,7 +151,7 @@ TIME_ZONE = 'Europe/Rome'
 {% endpre %}
 
 Un'altra cosa molto utile da avere è il sito nella tua lingua e per farlo, come per l'orario, esiste un'opzione che ci permette di settare il codice della lingua.
-Il codice della lingua è un identificativo univoco per le lingue ed è composto da due parti: una per la lingua, come ad esempio `en` per l'inglese o `de` per il tedesco, l'altra con il paese come `uk` per l'Inghilterra. [Django ha già pronto un serie di traduzioni pronte](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+Il codice della lingua è un identificativo univoco per le lingue ed è composto da due parti: una per la lingua, come ad esempio `en` per l'inglese o `de` per il tedesco, l'altra con il paese come `uk` per l'Inghilterra. [Django ha già pronto un serie di traduzioni pronte](https://docs.djangoproject.com/en/2.1/ref/settings/#language-code).
 
 Scegli il codice che ti interessa dal link qui sopra e modifica l'opzione di conseguenza:
 
