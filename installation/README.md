@@ -33,7 +33,7 @@ Per prima cosa bisogna controllare se la tua verisione di Windows è a 32-bit o 
 
 Puoi scaricare Python per Windows dal sito web ufficiale.
 
-Vai a [questo link](https://www.python.org/downloads/release/python-365/) e scorri la pagina fino al fondo e se la tua versione di Windows è **64-bit**, scarica **Windows x86-64 executable installer**. Altrimenti, scarica **Windows x86 executable installer**.
+Devi andare sul sito https://www.python.org/downloads/windows/. Fai click sul link "Latest Python 3 Release - Python x.x.x" e scarica il programma d'installazione di Python, se la tua versione di Windows è **64-bit**, scarica **Windows x86-64 executable installer**. Altrimenti, scarica **Windows x86 executable installer**.
 
 Dopo aver scaricato l'installer, lo dovresti eseguire (cliccaci sopra due volte) e segui le istruzioni. È importante ricordare il percorso (la directory) dove ha installato Python. Più tardi sarà necessario!
 
@@ -60,7 +60,7 @@ Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più av
 <!--sec data-title="macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Prima di installare Python su macOS, devi assicurarti che nelle impostazioni del tuo Mac permettano l'installazione di applicazioni che non provengono dell'App Store. Vai nelle `Preferenze di Sistema` cliccando sulla mela in alto a sinistra, fai click su `Sicurezza & Privacy`, qundi sul tab `Generali`. Se `Consenti app scaricate da:` è impostato su `App Store` cambialo in `App Store e sviluppatori identificati`.
+> **Note** Prima di installare Python su macOS, devi assicurarti che nelle impostazioni del tuo Mac permettano l'installazione di applicazioni che non provengono dell'App Store. Vai nelle `Preferenze di Sistema` cliccando sulla mela in alto a sinistra, fai click su `Sicurezza & Privacy`, quindi sul tab `Generali`. Se `Consenti app scaricate da:` è impostato su `App Store` cambialo in `App Store e sviluppatori identificati`.
 
 ![App Store e sviluppatori identificati](./images/AppStore.png)
 
@@ -70,6 +70,15 @@ Devi andare sul sito https://www.python.org/downloads/mac-osx/. Fai click sul li
 - Fai doppio click sul file appena scaricato per iniziare l'installazione.
 
 Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più avanti nel tutorial). Per adesso, se hai bisogno di aprirla, vai nel `Launchpad` e apri l'app `Terminale`. Puoi anche tenere premere contemporanemente il tasto `mela + spazio` e comparirà la barra di ricerca. Per aprire la linea di comando ti basterà scrivere `Terminale` e premere `enter`.
+
+- Una volta aperto il terminale, dovrai digitare il seguente comando (il percorso potrebbe essere **/Applications/Python\ 3.6/Install\ Certificates.command** a seconda della versione di python installata. Questo serve ad aggiornare dei componenti del tuo computer per far funzionare correttamente Python.
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2" %}
+/Applications/Python\ 3.7/Install\ Certificates.command
+{% endpre %}
+
+Non aver paura: in caso di dubbi o problemi, chiedi al tuo coach!
 
 <!--endsec-->
 
