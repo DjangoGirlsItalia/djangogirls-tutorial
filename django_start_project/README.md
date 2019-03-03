@@ -68,7 +68,7 @@ Dovresti eseguire nella tua console macOS o Linux il seguente comando **(non dim
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
-python3 -m django startproject --template=https://github.com/simobasso/startproject/archive/master.zip --name=Procfile mysite .
+python3 -m django startproject --template=https://github.com/DjangoGirlsItalia/startproject/archive/master.zip --name=Procfile mysite .
 {% endpre %}
 
 > Il punto `.` è cruciale perchè dice allo script di installare Django nella cartella corrente (della quale il periodo `.` è una comoda reference).
