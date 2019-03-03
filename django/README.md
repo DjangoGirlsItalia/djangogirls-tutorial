@@ -16,7 +16,7 @@ Immagina una cassetta delle lettere che monitora tutte le lettere in entrata (ri
 
 ## Cosa succede quando qualcuno richiede un sito Web dal tuo server?
 
-Quando una richiesta arriva al web server, viene passata a Django che prova a capire che cosa é stato veramente richiesto. Django prende l'indirizzo della pagina web e cerca di capire cosa deve fare. Questa parte viene svolta da Django **urlresolver** (nota che l'indirizzo di una pagina web si chiama URL - Uniform Resource Locator - per cui il nome *urlresolver* acquista significato). Non é molto intelligente - ha bisogno di una serie di schemi e in seguito prova a far corrispondere l'URL. Django controlla questi modelli o schemi da cima a fondo e se qualcosa corrisponde a quel punto Django passa la richiesta alla funzione associata (che si chiama *view*).
+Quando una richiesta arriva al web server, viene passata a Django che prova a capire che cosa é stato veramente richiesto. Django prende l'indirizzo della pagina web e cerca di capire cosa deve fare. Questa parte viene svolta da Django **urlresolver** (nota che l'indirizzo di una pagina web si chiama URL - Uniform Resource Locator - per cui il nome *urlresolver* acquista significato). Non è molto intelligente - ha bisogno di una serie di schemi e in seguito prova a far corrispondere l'URL. Django controlla questi modelli o schemi da cima a fondo e se qualcosa corrisponde a quel punto Django passa la richiesta alla funzione associata (che si chiama *view*).
 
 Immagina un postino con una lettera. Sta camminando per la strada e controlla ogni numero civico mettendolo a confronto con quello sulla lettera. Se corrisponde, mette lì la lettera. Questo è il modo in cui l'urlresolver funziona!
 

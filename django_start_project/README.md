@@ -56,6 +56,10 @@ cd djangogirls
 
 <!--endsec-->
 
+> Nota: Nel passaggio di installazione abbiamo installato Django sul nostro computer, con il passaggio seguente, invece, useremo Django per creare il nostro sito.
+>
+> Nel secondo caso è già installato e lo sfruttiamo per poter creare il blog e fare meno fatica.
+
 Ecco fatto, ora puoi procedere a creare il tuo primo progetto Django:
 
 <!--sec data-title="Creare un Progetto: macOS o Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
@@ -90,7 +94,7 @@ python -m django startproject --template=https://github.com/simobasso/startproje
 
 <!--endsec-->
 
-`django-admin.py` è uno script che creerà le cartelle ed i file per te.
+Questo comando creerà per te le cartelle ed i file base del progetto.
 
 Se apri il programma di gestione file e apri la cartella `djangogirls`, dovresti vedere una struttura di directory simile a questa:
 
