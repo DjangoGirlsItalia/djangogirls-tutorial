@@ -56,6 +56,10 @@ cd djangogirls
 
 <!--endsec-->
 
+> Nota: Nel passaggio di installazione abbiamo installato Django sul nostro computer, con il passaggio seguente, invece, useremo Django per creare il nostro sito.
+>
+> Nel secondo caso è già installato e lo sfruttiamo per poter creare il blog e fare meno fatica.
+
 Ecco fatto, ora puoi procedere a creare il tuo primo progetto Django:
 
 <!--sec data-title="Creare un Progetto: macOS o Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
@@ -64,7 +68,7 @@ Dovresti eseguire nella tua console macOS o Linux il seguente comando **(non dim
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
-python -m django startproject --template=https://github.com/simobasso/startproject/archive/master.zip --name=Procfile mysite .
+python3 -m django startproject --template=https://github.com/DjangoGirlsItalia/startproject/archive/master.zip --name=Procfile mysite .
 {% endpre %}
 
 > Il punto `.` è cruciale perchè dice allo script di installare Django nella cartella corrente (della quale il periodo `.` è una comoda reference).
@@ -90,7 +94,7 @@ python -m django startproject --template=https://github.com/simobasso/startproje
 
 <!--endsec-->
 
-`django-admin.py` è uno script che creerà le cartelle ed i file per te.
+Questo comando creerà per te le cartelle ed i file base del progetto.
 
 Se apri il programma di gestione file e apri la cartella `djangogirls`, dovresti vedere una struttura di directory simile a questa:
 
@@ -132,7 +136,7 @@ Per fortuna abbiamo tutte le informazioni che ci servono raccolte nel file `requ
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
-pip install --user -r requirements_base.txt
+pip3 install --user -r requirements_base.txt
 {% endpre %}
 
 ## Modificare le impostazioni
@@ -151,7 +155,7 @@ TIME_ZONE = 'Europe/Rome'
 {% endpre %}
 
 Un'altra cosa molto utile da avere è il sito nella tua lingua e per farlo, come per l'orario, esiste un'opzione che ci permette di settare il codice della lingua.
-Il codice della lingua è un identificativo univoco per le lingue ed è composto da due parti: una per la lingua, come ad esempio `en` per l'inglese o `de` per il tedesco, l'altra con il paese come `uk` per l'Inghilterra. [Django ha già pronto un serie di traduzioni pronte](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+Il codice della lingua è un identificativo univoco per le lingue ed è composto da due parti: una per la lingua, come ad esempio `en` per l'inglese o `de` per il tedesco, l'altra con il paese come `uk` per l'Inghilterra. [Django ha già pronto un serie di traduzioni pronte](https://docs.djangoproject.com/en/2.1/ref/settings/#language-code).
 
 Scegli il codice che ti interessa dal link qui sopra e modifica l'opzione di conseguenza:
 

@@ -14,7 +14,7 @@ Apri la tua console locale (non su Heroku) e digita questo comando:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
-python manage.py shell
+python3 manage.py shell
 {% endpre %}
 
 L'effetto dovrebbe essere come questo:

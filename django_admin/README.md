@@ -35,6 +35,8 @@ Password (again):
 Superuser created successfully.
 {% endpre %}
 
+> Nota: Nel caso tu abbia inserito una password molto semplice, potesti ricevere un messaggio tipo `Questa password è troppo corta. Deve contenere almeno 8 caratteri. Bypass password validation and create user anyway? [y/N]:` Ai fini del workshop rispondi tranquillamente `Y`. A cose normale è opportuno selezionare una password più complessa.
+
 Torna nel tuo browser e fai il log in con le credenziali di superuser che hai scelto, dovresti vedere la dashboard d'amministrazione di Django.
 
 ![Django admin](images/django_admin3.png)
@@ -45,6 +47,6 @@ Assicurati che almeno due o tre post (ma non tutti) abbiano la data in cui sono 
 
 ![Django admin](images/edit_post3.png)
 
-Se vuoi sapere di più riguardo l'admin di Django, dovresti dare un'occhiata alla documentazione di Django: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+Se vuoi sapere di più riguardo l'admin di Django, dovresti dare un'occhiata alla documentazione di Django: https://docs.djangoproject.com/en/2.1/ref/contrib/admin/
 
 Questo è un buon momento per andare a prendere un caffè (o tè) o qualcosa da mangiare per riprendere le forze. Hai creato il tuo primo modello Django - ti meriti una piccola pausa!

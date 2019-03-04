@@ -12,10 +12,7 @@ I programmi che andremo a installare sono:
 * [un editor di codice](#installare-un-editor-di-codice)
 * [Heroku](#heroku-toolbelt)
 
-Ricordati anche di creare due account:
-
-* [Github](#creare-un-account-su-github)
-* [Heroku](#heroku)
+Ricordati anche di creare un account su [Heroku](#heroku).
 
 Buona fortuna!
 
@@ -33,7 +30,7 @@ Per prima cosa bisogna controllare se la tua verisione di Windows è a 32-bit o 
 
 Puoi scaricare Python per Windows dal sito web ufficiale.
 
-Vai a [questo link](https://www.python.org/downloads/release/python-365/) e scorri la pagina fino al fondo e se la tua versione di Windows è **64-bit**, scarica **Windows x86-64 executable installer**. Altrimenti, scarica **Windows x86 executable installer**.
+Devi andare sul sito https://www.python.org/downloads/windows/. Fai click sul link "Latest Python 3 Release - Python x.x.x" e scarica il programma d'installazione di Python, se la tua versione di Windows è **64-bit**, scarica **Windows x86-64 executable installer**. Altrimenti, scarica **Windows x86 executable installer**.
 
 Dopo aver scaricato l'installer, lo dovresti eseguire (cliccaci sopra due volte) e segui le istruzioni. È importante ricordare il percorso (la directory) dove ha installato Python. Più tardi sarà necessario!
 
@@ -60,7 +57,7 @@ Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più av
 <!--sec data-title="macOS" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Prima di installare Python su macOS, devi assicurarti che nelle impostazioni del tuo Mac permettano l'installazione di applicazioni che non provengono dell'App Store. Vai nelle `Preferenze di Sistema` cliccando sulla mela in alto a sinistra, fai click su `Sicurezza & Privacy`, qundi sul tab `Generali`. Se `Consenti app scaricate da:` è impostato su `App Store` cambialo in `App Store e sviluppatori identificati`.
+> **Note** Prima di installare Python su macOS, devi assicurarti che nelle impostazioni del tuo Mac permettano l'installazione di applicazioni che non provengono dell'App Store. Vai nelle `Preferenze di Sistema` cliccando sulla mela in alto a sinistra, fai click su `Sicurezza & Privacy`, quindi sul tab `Generali`. Se `Consenti app scaricate da:` è impostato su `App Store` cambialo in `App Store e sviluppatori identificati`.
 
 ![App Store e sviluppatori identificati](./images/AppStore.png)
 
@@ -70,6 +67,15 @@ Devi andare sul sito https://www.python.org/downloads/mac-osx/. Fai click sul li
 - Fai doppio click sul file appena scaricato per iniziare l'installazione.
 
 Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più avanti nel tutorial). Per adesso, se hai bisogno di aprirla, vai nel `Launchpad` e apri l'app `Terminale`. Puoi anche tenere premere contemporanemente il tasto `mela + spazio` e comparirà la barra di ricerca. Per aprire la linea di comando ti basterà scrivere `Terminale` e premere `enter`.
+
+- Una volta aperto il terminale, dovrai digitare il seguente comando (il percorso potrebbe essere **/Applications/Python\ 3.6/Install\ Certificates.command** a seconda della versione di python installata. Questo serve ad aggiornare dei componenti del tuo computer per far funzionare correttamente Python.
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2" %}
+/Applications/Python\ 3.7/Install\ Certificates.command
+{% endpre %}
+
+Non aver paura: in caso di dubbi o problemi, chiedi al tuo coach!
 
 <!--endsec-->
 
@@ -139,6 +145,10 @@ Se hai dubbi o se qualcosa è andato storto e non hai idea di cosa fare dopo, ch
 >
 > Una parte di questo capitolo di basa sul [django-marcador tutorial](http://django-marcador.keimlink.de/) sotto licenza Creative Commons Attribution-ShareAlike 4.0 International License. Il tutorial di django-marcador è protetto da copyright di Markus Zapke-Gründemann et al.
 
+Ritroverai questo passaggio anche più avanti nel tutorial: puoi ignorarlo quando lo incontrerai di nuovo, se userai la stessa cartella durante la giornata del workshop.
+
+In questa fase ci serve per essere sicuri che sia tutto installato correttamente.
+
 ## Installare Django
 
 Per questo tutorial useremo una nuova directory `djangogirls` dalla tua home directory, ovvero la cartella principale del tuo utente, quindi apri una nuova linea di comando e digita:
@@ -151,15 +161,15 @@ cd djangogirls
 
 Non ti preoccupare se non sai cosa vogliano dire questi comandi, più avanti nel tutorial li guarderemo tutti.
 
-Ora che siamo nella cartella giusta, puoi installare Django usando `pip`. Nella console, esegui `pip install --user django~=1.11.0` (nota che usiamo una tilde seguita da un simbolo di uguale: `~=`).
+Ora che siamo nella cartella giusta, puoi installare Django usando `pip`. Nella console, esegui `pip install --user django~=2.1.0` (nota che usiamo una tilde seguita da un simbolo di uguale: `~=`).
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2-5" %}
-pip install --user django~=1.11.0 whitenoise~=3.3.0
-Collecting django~=1.11.0
-Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
+pip install --user django~=2.1 whitenoise~=4.1.0
+Collecting django~=2.1
+Downloading Django-2.1.7-py2.py3-none-any.whl (6.8MB)
 Installing collected packages: django
-Successfully installed django-1.11.3
+Successfully installed django-2.1.7
 {% endpre %}
 
 <!--sec data-title="Windows" data-id="django_err_windows"
@@ -277,10 +287,6 @@ sudo zypper install git
 {% endpre %}
 
 <!--endsec-->
-
-# Creare un account su GitHub
-
-Vai su [GitHub.com](https://www.github.com) e iscriviti per un nuovo account gratuito.
 
 # Heroku
 
