@@ -6,7 +6,7 @@ Scriviamo un po' codice!
 
 ## La linea di comando di Python
 
-Per iniziare a giocare con Python, devi avviare sul tuo computer la *linea di comando*. Dovresti già sapere come farlo -- l'hai imparato nel capitolo [Introduzione alla command line](../intro_to_command_line/README.md).
+Per iniziare a giocare con Python, devi avviare sul tuo computer la *linea di comando*. Dovresti già sapere come farlo, l'hai imparato nel capitolo [Introduzione alla command line](../intro_to_command_line/README.md).
 
 Una volta pronta, segui le istruzioni riportate di seguito.
 
@@ -427,7 +427,7 @@ partecipante
 {'paese': 'Polonia', 'linguaggio_preferito': 'Python', 'nome': 'Ola'}
 {% endpre %}
 
-Come puoi vedere dall'output, la coppia chiave-valore corrispondente alla chiave `'numeri_preferiti'` è stato cancellata.
+Come puoi vedere dall'output, la coppia chiave-valore corrispondente alla chiave `'numeri_preferiti'` è stata cancellata.
 
 Puoi anche cambiare un valore associato ad una chiave già creata nel dizionario. Digita:
 
@@ -442,7 +442,7 @@ Come puoi vedere, il valore della chiave `'paese'` è stato cambiato da `'Poloni
 
 ### Indice
 
-Fantastico! ora sai molto sulla programmazione. In questa ultima parte hai imparato:
+Fantastico! Ora sai molto sulla programmazione. In questa ultima parte hai imparato:
 
 - **errori** - ora sai come leggere e capire gli errori che appaiono se Python non comprende un comando che gli hai dato
 - **variabili** - nomi per oggetti. Ti permettono di scrivere codice più semplice e di renderlo più leggibile
@@ -577,7 +577,7 @@ Questo ti farà tornare nel prompt dei comandi.
 
 ## Apriamo l'editor di codice
 
-Prima, abbiamo installato un editor di codice alla sezione [installazione](../installation/README.md).
+Prima abbiamo installato un editor di codice nella sezione [installazione](../installation/README.md).
 
 Ora apri l'editor, crea un nuovo file e e comincia a scrivere un po' di codice:
 
@@ -699,7 +699,7 @@ if 3 > 2:
     print('Funziona!')
 {% endpre %}
 
-Vedi come abbiamo indentato la riga successiva usando 4 spazi? Si deve fare così in modo tale che Python sappia quale codice eseguire se il risultato è True. Puoi fare uno spazio, ma circa tutti i programmatori di Python ne fanno 4 per far vedere le cose più ordinate. Anche un signolo `tab` conta come 4 spazi.
+Vedi come abbiamo indentato la riga successiva usando 4 spazi? E' importante per fare in modo che Python sappia quale codice eseguire se il risultato è True. Puoi usare uno spazio, ma quasi tutti i programmatori Python ne usano 4 per far vedere le cose più ordinate. Anche un signolo `tab` conta come 4 spazi.
 
 Salvalo ed eseguilo di nuovo:
 

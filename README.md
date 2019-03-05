@@ -8,9 +8,9 @@
 
 Benvenuta al tutorial di Django Girls! Siamo felici di vederti :\)
 
-In questo tutorial ti faremo vedere cosa succede sotto il cofano di un sito web, mostrandoti tutti i pezzi che compongono il web per come lo consciamo.
+In questo tutorial ti faremo vedere cosa succede sotto il cofano di un sito web, mostrandoti tutti i pezzi che compongono il web per come lo conosciamo.
 
-Ci saranno un sacco di cose che non hai mai visto e sarà come vivere un'avventura - ma non preoccuparti, se hai preso la decisione di provarci hai tutto quello che serve per arrivare in fondo :\)
+Ci saranno un sacco di cose che non hai mai visto e sarà come vivere un'avventura, ma non preoccuparti, se hai preso la decisione di provarci hai tutto quello che serve per arrivare in fondo :\)
 
 ## Introduzione
 

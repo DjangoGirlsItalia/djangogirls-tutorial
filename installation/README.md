@@ -1,6 +1,6 @@
 # Installazione
 
-Nel workshop costruirai un blog, e ci sono alcuni task dedicati all'Installazione che sarebbe bello completare in anticipo, in modo che tu sia pronta a scrivere codice in giornata.
+Nel workshop costruirai un blog, e ci sono alcuni task dedicati all'installazione che sarebbe bello completare in anticipo, in modo che tu sia pronta a scrivere codice in giornata.
 
 Assicurati di avere il tuo coach a disposizione in caso di dubbi o problemi.
 
@@ -24,7 +24,7 @@ Django è scritto in Python. Abbiamo bisogno di Python per fare qualsiasi cosa i
 
 <!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
 
-Per prima cosa bisogna controllare se la tua verisione di Windows è a 32-bit o 64-bit, per farlo premi il tasto `Windows + Pausa/Break`, che apriranno le informazioni di sistema e cerca "Tipo sistema".
+Per prima cosa bisogna controllare se la tua versione di Windows è a 32-bit o 64-bit, per farlo premi il tasto `Windows + Pausa/Break`, che apriranno le informazioni di sistema e cerca "Tipo sistema".
 
 ![Tipo sitema](/installation/images/sistemtype.jpg)
 
@@ -111,7 +111,7 @@ Usa questo comando nella tua console:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
-sudo dnf install python3.6
+sudo dnf install python3
 {% endpre %}
 
 #### openSUSE
@@ -130,7 +130,7 @@ Verifica che l'installazione sia andata a buon fine aprendo la command line e sc
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2" %}
 python3 --version
-Python 3.6.2
+Python 3.7.2
 {% endpre %}
 
 **Note** Se usi Windows e ottieni un messaggio di errore tipo `python3` non è stato trovato, prova ad usare solo `python` (senza il `3`) e controlla che sia una versione di Python 3.6 come mostrato sopra.
@@ -161,16 +161,18 @@ cd djangogirls
 
 Non ti preoccupare se non sai cosa vogliano dire questi comandi, più avanti nel tutorial li guarderemo tutti.
 
-Ora che siamo nella cartella giusta, puoi installare Django usando `pip`. Nella console, esegui `pip install --user django~=2.1.0` (nota che usiamo una tilde seguita da un simbolo di uguale: `~=`).
+Ora che siamo nella cartella giusta, puoi installare Django usando `pip`. Nella console, esegui `pip3 install --user django~=2.1.0` (nota che usiamo una tilde seguita da un simbolo di uguale: `~=`).
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2-5" %}
-pip install --user django~=2.1 whitenoise~=4.1.0
+pip3 install --user django~=2.1 whitenoise~=4.1.0
 Collecting django~=2.1
 Downloading Django-2.1.7-py2.py3-none-any.whl (6.8MB)
 Installing collected packages: django
 Successfully installed django-2.1.7
 {% endpre %}
+
+**Note** Assicurati di usare `pip3` invece di `pip` se durante l'installazione di Django ottieni l'errore `Could not find a version that satisfies the requirement django~=2.1`.
 
 <!--sec data-title="Windows" data-id="django_err_windows"
 data-collapse=true ces-->
@@ -215,7 +217,7 @@ Atom è un editor di codice creato da [GitHub](https://github.com/). È gratuito
 
 ## PyCharm Community Edition
 
-PyCharm è uno tra gli editor più utilizzati costuito per Python da [JetBrains](https://www.jetbrains.com/). È molto facile da installare e da utilizzare ed è disponibile per tutti i sistemi operativi.
+PyCharm è uno tra gli editor più utilizzati per Python, prodotto da [JetBrains](https://www.jetbrains.com/). È molto facile da installare e da utilizzare ed è disponibile per tutti i sistemi operativi.
 
 [Scaricalo qui](https://www.jetbrains.com/pycharm/download/)
 

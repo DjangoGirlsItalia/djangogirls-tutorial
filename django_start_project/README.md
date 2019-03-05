@@ -132,7 +132,7 @@ Ignoriamo gli altri file per ora dal momento che non li modificheremo. L'unica c
 
 Per poter lanciare il nostro nuovo progetto Django abbiamo però bisogno di installare altre librerie.
 
-Per fortuna abbiamo tutte le informazioni che ci servono raccolte nel file `requirements_base.txt` e quindi ci è sufficiente usare il comando `pip` per installare le librerie:
+Per fortuna abbiamo tutte le informazioni che ci servono raccolte nel file `requirements_base.txt` e quindi è sufficiente usare il comando `pip` per installare le librerie:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
@@ -155,7 +155,7 @@ TIME_ZONE = 'Europe/Rome'
 {% endpre %}
 
 Un'altra cosa molto utile da avere è il sito nella tua lingua e per farlo, come per l'orario, esiste un'opzione che ci permette di settare il codice della lingua.
-Il codice della lingua è un identificativo univoco per le lingue ed è composto da due parti: una per la lingua, come ad esempio `en` per l'inglese o `de` per il tedesco, l'altra con il paese come `uk` per l'Inghilterra. [Django ha già pronto un serie di traduzioni pronte](https://docs.djangoproject.com/en/2.1/ref/settings/#language-code).
+Il codice della lingua è un identificativo univoco per le lingue ed è composto da due parti: una per la lingua, come ad esempio `en` per l'inglese o `de` per il tedesco, l'altra con il paese come `uk` per l'Inghilterra. [Django ha già una serie di traduzioni pronte](https://docs.djangoproject.com/en/2.1/ref/settings/#language-code).
 
 Scegli il codice che ti interessa dal link qui sopra e modifica l'opzione di conseguenza:
 
