@@ -20,7 +20,7 @@ Buona fortuna!
 
 > Questa sezione si basa su un tutorial fatto da Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django è scritto in Python. Abbiamo bisogno di Python per fare qualsiasi cosa in Django. Iniziamo con l'installazione! Vogliamo che sul tuo pc sia installato Python 3.6.2, quindi se hai una versione precedente, dovrai aggiornarlo.
+Django è scritto in Python. Abbiamo bisogno di Python per fare qualsiasi cosa in Django. Iniziamo con l'installazione! Vogliamo che sul tuo pc sia installato Python 3.7.2, quindi se hai una versione precedente, dovrai aggiornarlo.
 
 <!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
 
@@ -34,7 +34,7 @@ Devi andare sul sito https://www.python.org/downloads/windows/. Fai click sul li
 
 Dopo aver scaricato l'installer, lo dovresti eseguire (cliccaci sopra due volte) e segui le istruzioni. È importante ricordare il percorso (la directory) dove ha installato Python. Più tardi sarà necessario!
 
-Una cosa a cui fare **attenzione**: in una schermata dell'installazione guidata, contrassegnata con "Setup", assicurati di scegliere l'opzione "Add Python 3.6 to PATH", come illustrato qui:
+Una cosa a cui fare **attenzione**: in una schermata dell'installazione guidata, contrassegnata con "Setup", assicurati di scegliere l'opzione "Add Python 3.7 to PATH", come illustrato qui:
 
 ![Non dimenticare di aggiungere Python al Path](./images/python-installation-options.png)
 
@@ -43,7 +43,7 @@ Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più av
 
 ![Scrivi "cmd" nella finestra "Run"](/installation/images/windows-plus-r.png)
 
->Nota: se stai usando una vecchia versione di Windows (7, Vista, o qualsiasi versione più vecchia) e l'installer di python 3.6.x ti da un errore puoi provare queste cose:
+>Nota: se stai usando una vecchia versione di Windows (7, Vista, o qualsiasi versione più vecchia) e l'installer di python 3.7.x ti dà un errore puoi provare queste cose:
 
 >1. installa tutti gli update di Windows Updates e riprova; o
 2. installa una [vecchia versione Python](https://www.python.org/downloads/windows/), es., [3.4.6](https://www.python.org/downloads/release/python-346/).
@@ -68,7 +68,7 @@ Devi andare sul sito https://www.python.org/downloads/mac-osx/. Fai click sul li
 
 Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più avanti nel tutorial). Per adesso, se hai bisogno di aprirla, vai nel `Launchpad` e apri l'app `Terminale`. Puoi anche tenere premere contemporanemente il tasto `mela + spazio` e comparirà la barra di ricerca. Per aprire la linea di comando ti basterà scrivere `Terminale` e premere `enter`.
 
-- Una volta aperto il terminale, dovrai digitare il seguente comando (il percorso potrebbe essere **/Applications/Python\ 3.6/Install\ Certificates.command** a seconda della versione di python installata. Questo serve ad aggiornare dei componenti del tuo computer per far funzionare correttamente Python.
+- Una volta aperto il terminale, dovrai digitare il seguente comando (il percorso potrebbe essere **/Applications/Python\ 3.7/Install\ Certificates.command** a seconda della versione di python installata. Questo serve ad aggiornare dei componenti del tuo computer per far funzionare correttamente Python.
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2" %}
@@ -91,7 +91,7 @@ Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più av
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2" %}
 python3 --version
-Python 3.6.2
+Python 3.7.2
 {% endpre %}
 
 Se non hai Python installato o se vuoi una versione diversa, puoi installarla come segue:
@@ -102,7 +102,7 @@ Digita questo comando nella tua console:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
-sudo apt-get install python3.6
+sudo apt-get install python3.7
 {% endpre %}
 
 #### Fedora
@@ -133,7 +133,7 @@ python3 --version
 Python 3.7.2
 {% endpre %}
 
-**Note** Se usi Windows e ottieni un messaggio di errore tipo `python3` non è stato trovato, prova ad usare solo `python` (senza il `3`) e controlla che sia una versione di Python 3.6 come mostrato sopra.
+**Note** Se usi Windows e ottieni un messaggio di errore tipo `python3` non è stato trovato, prova ad usare solo `python` (senza il `3`) e controlla che sia una versione di Python 3.7 come mostrato sopra.
 
 ----
 
