@@ -6,9 +6,9 @@ Scommettiamo che usi Internet tutti i giorni. Ma sai davvero che cosa succede qu
 
 La prima cosa da capire è che un sito è solo un gruppo di file salvati su un hard disk. Proprio come i tuoi film, la tua musica e le tue immagini. Tuttavia, c'è una caratteristica tipica dei siti web: includono un codice chiamato HTML.
 
-Se non hai familiarità con la programmazione, può essere difficile da capire l'HTML all'inizio, ma i tuoi web browser (come Chrome, Safari, Firefox, ecc) lo adorano. I browser sono progettati per capire questo codice, seguire le sue istruzioni e presentare questi file che costituiscono il tuo sito web esattamente nel modo desiderato.
+Può essere difficile capire l'HTML all'inizio se non hai familiarità con la programmazione ma i tuoi web browser (come Chrome, Safari, Firefox, ecc) lo adorano. I browser sono progettati per capire questo codice, seguire le sue istruzioni e presentare questi file che costituiscono il tuo sito web esattamente nel modo desiderato.
 
-Come per tutti i file, dobbiamo archiviare i file HTML da qualche parte su un hard disk. Per l'Internet, utilizziamo computer speciali e potenti chiamati _server_. Non hanno uno schermo, un mouse o una tastiera, perché il loro unico compito è quello di archiviare i dati e fornirli. È per quello che vengono chiamati _server_ -- perché questi _servono_ i tuoi dati.
+Come per tutti i file, dobbiamo archiviare i file HTML da qualche parte su un hard disk. Per l'Internet, utilizziamo computer speciali e potenti chiamati _server_. Non hanno uno schermo, un mouse o una tastiera, perché il loro unico compito è quello di archiviare i dati e fornirli. È per questo che vengono chiamati _server_: _servono_ i tuoi dati.
 
 OK, ma tu vuoi sapere com'è internet, vero?
 
@@ -20,7 +20,7 @@ Sembra caotico, vero? Infatti è una rete di macchine collegate (i _server_ che 
 
 ![Submarine](/how_the_internet_works/images/internet_2.png)
 
-È affascinante, non è vero? Ma ovviamente, non è possibile avere un cavo fra ogni macchina collegata ad Internet. Quindi, per raggiungere una macchina (per esempio quella in cui è salvato [https://djangogirls.org](https://djangogirls.org)) dobbiamo far passare una richiesta attraverso a molte, molte macchine diverse.
+È affascinante, non è vero? Ma ovviamente, non è possibile avere un cavo fra ogni macchina collegata ad Internet. Quindi, per raggiungere una macchina (per esempio quella in cui è salvato [https://djangogirls.org](https://djangogirls.org)) dobbiamo far passare una richiesta attraverso molte, molte macchine diverse.
 
 Assomiglia a questo:
 

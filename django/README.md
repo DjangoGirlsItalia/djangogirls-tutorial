@@ -10,7 +10,7 @@ I framework esistono per evitare che tu debba 'reinventare la ruota' e ti sempli
 
 ## Perché ho bisogno di un framework?
 
-Per capire Django, abbiamo bisogno di dare un'occhiata più da vicino ai server. La prima cosa che il server deve sapere è che vuoi che ti fornisca una pagina web.
+Per capire Django abbiamo bisogno di dare un'occhiata più da vicino ai server. La prima cosa che il server deve sapere è che vuoi che ti fornisca una pagina web.
 
 Immagina una cassetta delle lettere che monitora tutte le lettere in entrata (richieste). Questo è ciò che fa un web server. Il web server legge le lettere, e invia una risposta con una pagina web. Ma quando vuoi inviare qualcosa, hai bisogno di avere qualche contenuto. E Django è ciò che ti aiuta a creare questo contenuto.
 
