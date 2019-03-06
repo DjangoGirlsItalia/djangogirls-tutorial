@@ -2,13 +2,13 @@
 
 Ti potresti chiedere, cos'è un template?
 
-Un template è un file che possiamo riutilizzare per presentare informazioni diverse in un formato consistente - per esempio, potresti utilizzare un template per aiutarti a scrivere una lettera, perché anche se ciascuna lettera potrebbe contenere un messaggio diverso ed essere a sua volta indirizzata ad una persona diversa, condivideranno lo stesso formato.
+Un template è un file che possiamo riutilizzare per presentare informazioni diverse in un formato consistente. Per esempio potresti utilizzare un template per aiutarti a scrivere una lettera, perché anche se ciascuna lettera potrebbe contenere un messaggio diverso ed essere a sua volta indirizzata ad una persona diversa, condivideranno lo stesso formato.
 
 Un template Django viene descritto in un linguaggio chiamato HTML (è lo stesso HTML che abbiamo menzionato nel primo capitolo **Come funziona l'Internet**).
 
 ## Cos'è l'HTML?
 
-HTML è un semplice codice che viene interpretato dal tuo browser - come Chrome, Firefox o Safari - per rendere un sito web visibile all'utente.
+HTML è un semplice codice che viene interpretato dal tuo browser, come Chrome, Firefox o Safari, per rendere un sito web visibile all'utente.
 
 HTML sta per "HyperText Markup Language". **HyperText** significa che è un tipo di testo che supporta i collegamenti ipertestuali tra le pagine. **Markup** significa che abbiamo preso un documento e l'abbiamo contrassegnato con il codice per dire a qualcosa (in questo caso, un browser) come interpretare la pagina. Il codice HTML è costruito con **tags**, ognuno inizia con `<` e finisce con `>`. Questi tag rappresentano gli **elementi** di markup.
 
@@ -16,7 +16,7 @@ HTML sta per "HyperText Markup Language". **HyperText** significa che è un tipo
 
 Creare un template significa creare un file template. Tutto è un file, vero? Probabilmente l'hai già notato.
 
-I template vengono salvati in una cartella `blog/templates/blog`. Quindi prima crea una directory chiamata `templates` nella directory del tuo blog. Quindi crea un'altra directory chiamata `blog` all'interno della tua directory templates:
+I template vengono salvati nella cartella `blog/templates/blog`. Quindi prima crea una directory chiamata `templates` nella directory del tuo blog. Quindi crea un'altra directory chiamata `blog` all'interno della tua directory templates:
 
 {% filename %}command-line{% endfilename %}
 {% pre language="bash", output="1-3" %}
@@ -25,7 +25,7 @@ blog
     └───blog
 {% endpre %}
 
-(Ti chiederai perché abbiamo bisogno di due directory chiamate entrambe `blog` - come scoprirai più tardi, si tratta semplicemente di una denominazione convenzionale che serve a rendere la vita più facile.)
+(Ti chiederai perché abbiamo bisogno di due directory chiamate entrambe `blog` - come scoprirai più tardi, si tratta semplicemente di una denominazione convenzionale che serve a renderci la vita più facile.)
 
 E ora crea un file `post_list.html` nella directory `blog/templates/blog` (lascialo in bianco per adesso).
 
@@ -93,9 +93,11 @@ Probabilmente hai anche notato che ogni tag di apertura è abbinato ad un *tag d
 
 Devi seguire queste regole di tag *di chiusura*, e di elementi *annidati* - se non lo fai, il browser potrebbe non essere in grado di interpretarli correttamente e la tua pagina verrà visualizzata incorrettamente.
 
+Non dimenticare inoltre di inserire sempre `<!DOCTYPE html>` in testa al file. Questa istruzione è importante e serve al browser per capire che si trova di fronte ad una pagina HTML 5 (5 è l'ultima versione del linguaggio HTML).
+
 ## Personalizza il tuo template
 
-Ora puoi divertirti un po' e provare a personalizzare il tuo template! Qua ci sono un po' di tag utili per quello:
+Ora puoi divertirti un po' e provare a personalizzare il tuo template! Qua ci sono un po' di tag utili:
 
 - `<h1>Un'intestazione</h1>` - per la tua intestazione più importante
 - `<h2>Un sottotitolo</h2>` per un titolo di livello inferiore
@@ -111,6 +113,7 @@ Qui c'è un esempio di un template completo:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 {% pre language="html" %}
+<!DOCTYPE html>
 <html>
     <head>
         <title>Django Girls blog</title>
@@ -137,14 +140,14 @@ Qui c'è un esempio di un template completo:
 
 Abbiamo creato tre sezioni `div` qui.
 
-- Il primo elemento `div` contiene il titolo del nostro blog - è un'intestazione ed un link
+- Il primo elemento `div` contiene il titolo del nostro blog: un'intestazione ed un link
 - Altri tre elementi `div` contengono i nostri post con la loro data di pubblicazione, `h2` con il titolo di un post che è cliccabile e due `p` (paragrafi) di testo, uno per la data e l'altro per i nostri post.
 
-Ci dà questo effetto:
+Il risultato è questo:
 
 ![Figura 11.4](images/step6.png)
 
-Yaaay! Ma fino adesso, il nostro template mostra esattamente **la stessa informazione** - mentre prima stavamo dicendo che i template ci permettono di mostrare **diverse** informazioni nello **stesso formato**.
+Yaaay! Ora però il nostro template mostra esattamente **la stessa informazione**  mentre prima stavamo dicendo che i template ci permettono di mostrare **diverse** informazioni nello **stesso formato**.
 
 Quello che vogliamo è visualizzare i veri post aggiunti nel nel nostro Django admin - è quello che faremo adesso.
 
@@ -152,7 +155,7 @@ Quello che vogliamo è visualizzare i veri post aggiunti nel nel nostro Django a
 
 Sarebbe bello vedere tutto questo live su Internet, giusto? Facciamo un altro deploy su Heroku:
 
-### Committa e pubblica il tuo codice su Heroku
+### Fai committ e pubblica il tuo codice su Heroku
 
 Prima di tutto, vediamo quali file sono cambiati dall'ultimo deploy:
 
@@ -186,7 +189,7 @@ git commit -m "Ho cambiato l'HTML per questo sito."
 
 > **Note** Assicurati di usare doppie virgolette attorno al messaggio di commit.
 
-Quando hai finito, caricheremo (push) le nostre modifiche su Heroku:
+Quando hai finito, carica (push) le modifiche su Heroku:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
