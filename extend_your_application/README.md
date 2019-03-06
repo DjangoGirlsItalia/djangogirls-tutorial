@@ -45,7 +45,7 @@ Vogliamo creare un link che dal titolo di un post facente parte dell'elenco di a
 
 La parte `post_detail` significa che Django si aspetterà un URL in `blog/urls.py` con `name='post_detail'`
 
-E invece `pk=post.pk`? `pk` è un abbreviazione per **primary key**, che è un nome univoco per ogni oggetto presente nel database. Siccome non abbiamo creato una primary key nel nostro modello di Post, Django ne crea una per noi (di default è un numero che viene incrementato di uno per ogni record: es. 1, 2, 3) e la aggiunge come un campo del chiamato `pk` per ogniuno dei nostri post. Possiamo usare la primary key scrivendo `post.pk`, esattamente come facciamo per tutti gli altri campi (`title`, `autore`, ecc.) nel nostro oggetto Post.
+E invece `pk=post.pk`? `pk` è un abbreviazione per **primary key**, che è un nome univoco per ogni oggetto presente nel database. Siccome non abbiamo creato una primary key nel nostro modello di Post, Django ne crea una per noi (di default è un numero che viene incrementato di uno per ogni record: es. 1, 2, 3) e la aggiunge come un campo chiamato `pk` per ognuno dei nostri post. Possiamo usare la primary key scrivendo `post.pk`, esattamente come facciamo per tutti gli altri campi (`title`, `autore`, ecc.) nel nostro oggetto Post.
 
 Adesso quando andremo all'indirizzo: http://127.0.0.1:8000/ avremo un errore (come sapevamo, dal momento che non abbiamo una URL e neppure una **view** per `post_detail`). Avrà questo aspetto:
 
@@ -57,26 +57,24 @@ Creiamo una URL in `urls.py` per la nostra __view__ `post_detail`!
 
 Vogliamo che il nostro primo post venga visualizzato a questo **URL**: http://127.0.0.1:8000/post/1/
 
-Facciamo sì che l'URL nel file `blog/urls.py` punti Django ad una *view* chiamata `post_detail`, che mostrerà un intero post. Aggiungi la riga `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail'),` al file `blog/urls.py`. Il file dovrebbe assomigliare a questo:
+Facciamo sì che l'URL nel file `blog/urls.py` punti Django ad una *view* chiamata `post_detail`, che mostrerà un intero post. Il file dovrebbe assomigliare a questo:
 
 {% filename %}blog/urls.py{% endfilename %}
 {% pre language="python" %}
-from django.conf.urls import url
+from django.urls import path
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail')
 ]
 {% endpre %}
 
-Questa parte `^post/(?P<pk>[0-9]+)/$` sembra spaventosa, ma non preoccuparti - te la spiegheremo:
+Questa parte `post/<int:pk>/` sembra complicata ma in realtà:
 
-- inizia ancora con `^` - "l'inizio"
-- `post/` semplicemente significa che dopo l'inizio, l'URL dovrebbe contenere la parola `post` **e** `/`. Fin qui tutto bene.
-- `(?P<pk>\d+)` - questa parte è più complicata. Significa che Django prenderà tutto quello che hai messo qui e lo trasferirà ad una view come variabile denominata `pk` (nota che è lo stesso nome che abbiamo usato in `blog/templates/blog/post_list.html!`). `\d` ci dice anche che la variabile può essere solo un numero, non una lettera (quindi tutto tra 0 e 9). `+` significa che ci devono essere una o più cifre. Quindi qualcosa di simile a `http://127.0.0.1:8000/post//` non è valido, ma `http://127.0.0.1:8000/post/1234567890/` è perfetto!
+- `post/` significa che dopo l'inizio, l'URL dovrebbe contenere la parola `post` **e** `/`.
+- `<int:pk>/` invece significa che Django prenderà tutto quello che hai messo qui e lo trasferirà ad una view come variabile denominata `pk` (nota che è lo stesso nome che abbiamo usato in `blog/templates/blog/post_list.html!`). `int` ci dice anche che la variabile può essere solo un numero, non una lettera (quindi tutto tra 0 e 9). Qualcosa di simile a `http://127.0.0.1:8000/post//` non è valido ma `http://127.0.0.1:8000/post/1234567890/` è perfetto!
 - `/` - Quindi ci serve `/` di nuovo
-- `$` - "fine"!
 
 Ciò significa che se digiti `http://127.0.0.1:8000/post/5/` nel tuo browser, Django capirà che stai cercando una __view__ chiamata `post_detail` e trasferirà l'informazione che "`pk` è uguale a `5`" a quella __view__.
 
