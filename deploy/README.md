@@ -79,7 +79,7 @@ git commit -m "La mia app Django Girls, primo commit"
 
 ## Carichiamo il nostro codice su Heroku
 
-Per portare la il nostro codice su Heroku la prima cosa che dobbiamo fare è autenticarci tramite la `toolbelt` di Heroku che hai installato durante il party:
+Per portare il nostro codice su Heroku la prima cosa che dobbiamo fare è autenticarci tramite la `toolbelt` di Heroku che hai installato durante il party:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2-5" %}
