@@ -84,7 +84,7 @@ Su Windows devi lanciare il comando che segue. **(non dimenticarti di aggiungere
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt=">", language="powershell" %}
-python -m django startproject --template=https://github.com/simobasso/startproject/archive/master.zip --name=Procfile mysite .
+python -m django startproject --template=https://github.com/DjangoGirlsItalia/startproject/archive/master.zip --name=Procfile mysite .
 {% endpre %}
 
 
