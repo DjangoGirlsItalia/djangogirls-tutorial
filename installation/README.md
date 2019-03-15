@@ -188,7 +188,7 @@ data-collapse=true ces-->
 >
 >{% filename %}command-line{% endfilename %}
 >{% pre prompt="C:\\Users\\Name\\djangogirls> ", output="2-5" %}
-python -m pip install django~=1.11.0 whitenoise~=3.3.0
+python -m pip install django~=2.1 whitenoise~=4.1.0
 {% endpre %}
 
 <!--endsec-->
