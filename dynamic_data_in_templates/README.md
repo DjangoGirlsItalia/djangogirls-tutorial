@@ -58,7 +58,7 @@ Nota che abbiamo creato una variabile per il nostro QuerySet: `posts`. Vedila co
 
 Nella funzione `render` abbiamo già un parametro con `request` (quindi tutto quello che riceviamo dal nostro utente via internet) e un file template `'blog/post_list.html'`. Nell'ultimo parametro, che è simile a questo: `{}` possiamo aggiungere i dati che il template può utilizzare per mostrare i nostri contenuti nel browser. Dobbiamo dargli un nome (ci atterremo a `'posts'` per il momento :)). La forma è: `{'posts': posts}`. Nota che la parte prima di `:` è una stringa; devi metterla tra virgolette `''`.
 
-Il nostro file `blog/views.py` sara così:
+Il nostro file `blog/views.py` sarà così:
 
 {% filename %}blog/views.py{% endfilename %}
 {% pre language="python" %}

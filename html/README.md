@@ -155,7 +155,7 @@ Quello che vogliamo è visualizzare i veri post aggiunti nel nel nostro Django a
 
 Sarebbe bello vedere tutto questo live su Internet, giusto? Facciamo un altro deploy su Heroku:
 
-### Fai committ e pubblica il tuo codice su Heroku
+### Fai commit e pubblica il tuo codice su Heroku
 
 Prima di tutto, vediamo quali file sono cambiati dall'ultimo deploy:
 
