@@ -39,4 +39,4 @@ Un altro errore! Leggi cosa sta succedendo adesso:
 
 Ci mostra che il server gira di nuovo almeno, ma non ha un bell'aspetto, vero? Non preoccuparti è solo un errore e non dobbiamo averne paura! Come gli errori nella command line sono parecchio utili. Puoi leggere che *TemplateDoesNotExist* (il template non esiste). Sistemiamo il bug e creiamo un template nel prossimo capitolo!
 
-> Impara di più sulle views di Django leggendo la documentazione ufficiale: https://docs.djangoproject.com/en/1.11/topics/http/views/
+> Impara di più sulle views di Django leggendo la documentazione ufficiale: https://docs.djangoproject.com/en/2.1/topics/http/views/

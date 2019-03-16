@@ -18,7 +18,7 @@ Si! Vai avanti e prova il nostro libro dal titolo [Django Girls Tutorial: estens
 
 Più avanti potrai provare le risorse elencate qui sotto. Sono tutte molto consigliate!
 
-* [Django - tutorial ufficiale](https://docs.djangoproject.com/en/1.8/intro/tutorial01/)
+* [Django - tutorial ufficiale](https://docs.djangoproject.com/en/2.1/intro/tutorial01/)
 * [Tutorial per i nuovi Coder](http://newcoder.io/tutorials/)
 * [Corso Code Academy Python](https://www.codecademy.com/en/tracks/python)
 * [Corso Code Academy HTML & CSS](https://www.codecademy.com/tracks/web)
