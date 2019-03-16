@@ -35,7 +35,7 @@ Password (again):
 Superuser created successfully.
 {% endpre %}
 
-> Nota: Nel caso tu abbia inserito una password molto semplice, potesti ricevere un messaggio tipo `Questa password è troppo corta. Deve contenere almeno 8 caratteri. Bypass password validation and create user anyway? [y/N]:` Ai fini del workshop rispondi tranquillamente `Y`. A cose normale è opportuno selezionare una password più complessa.
+> Nota: Nel caso tu abbia inserito una password molto semplice, potesti ricevere un messaggio tipo `Questa password è troppo corta. Deve contenere almeno 8 caratteri. Bypass password validation and create user anyway? [y/N]:` Ai fini del workshop rispondi tranquillamente `Y`, ma in qualsiasi altro caso non è una buona abitudine ed è opportuno selezionare password più complesse.
 
 Torna nel tuo browser e fai il log in con le credenziali di superuser che hai scelto, dovresti vedere la dashboard d'amministrazione di Django.
 
