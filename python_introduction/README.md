@@ -795,7 +795,7 @@ if volume < 20 or volume > 80:
     print("That's better!")
 {% endpre %}
 
-Non hai bisogno di scrivere i commenti per ogni singola riga di codice, ma sono molto utili per spiegare perchè il tuo codice sta facendo qualcosa o per semplificare qualcosa di complesso.
+Non hai bisogno di scrivere i commenti per ogni singola riga di codice, ma sono molto utili per spiegare perché il tuo codice sta facendo qualcosa o per semplificare qualcosa di complesso.
 
 ### Indice
 
