@@ -20,6 +20,8 @@ Buona fortuna!
 # Installare Homebrew
 
 <!--sec data-title="macOS" data-id="homebrew_OSX" data-collapse=true ces-->
+Attenta: questa sezione descrive un metodo alternativo per installare applicazioni e utility sul tuo sistema macos. Non ci sono controindicazioni, anzi, scoprirai che è un modo semplice e rapido! Se scegli questa strada devi solo ricordarti, da questo momento, di far riferimento alle sezioni di installazione che riguardano l'uso di Homebrew (brew) e saltare le procedure di installazione normali che rimandano al sito di ogni specifica applicazione.
+
 [Homebrew](https://brew.sh) è un packet manager per macOS ovvero un'utility che permette di semplificare le operazioni di installazione, aggiornamento e disinstallazione di applicazioni attraverso semplici comandi impartiti dalla **linea di comando**. Questo passaggio ti faciliterà le successive installazioni richieste e potrà tornarti molto utile anche in futuro.
 
 Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più avanti nel tutorial). Per adesso, se hai bisogno di aprirla, vai nel `Launchpad` e apri l'app `Terminale`. Puoi anche tenere premere contemporanemente il tasto `mela + spazio` e comparirà la barra di ricerca. Per aprire la linea di comando ti basterà scrivere `Terminale` e premere `enter`.
