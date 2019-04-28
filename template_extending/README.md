@@ -1,6 +1,6 @@
 # Estendere il template
 
-Un'altra cosa bella di Django è l'**estensione del template**. Cosa significa? Significa che puoi usare le stesse parti del tuo HTML per pagine diverse del tuo sito.
+Un'altra cosa bella di Django è l'**estensione dei template**. Cosa significa? Significa che puoi usare le stesse parti del tuo HTML per pagine diverse del sito.
 
 Così non hai bisogno di ripetere le stesse informazioni o il layout in ogni file. E se vuoi cambiare qualcosa, non devi cambiarlo in ogni templates, ma soltanto una volta!
 

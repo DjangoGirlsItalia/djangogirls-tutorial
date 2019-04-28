@@ -30,13 +30,13 @@ CiboPerGatti
 gusto
 ```
 
-Quindi in pratica l'idea è quella di descrivere cose vere in codice con delle proprietà (chiamate `proprietà di oggetti`) e azioni (chiamate `metodi`).
+Quindi in pratica l'idea è quella di descrivere cose vere in codice con delle proprietà (chiamate `proprietà degli oggetti`) e azioni (chiamate `metodi`).
 
 Quindi come faremo a modellare i post del blog? Vogliamo costruire un blog, giusto?
 
 Dobbiamo rispondere alla domanda: cos'è un post? Quali proprietà dovrebbe avere?
 
-Beh, sicuramente il nostro post ha bisogno di qualche testo con il suo contenuto ed un titolo, vero? Sarebbe bello sapere chi l'ha scritto - quindi abbiamo bisogno di un autore. Infine, vogliamo sapere quando il post è stato creato e pubblicato.
+Beh, sicuramente il nostro post ha bisogno di qualche testo con il suo contenuto ed un titolo, vero? Sarebbe bello sapere chi l'ha scritto, quindi abbiamo bisogno di un autore. Infine, vogliamo sapere quando il post è stato creato e pubblicato.
 
 ```
 Post
@@ -52,13 +52,13 @@ Che tipo di cose si potrebbero fare con un post? Sarebbe bello avere qualche met
 
 Quindi avremo bisogno di un metodo `pubblicare`.
 
-Dal momento che sappiamo già cosa vogliamo ottenere, iniziamo a modellarlo in Django!
+Dal momento che sappiamo già cosa vogliamo ottenere iniziamo a modellarlo in Django!
 
 ## Modello Django
 
 Sapendo cos'è un oggetto, possiamo creare un modello Django per il nostro post.
 
-Un modello in Django è uno speciale tipo di oggetto - è salvato nel `database`. Un database è un insieme di dati. È un posto in cui archivierai informazioni sui tuoi utenti, sui tuoi post, ecc. Useremo un database SQLite per archiviare i nostri dati. Questo è l'adattatore Django di database predefinito -- ci basterà per adesso.
+Un modello in Django è uno speciale tipo di oggetto salvato nel `database`. Un database è un insieme di dati. È un posto in cui archivierai informazioni sui tuoi utenti, sui tuoi post, ecc. Useremo un database SQLite per archiviare i nostri dati. Questo è l'adattatore Django di database predefinito, ci basterà per adesso.
 
 Puoi pensare ad un modello nel database come ad un foglio elettronico con colonne (campi) e righe (dati).
 
@@ -71,7 +71,7 @@ Per mantenere tutto ordinato, creeremo un'applicazione diversa all'interno del n
 python3 manage.py startapp blog
 {% endpre %}
 
-Aprendo il programma di gestione file, nella cartella `djangogirls`, noterai che si è creata una nuova cartella `blog` e che ora contiene alcuni file.
+Aprendo il programma di gestione file, nella cartella `djangogirls`, noterai che è stata creata una nuova cartella `blog` che contiene alcuni file.
 Quelle sotto dovrebbero essere le cartelle e i file del nostro progetto:
 
 {% filename %}command-line{% endfilename %}
@@ -93,7 +93,7 @@ djangogirls
     └── views.py
 {% endpre %}
 
-Dopo aver creato un'applicazione dobbiamo dire a Django che dovrebbe utilizzarla. Lo facciamo nel file `mysite/settings.py`. Dobbiamo trovare `INSTALLED_APPS` ed aggiungere una riga che contenga `'blog',` appena sopra`]`. Quindi il prodotto finale dovrebbe assomigliare a questo:
+Dopo aver creato un'applicazione dobbiamo dire a Django che deve utilizzarla. Lo facciamo nel file `mysite/settings.py`. Dobbiamo trovare `INSTALLED_APPS` ed aggiungere una riga che contenga `'blog',` appena sopra`]`. Quindi il prodotto finale dovrebbe assomigliare a questo:
 
 {% filename %}mysite/settings.py{% endfilename %}
 {% pre language="python" %}
@@ -142,9 +142,9 @@ class Post(models.Model):
 
 > Ricontrolla se stai utilizzando due underscore (`_`) su ciascun lato di `str`. Questa convenzione viene utilizzata spesso in Python e a volte li chiamiamo anche "dunder" (abbreviazione di "doppio underscore").
 
-Sembra spaventoso, vero? Ma non ti preoccupare, ti spiegheremo cosa significano queste righe!
+Sembra complicato, vero? Non ti preoccupare, ti spiegheremo cosa significano queste righe!
 
-Tutte le righe che iniziano con `from` oppure con `import` sono righe che aggiungono alcuni pezzi da altri file. Quindi invece di copiare e incollare le stesse cose in ogni file, possiamo includere alcune parti con `from ... import ...`.
+Tutte le righe che iniziano con `from` oppure con `import` sono istruzioni che aggiungono codice da altri file. Quindi invece di copiare e incollare le stesse cose in ogni file, possiamo includere alcune parti con `from ... import ...`.
 
 `class Post(models.Model):` - questa riga definisce il nostro modello (è un `oggetto`).
 

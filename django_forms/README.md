@@ -2,7 +2,7 @@
 
 Infine vogliamo creare un bel modo per poter aggiungere e cambiare i nostri blog posts. Django `admin` è bello, ma è alquanto difficile da personalizzare e rendere carino. Con i `forms` avremo il potere assoluto sull'aspetto della nostra pagina web - possiamo fare praticamente qualsiasi cosa vogliamo!
 
-La bella cosa dei Django forms è che possiamo sia inventare un nuovo form da zero che creare un `ModelForm` che salverà il risultato del form sul nostro modello.
+La cosa bella dei Django forms è che possiamo sia inventare un nuovo form da zero che creare un `ModelForm` che salverà il risultato del form sul nostro modello.
 
 Questo è esattamente quello che stiamo per fare: stiamo per creare un form per il nostro modello dei `Post`.
 
@@ -42,7 +42,7 @@ Finalmente possiamo indicare uno o più campi che il nostro form deve avere. In 
 
 E questo è tutto! Tutto quello che dobbiamo fare ora è usare il form nella nostra *view* e visualizzarlo nel template.
 
-Quindi un'altra volta creeremo un link che punti alla pagina, un URL, una view e un template.
+Quindi creeremo un nuovo link che punta alla pagina, un URL, una view e un template.
 
 ## Link ad una pagina usando il form
 
@@ -97,28 +97,28 @@ Apri il file `blog/urls.py` e aggiungi:
 
 {% filename %}blog/urls.py{% endfilename %}
 {% pre language="python" %}
-url(r'^post/new/$', views.post_new, name='post_new'),
+path('post/new/', views.post_new, name='post_new'),
 {% endpre %}
 
 Il risultato finale sarà:
 
 {% filename %}blog/urls.py{% endfilename %}
 {% pre language="python" %}
-from django.conf.urls import url
+from django.urls import path
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
-    url(r'^post/new/$', views.post_new, name='post_new'),
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
+    path('post/new/', views.post_new, name='post_new')
 ]
 {% endpre %}
 
-Dopo aver aggiornato il sito, vedremo un `AttributeError` dal momento che non abbiamo ancora creato `post_new`. Aggiungiamolo adesso.
+Dopo aver aggiornato il sito vedremo un `AttributeError` dal momento che non abbiamo ancora creato `post_new`. Aggiungiamolo adesso.
 
 ## post_new view
 
-Apri il file `blog/views.py` e aggiungi quanto segue con il resto delle importazioni `from`:
+Apri il file `blog/views.py` e aggiungi quanto segue con il resto degli import `from`:
 
 {% filename %}blog/views.py{% endfilename %}
 {% pre language="python" %}
@@ -217,7 +217,7 @@ if form.is_valid():
     post.save()
 {% endpre %}
 
-In pratica, ci sono due cose da fare: salviamo il form con `form.save` e aggiungiamo un autore (dal momento che non c'era nessun campo autore `author` nel form `PostForm` e questo campo non può essere lasciato bianco!). `commit=False` significa che non vogliamo salvare il modello `Post` per il momento - vogliamo prima assicurarci di aggiungere un autore. Per la maggior parte del tempo userai `form.save()`, senza `commit=False`, ma in questo caso abbiamo bisogno di specificarlo extra. `post.save()` salverà le modifiche (aggiunta di autore) e il nuovo post del tuo blog è stato finalmente creato!
+In pratica, ci sono due cose da fare: salviamo il form con `form.save` e aggiungiamo un autore (dal momento che non c'era nessun campo autore `author` nel form `PostForm` e questo campo non può essere lasciato bianco!). `commit=False` significa che non vogliamo salvare il modello `Post` per il momento - vogliamo prima assicurarci di aggiungere un autore. Per la maggior parte del tempo userai `form.save()`, senza `commit=False`, ma in questo caso abbiamo bisogno di specificarlo a parte. `post.save()` salverà le modifiche (aggiunta di autore) e il nuovo post del tuo blog è stato finalmente creato!
 
 Infine, non sarebbe fantastico se potessimo immediatamente essere indirizzati alla pagina `post_detail` del nuovo blog post appena creato? Per fare ciò dobbiamo importare:
 
@@ -312,7 +312,7 @@ In `blog/urls.py` aggiugi:
 
 {% filename %}blog/urls.py{% endfilename %}
 {% pre language="python" %}
-    url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
+    path('post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
 {% endpre %}
 
 Riutilizzeremo il modello `blog/templates/blog/post_edit.html`, quindi l'ultima cosa che manca è una *view*.

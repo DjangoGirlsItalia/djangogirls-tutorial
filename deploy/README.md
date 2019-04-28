@@ -4,11 +4,11 @@
 
 Fino ad ora il tuo sito è accessibile solo dal tuo computer, ma ora imparerai come metterlo online! Deploying è il processo di pubblicazione online del tuo progetto in modo tale che sia visibile anche da altre persone :).
 
-Come hai già visto, un sito internet ha sede in un server. Ci sono tantissimi server provider disponibili su internet. Noi ne useremo uno che ha un processo di deployment relativamente semplice: [Heroku](https:/heroku.com). Questo provider è gratuito per piccole applicazioni che non hanno troppi visitatori. Sarà quindi perfetto per te al momento.
+Come hai già visto ogni sito internet deve essere ospitato su un server. Ci sono tantissimi server provider disponibili su internet. Noi ne useremo uno che ha un processo di deployment relativamente semplice: [Heroku](https:/heroku.com). Questo provider è gratuito per piccole applicazioni che non hanno troppi visitatori. Sarà quindi perfetto per te al momento.
 
 # Git
 
-Git è un "sistema di controllo versione" utilizzato da un sacco di programmatori. Questo software può tracciare le modifiche nel corso del tempo ad i file, in questo modo puoi ripristinare successivamente una specifica versione. Un po' come l'opzione "traccia modifiche" in Microsoft Word, ma molto più potente.
+Git è un "sistema di controllo versione" utilizzato da molti programmatori. Questo software può tracciare le modifiche nel corso del tempo ad i file, in questo modo puoi ripristinare successivamente una specifica versione. Un po' come l'opzione "traccia modifiche" in Microsoft Word, ma molto più potente.
 
 ## Inizializzare un repository Git
 
@@ -42,7 +42,7 @@ E salvalo come `.gitignore` all'interno della cartella "djangogirls".
 
 > **Note** Il punto all'inizio del nome del file è importante! Se hai difficoltà nel crearlo (ad esempio, ai Mac non piace quando crei file che iniziano con un punto tramite il Finder), allora usa la funzionalità "Salva con nome" nel tuo editor, è a prova di bomba.
 
-> **Note** Uno dei file che hai inserito nel tuo `.gitignore` è `db.sqlite3`. Quello è il tuo database locale dove tutti i tuoi post sono salvati. Non lo vogliamo aggiungere al tuo repository perché Heroku userà un altro database. Il database può essere SQLite, come sulla tua macchina locale, ma generalmente usarai uno chiamato PostgreSQL che può gestire molti più visitatori di SQLite. In ogni caso, ignorando il tuo database SQLite per la copia remota, ogni post che hai creato fino a questo punto continuerà ad essere visibile in locale, ma dovrai aggiungerne di nuovi in produzione. Devi pernsare al tuo database locale come un posto sicuro dove testare cose nuove senza dover proccuparti di eliminare i tuoi veri post dal tuo blog.
+> **Note** Uno dei file che hai inserito nel tuo `.gitignore` è `db.sqlite3`. Quello è il tuo database locale dove tutti i tuoi post sono salvati. Non lo vogliamo aggiungere al tuo repository perchè Heroku userà un altro database. Il database può essere SQLite, come sulla tua macchina locale, ma generalmente userai PostgreSQL che può gestire molti più visitatori di SQLite. In ogni caso, ignorando il tuo database SQLite per la copia remota, ogni post che hai creato fino a questo punto continuerà ad essere visibile in locale, ma dovrai aggiungerne di nuovi in produzione. Devi pensare al tuo database locale come un posto sicuro dove testare cose nuove senza dover proccuparti di eliminare i tuoi veri post dal tuo blog.
 
 È una buona idea usare il comando `git status` prima di `git add` oppure ogni volta che non sei sicura di cosa sia cambiato. Questo aiuterà ad evitare eventuali brutte sorprese, come file sbagliati che vengono aggiunti o a cui viene fatto il commit. Il comando `git status` restituisce informazioni riguardanti qualsiasi file non tracciato/modificato/in staging, lo stato del branch e molto altro. L'output dovrebbe essere simile a:
 
@@ -207,4 +207,4 @@ https://<nome-del-blog>.herokuapp.com
 
 La pagina predefinita per il tuo sito dovrebbe dire "Welcome to Django", esattamente come sul tuo Pc locale. Prova ad aggiungere `/admin/` alla fine della URL, e verrai portata al sito di amministrazione. Accedi con il tuo username e password, e vedrai che puoi aggiungere nuovi Post sul server.
 
-Da' a te stessa un'*ENORME* pacca sulla schiena! Il deploy dei server è tra le parti più complicate dello sviluppo web e di solito le persone ci impiegano svariati giorni prima di farli funzionare. Ma hai pubblicato il tuo sito su Internet senza sforzo!
+Da' a te stessa un'*ENORME* pacca sulla schiena! Il deploy dei server è tra le parti più complicate dello sviluppo web e di solito le persone ci impiegano svariati giorni prima di farli funzionare. Ma hai pubblicato il tuo sito su internet senza sforzo!

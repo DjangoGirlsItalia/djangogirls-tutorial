@@ -29,7 +29,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 {% endpre %}
 
-Come puoi vedere, abbiamo creato un metodo (`def`) chiamato `post_list` che prende `request` e `restituisce` un metodo `render` che ci fornirà (metterà insieme) il nostro template `blog/post_list.html`.
+Come puoi vedere abbiamo creato un metodo (`def`) chiamato `post_list` che prende `request` e restituisce un metodo `render` che a sua volta mettera insieme il nostro template `blog/post_list.html`.
 
 Aggiungila al file, salva, vai su http://127.0.0.1:8000/ e guarda cosa abbiamo ottenuto.
 
@@ -37,6 +37,6 @@ Un altro errore! Leggi cosa sta succedendo adesso:
 
 ![Error](images/error.png)
 
-Ci mostra che il server gira di nuovo almeno, ma non ha un bell'aspetto, vero? Non preoccuparti è solo un errore e non dobbiamo averne paura! Come gli errori nella command line sono parecchio utili. Puoi leggere che *TemplateDoesNotExist* (il template non esiste). Sistemiamo il bug e creiamo un template nel prossimo capitolo!
+Ci mostra che il server gira di nuovo almeno, ma non ha un bell'aspetto, vero? Non preoccuparti! Come gli errori nella command line sono parecchio utili. Puoi leggere che *TemplateDoesNotExist* (il template non esiste). Sistemiamo il bug e creiamo un template nel prossimo capitolo!
 
 > Impara di più sulle views di Django leggendo la documentazione ufficiale: https://docs.djangoproject.com/en/2.1/topics/http/views/

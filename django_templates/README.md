@@ -1,10 +1,10 @@
 # I templates di Django
 
-È l'ora di visualizzare alcuni dati! Django ci dà alcuni **template tags** già pronti per farlo.
+È ora di visualizzare alcuni dati! Django ci dà alcuni **template tags** pronti all'uso.
 
 ## Cosa sono i template tags?
 
-In HTML non puoi scrivere codice Python, perché i browser non lo capiscono. Essi conoscono solo l'HTML. Noi sappiamo che l'HTML è piuttosto statico, mentre Python è molto più dinamico.
+In HTML non puoi scrivere codice Python, perché i browser interpretano solo l'HTML. Noi sappiamo che l'HTML è piuttosto statico, mentre Python è molto più dinamico.
 
 I **Django template tags** ci permettono di trasferire le cose simili a Python in HTML, in modo che tu possa costruire siti web in modo più veloce e facile. Stupendo!
 
@@ -31,7 +31,7 @@ Come vedi, quello che abbiamo è:
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-Significa che Django lo vede come una lista di oggetti. Ricordi dalla **Introduzione a Python** come possiamo rendere visibili le liste? Sì, con i cicli for! In un template Django si fanno così:
+Significa che Django vede la QuerySet come una lista di oggetti. Ricordi da **Introduzione a Python** come possiamo rendere visibili le liste? Sì, con i cicli for! In un template Django si fanno così:
 
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
@@ -70,7 +70,7 @@ Tutto quello che hai messo tra {% raw %}`{% for %}`{% endraw %} e {% raw %}`{% e
 
 ![Figura 13.3](images/step3.png)
 
-Ti sei accorta che abbiamo utilizzato una notazione leggermente diversa questa volta {% raw %}`{{ post.title }}`{% endraw %} oppure {% raw %}`{{ post.text }}`{% endraw %}? Stiamo introducendo i dati in ciascuno dei campi definiti nel nostro modello `Post`. Inoltre le `|linebreaksbr` stanno spingendo il testo dei post attraverso un filtro per trasformare le line-breaks in paragrafi.
+Ti sei accorta che abbiamo utilizzato una notazione leggermente diversa questa volta {% raw %}`{{ post.title }}`{% endraw %} oppure {% raw %}`{{ post.text }}`{% endraw %}? Stiamo introducendo i dati in ciascuno dei campi definiti nel nostro modello `Post`. Inoltre le `|linebreaksbr` passano il testo dei post attraverso un filtro per trasformare le line-breaks in paragrafi.
 
 ## Un'ultima cosa
 

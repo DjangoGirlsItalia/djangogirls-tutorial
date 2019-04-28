@@ -2,11 +2,11 @@
 
 Abbiamo diversi pezzi: il modello `Post` è definito in `models.py`, abbiamo `post_list` nel file `views.py` ed abbiamo aggiunto il template. Ma come faremo a far comparire i nostri post nel nostro template HTML? Perché questo è quello che vogliamo: prendere qualche contenuto (modelli salvati nel database) e farlo vedere in modo carino nel nostro template, giusto?
 
-Questo è esattamente quello che le *views* dovrebbero fare: collegare i modelli ed i template. Nella nostra *view* `post_list` avremo bisogno di prendere i modelli che vogliamo far vedere e passarli nel template. Quindi praticamente nella *view* decidiamo cosa (modello) renderemo visibile nel template.
+Questo è esattamente il compito delle *views*: collegare i modelli ed i template. Nella nostra *view* `post_list` avremo bisogno di prendere i modelli che vogliamo far vedere e passarli nel template. Quindi praticamente nella *view* decidiamo cosa (modello) renderemo visibile nel template.
 
 Ok, quindi come facciamo a farlo?
 
-Dobbiamo aprire il nostro `blog/views.py`. Per ora *view* `post_list` si vede così:
+Dobbiamo aprire il nostro `blog/views.py`. Per ora *view* `post_list` è così:
 
 {% filename %}blog/views.py{% endfilename %}
 {% pre language="python" %}
@@ -56,9 +56,9 @@ L'ultima cosa che ci manca da fare è aggiungere il QuerySet `posts` al contesto
 
 Nota che abbiamo creato una variabile per il nostro QuerySet: `posts`. Vedila come il nome del nostro QuerySet. Da qui in avanti possiamo riferirci ad esso con questo nome.
 
-Nella funzione `render` abbiamo già un parametro con `request` (quindi tutto quello che riceviamo dal nostro utente via internet) e un file template `'blog/post_list.html'`. Nell'ultimo parametro, che è simile a questo: `{}` possiamo aggiungere cose che il template possa utilizzare. Dobbiamo dargli un nome (ci atterremo a `'posts'` per il momento :)). Si vede così: `{'posts': posts}`. Ti preghiamo di notare che la parte prima di `:` è una stringa; devi metterla tra virgolette `''`.
+Nella funzione `render` abbiamo già un parametro con `request` (quindi tutto quello che riceviamo dal nostro utente via internet) e un file template `'blog/post_list.html'`. Nell'ultimo parametro, che è simile a questo: `{}` possiamo aggiungere i dati che il template può utilizzare per mostrare i nostri contenuti nel browser. Dobbiamo dargli un nome (ci atterremo a `'posts'` per il momento :)). La forma è: `{'posts': posts}`. Nota che la parte prima di `:` è una stringa; devi metterla tra virgolette `''`.
 
-Il nostro file `blog/views.py` dovrà risultare così:
+Il nostro file `blog/views.py` sarà così:
 
 {% filename %}blog/views.py{% endfilename %}
 {% pre language="python" %}
