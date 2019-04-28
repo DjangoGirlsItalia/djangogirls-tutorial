@@ -115,7 +115,7 @@ Eccolo, un altro post nell'elenco!
 
 Ora puoi divertirti un po' ed aggiungere altri post per vedere come funziona. Aggiungene altri 2 o 3 e vai alla prossima parte.
 
-### Filtrare gli oggeti
+### Filtrare gli oggetti
 
 Uno dei vantaggi dei QuerySet consiste nell'abilità di filtrarli. Diciamo che vogliamo trovare tutti i post che hanno come autore l'utente 'ola'. Possiamo usare `filter` invece di `all` in `Post.objects.all()`. Tra parentesi dichiariamo le condizioni che un post deve soddisfare per finire nel nostro QuerySet. Nella nostra situazione è `autore` che è uguale a `me`. Il modo di scriverlo in Django è `autore=me`. Ora il nostro pezzo di codice ha questo aspetto:
 

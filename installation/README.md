@@ -6,6 +6,7 @@ Assicurati di avere il tuo coach a disposizione in caso di dubbi o problemi.
 
 I programmi che andremo a installare sono:
 
+* [Homebrew](#installare-homebrew)
 * [Python](#installare-python)
 * [Django](#installare-django)
 * [Git](#installare-git)
@@ -15,6 +16,65 @@ I programmi che andremo a installare sono:
 Ricordati anche di creare un account su [Heroku](#heroku).
 
 Buona fortuna!
+
+# Installare Homebrew
+
+<!--sec data-title="macOS" data-id="homebrew_OSX" data-collapse=true ces-->
+Attenta: questa sezione descrive un metodo alternativo per installare applicazioni e utility sul tuo sistema macos. Non ci sono controindicazioni, anzi, scoprirai che è un modo semplice e rapido! Se scegli questa strada devi solo ricordarti, da questo momento, di far riferimento alle sezioni di installazione che riguardano l'uso di Homebrew (brew) e saltare le procedure di installazione normali che rimandano al sito di ogni specifica applicazione.
+
+[Homebrew](https://brew.sh) è un packet manager per macOS ovvero un'utility che permette di semplificare le operazioni di installazione, aggiornamento e disinstallazione di applicazioni attraverso semplici comandi impartiti dalla **linea di comando**. Questo passaggio ti faciliterà le successive installazioni richieste e potrà tornarti molto utile anche in futuro.
+
+Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più avanti nel tutorial). Per adesso, se hai bisogno di aprirla, vai nel `Launchpad` e apri l'app `Terminale`. Puoi anche tenere premere contemporanemente il tasto `mela + spazio` e comparirà la barra di ricerca. Per aprire la linea di comando ti basterà scrivere `Terminale` e premere `enter`.
+
+Adesso che il terminale è aperto digita il seguente comando:
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2-10" %}
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+==> This script will install:
+/usr/local/bin/brew
+/usr/local/share/doc/homebrew
+/usr/local/share/man/man1/brew.1
+/usr/local/share/zsh/site-functions/_brew
+/usr/local/etc/bash_completion.d/brew
+/usr/local/Homebrew
+
+Press RETURN to continue or any other key to abort
+{% endpre %}
+
+Questo scaricherò uno speciale script da internet, indicherà le azioni che andrà a svolgere e rimarrà in attesa della pressione del tasto invio per confermare l'installazione (o un qualsiasi altro per annullare l'operazione). Se tutto si concluderà correttamente avrai il comando `brew` disponibile sul tuo sistema, provalo:
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash", output="2-24" %}
+brew info
+HOMEBREW_VERSION: 2.0.4-6-gae0332a
+ORIGIN: https://github.com/Homebrew/brew.git
+HEAD: ae0332a0f6fcf4846ef032ba217fb00ef66ccc48
+Last commit: 67 minutes ago
+Core tap ORIGIN: https://github.com/Homebrew/homebrew-core
+Core tap HEAD: a6fc7849abf7d93ec823c55ba37052c0ba22e799
+Core tap last commit: 38 minutes ago
+HOMEBREW_PREFIX: /usr/local
+HOMEBREW_DEV_CMD_RUN: 1
+HOMEBREW_DISPLAY: /private/tmp/com.apple.launchd.NwNSvEwpgI/org.macosforge.xquartz:0
+HOMEBREW_LOGS: /Users/tuonome/Library/Logs/Homebrew
+HOMEBREW_VISUAL: vim
+CPU: octa-core 64-bit haswell
+Homebrew Ruby: 2.3.7 => /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby
+Clang: 10.0 build 1000
+Git: 2.20.1 => /usr/local/bin/git
+Curl: 7.54.0 => /usr/bin/curl
+Java: 11.0.2, 1.8.0_202
+macOS: 10.14.3-x86_64
+CLT: 10.1.0.0.1.1539992718
+Xcode: 10.1
+CLT headers: 10.1.0.0.1.1539992718
+XQuartz: 2.7.11 => /opt/X11
+{% endpre %}
+
+Da adesso puoi usare `brew` per installare il software proposto e tanto altro!
+
+<!--endsec-->
 
 # Installare Python
 
@@ -76,6 +136,18 @@ Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più av
 {% endpre %}
 
 Non aver paura: in caso di dubbi o problemi, chiedi al tuo coach!
+
+<!--endsec-->
+
+<!--sec data-title="macOS_homebrew" data-id="python_macOS_homebrew"
+data-collapse=true ces-->
+
+Una volta aperto il terminale, dovrai digitare il seguente comando:
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash" %}
+brew install python3
+{% endpre %}
 
 <!--endsec-->
 
@@ -188,7 +260,7 @@ data-collapse=true ces-->
 >
 >{% filename %}command-line{% endfilename %}
 >{% pre prompt="C:\\Users\\Name\\djangogirls> ", output="2-5" %}
-python -m pip install django~=1.11.0 whitenoise~=3.3.0
+python -m pip install django~=2.1 whitenoise~=4.1.0
 {% endpre %}
 
 <!--endsec-->
@@ -215,11 +287,31 @@ Atom è un editor di codice creato da [GitHub](https://github.com/). È gratuito
 
 [Scaricalo qui](https://atom.io/)
 
+<!--sec data-title="macOS_homebrew" data-id="atom_install_macOS_homebrew"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash" %}
+brew cask install atom
+{% endpre %}
+
+<!--endsec-->
+
 ## PyCharm Community Edition
 
 PyCharm è uno tra gli editor più utilizzati per Python, prodotto da [JetBrains](https://www.jetbrains.com/). È molto facile da installare e da utilizzare ed è disponibile per tutti i sistemi operativi.
 
 [Scaricalo qui](https://www.jetbrains.com/pycharm/download/)
+
+<!--sec data-title="macOS_homebrew" data-id="pycharm_ce_install_macOS_homebrew"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash" %}
+brew cask install pycharm-ce
+{% endpre %}
+
+<!--endsec-->
 
 ## Visual Studio Code
 
@@ -257,6 +349,16 @@ data-collapse=true ces-->
 Scarica Git da [git-scm.com](https://git-scm.com/) e segui le istruzioni.
 
 > **Note** Se usi OS X 10.6, 10.7, or 10.8, dovrai installare git partendo da qui: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+
+<!--endsec-->
+
+<!--sec data-title="macOS_homebrew" data-id="git_install_macOS_homebrew"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash" %}
+brew install git
+{% endpre %}
 
 <!--endsec-->
 
@@ -304,6 +406,16 @@ data-collapse=true ces-->
 Assicurati che tutte le opzioni siano selezionate quando ti verrà richiesto quale componenti installare. Al termine dell'installazione chiudi e riapri la linea di comando.
 
 Dopo aver riaperto la linea di comando ricordati di tornare alla cartella `djangogirls`.
+
+<!--endsec-->
+
+<!--sec data-title="macOS_homebrew" data-id="heroku_install_macOS_homebrew"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash" %}
+brew tap heroku/brew && brew install heroku
+{% endpre %}
 
 <!--endsec-->
 

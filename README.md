@@ -1,6 +1,6 @@
 # Il tutorial di Django Girls
 
-[![DjangoGirls It](https://img.shields.io/badge/telegram-%40djangogirls__it-blue.svg)](https://t.me/djangogirls_ita)
+[![DjangoGirls It](https://img.shields.io/badge/telegram-%40djangogirls__it-blue.svg)](https://t.me/joinchat/CQpYvUO3fHD8UwTzHtNtSw)
 
 > Questo lavoro è sotto la licenza internazionale di Creative Commons Attribution-ShareAlike 4.0. Per vedere una copia di questa licenza, visita [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
 
@@ -30,7 +30,7 @@ Assomiglierà \(più o meno\) a questo:
 
 ![Il tuo blog](images/application.png)
 
-> Se lavori da sola al tutorial e non hai un coach che ti possa aiutare nel caso avessi qualche problema, abbiamo una chat per te: [![DjangoGirls It](https://img.shields.io/badge/telegram-%40djangogirls__it-blue.svg)](https://t.me/djangogirls_ita). Abbiamo chiesto ai nostri coach e alle partecipanti precedenti di esserci di volta in volta, ed aiutare gli altri con il tutorial! Non aver paura di fare domande!
+> Se lavori da sola al tutorial e non hai un coach che ti possa aiutare nel caso avessi qualche problema, abbiamo una chat per te: [![DjangoGirls It](https://img.shields.io/badge/telegram-%40djangogirls__it-blue.svg)](https://t.me/joinchat/CQpYvUO3fHD8UwTzHtNtSw). Abbiamo chiesto ai nostri coach e alle partecipanti precedenti di esserci di volta in volta, ed aiutare gli altri con il tutorial! Non aver paura di fare domande!
 
 OK, [cominciamo dall'inizio...](./how_the_internet_works/README.md)
 

@@ -71,7 +71,7 @@ Dovresti eseguire nella tua console macOS o Linux il seguente comando **(non dim
 python3 -m django startproject --template=https://github.com/DjangoGirlsItalia/startproject/archive/master.zip --name=Procfile mysite .
 {% endpre %}
 
-> Il punto `.` è cruciale perchè dice allo script di installare Django nella cartella corrente (della quale il periodo `.` è una comoda reference).
+> Il punto `.` è cruciale perché dice allo script di installare Django nella cartella corrente (della quale il periodo `.` è una comoda reference).
 
 > **Note** Quando scrivi il comando qui sopra, ricordati di scrivere solo quello che c'è dopo il simbolo `$`.
 
@@ -84,11 +84,11 @@ Su Windows devi lanciare il comando che segue. **(non dimenticarti di aggiungere
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt=">", language="powershell" %}
-python -m django startproject --template=https://github.com/simobasso/startproject/archive/master.zip --name=Procfile mysite .
+python -m django startproject --template=https://github.com/DjangoGirlsItalia/startproject/archive/master.zip --name=Procfile mysite .
 {% endpre %}
 
 
-> Il punto `.` è criuciale perchè dice allo script di installare Django nella cartella corrente (della quale il periodo `.` è una comoda reference).
+> Il punto `.` è criuciale perché dice allo script di installare Django nella cartella corrente (della quale il periodo `.` è una comoda reference).
 
 > **Note** Quando scrivi il comando qui sopra, ricordati di scrivere solo quello che c'è dopo il simbolo `>`.
 
@@ -180,7 +180,7 @@ DATABASES = {
 }
 {% endpre %}
 
-Per creare un database per il nostro blog, eseguiamo questo nella console: `python manage.py migrate` (abbiamo bisogno di essere nella directory `djangogirls` che contiene il file `manage.py`). Se funziona, dovresti vedere qualcosa di simile:
+Per creare un database per il nostro blog, eseguiamo questo nella console: `python3 manage.py migrate` (abbiamo bisogno di essere nella directory `djangogirls` che contiene il file `manage.py`). Se funziona, dovresti vedere qualcosa di simile:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2-17" %}
@@ -205,7 +205,7 @@ Running migrations:
 
 E abbiamo finito! Tempo di avviare il server web e vedere se il nostro sito Web funziona!
 
-Devi essere nella directory che contiene il file di `manage.py` (la directory `djangogirls`). Nella console, possiamo avviare il server web eseguendo `python manage.py runserver`:
+Devi essere nella directory che contiene il file di `manage.py` (la directory `djangogirls`). Nella console, possiamo avviare il server web eseguendo `python3 manage.py runserver`:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}
