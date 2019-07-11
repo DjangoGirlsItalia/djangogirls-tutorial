@@ -42,7 +42,12 @@ Adesso che il terminale è aperto digita il seguente comando:
 Press RETURN to continue or any other key to abort
 {% endpre %}
 
-Questo scaricherò uno speciale script da internet, indicherà le azioni che andrà a svolgere e rimarrà in attesa della pressione del tasto invio per confermare l'installazione (o un qualsiasi altro per annullare l'operazione). Se tutto si concluderà correttamente avrai il comando `brew` disponibile sul tuo sistema, provalo:
+Questo scaricherò uno speciale script da internet, indicherà le azioni che andrà a svolgere e rimarrà in attesa della pressione del tasto invio per confermare l'installazione (o un qualsiasi altro per annullare l'operazione).
+
+> Durante questa fase dell'installazione verrà richiesta la password per svolgere alcune operazioni che richiedono privilegi di sistema. La password dovrà essere digitata alla cieca, infatti non sarenno scritti né i caratteri digitati, né
+degli asterischi `*` per motivi di sicurezza. Digitata la password si dovrà premere il tasto `enter`.
+
+Se tutto si concluderà correttamente avrai il comando `brew` disponibile sul tuo sistema, provalo:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2-24" %}
