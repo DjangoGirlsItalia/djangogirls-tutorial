@@ -1,7 +1,5 @@
 # Il tutorial di Django Girls
 
-[![DjangoGirls It](https://img.shields.io/badge/telegram-%40djangogirls__it-blue.svg)](https://t.me/joinchat/CQpYvUO3fHD8UwTzHtNtSw)
-
 > Questo lavoro è sotto la licenza internazionale di Creative Commons Attribution-ShareAlike 4.0. Per vedere una copia di questa licenza, visita [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ## Benvenuta {#welcome}
@@ -37,5 +35,3 @@ OK, [cominciamo dall'inizio...](./how_the_internet_works/README.md)
 ## Informazioni e contribuzioni
 
 Questo tutorial è mantenuto da [DjangoGirls](https://djangogirls.org/). Se trovi errori o se vuoi aggiornare questo tutorial, [segui le linee guida per i collaboratori](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
-
-
