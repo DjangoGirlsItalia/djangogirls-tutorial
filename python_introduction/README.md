@@ -14,14 +14,14 @@ Vogliamo aprire una console Python, quindi digita `python` su Windows o `python3
 
 > Nota: Verifica **sempre** sul tuo sistema la corretta versione di python e il modo di avviare ``python``. A seconda delle version
 > e dei sistemi operativi il nome corretto potrebbe essere ``python`` o ``python3``.
-> Puoi verificare in ogni momento scrivendo ``python --version`` o ``python3 --version`` nel terminale: se la versione corrisponde a quella che hai installato (in teoria 3.7.2) significa che quello è il modo giusto per avviare python
+> Puoi verificare in ogni momento scrivendo ``python --version`` o ``python3 --version`` nel terminale: se la versione corrisponde a quella che hai installato (in teoria 3.7.5) significa che quello è il modo giusto per avviare python
 
 <!--sec data-title="macOS e Linux" data-id="OSX_Linux_python" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2-4" %}
 python3
-Python 3.7.2 (...)
+Python 3.7.5 (...)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 {% endpre %}
@@ -33,7 +33,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 {% filename %}command-line{% endfilename %}
 {% pre prompt=">", language="powershell", output="2-4" %}
 python
-Python 3.7.2 (...)
+Python 3.7.5 (...)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 {% endpre %}

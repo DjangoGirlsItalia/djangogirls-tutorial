@@ -85,7 +85,7 @@ Da adesso puoi usare `brew` per installare il software proposto e tanto altro!
 
 > Questa sezione si basa su un tutorial fatto da Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django è scritto in Python. Abbiamo bisogno di Python per fare qualsiasi cosa in Django. Iniziamo con l'installazione! Vogliamo che sul tuo pc sia installato Python 3.7.2, quindi se hai una versione precedente, dovrai aggiornarlo.
+Django è scritto in Python. Abbiamo bisogno di Python per fare qualsiasi cosa in Django. Iniziamo con l'installazione! Vogliamo che sul tuo pc sia installato Python 3.7.5, quindi se hai una versione precedente, dovrai aggiornarlo.
 
 <!--sec data-title="Windows" data-id="python_windows" data-collapse=true ces-->
 
@@ -168,7 +168,7 @@ Nei prossimi passaggi dovrai usare la **linea di comando** (ne parleremo più av
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2" %}
 python3 --version
-Python 3.7.2
+Python 3.7.5
 {% endpre %}
 
 Se non hai Python installato o se vuoi una versione diversa, puoi installarla come segue:
@@ -207,7 +207,7 @@ Verifica che l'installazione sia andata a buon fine aprendo la command line e sc
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2" %}
 python3 --version
-Python 3.7.2
+Python 3.7.5
 {% endpre %}
 
 **Note** Se usi Windows e ottieni un messaggio di errore tipo `python3` non è stato trovato, prova ad usare solo `python` (senza il `3`) e controlla che sia una versione di Python 3.7 come mostrato sopra.

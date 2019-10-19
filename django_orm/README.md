@@ -21,8 +21,8 @@ L'effetto dovrebbe essere come questo:
 
 {% filename %}command-line{% endfilename %}
 {% pre language="python", output="1-5" %}
-Python 3.7.2 (default, Jan 16 2019, 19:49:22)
-[GCC 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.42)] on darwin
+Python 3.7.5 (default, Oct  8 2019, 16:47:45)
+[GCC 9.2.1 20190909] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 (InteractiveConsole)
 >>>
