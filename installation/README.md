@@ -6,7 +6,7 @@ Assicurati di avere il tuo coach a disposizione in caso di dubbi o problemi.
 
 I programmi che andremo a installare sono:
 
-* [Homebrew](#installare-homebrew)
+* [Homebrew](#installare-homebrew), solo per macOS
 * [Python](#installare-python)
 * [Django](#installare-django)
 * [Git](#installare-git)
