@@ -234,6 +234,6 @@ Mentre il web server gira, non vedrai nuovi prompt della command line per inseri
 
 > Abbiamo visto come funzionano i web server nel capitolo **Come funziona internet**. Se non ti ricordi torna a dare un'occhiata.
 
-Per fermare il server web, torna alla finestra dove è in esecuzione e premi i pulsanti CTRL+C insieme (su Windows, è probabile che tu deva premere Ctrl+Break).
+Per fermare il server web, torna alla finestra dove è in esecuzione e premi i pulsanti CTRL+C insieme (su Windows, è probabile che tu debba premere Ctrl+Break).
 
 Pronta per il prossimo passo? È ora di creare un po' di contenuti!
