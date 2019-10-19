@@ -299,6 +299,6 @@ Woohoo! È fantastico, vero? Guarda il codice che hai appena incollato per cerca
 
 Non farti spaventare, sperimenta con i CSS e prova a cambiare alcune cose. Se rompi qualcosa, non ti preoccupare, puoi sempre farlo tornare come era prima!
 
-Ti consigliamo caldamente di seguire [il corso su HTML & CSS di Codeacademy](https://www.codecademy.com/tracks/web). Così potrai imparare tutto ciò di cui hai bisogno per rendere i tuoi siti web più belli con CSS.
+Ti consigliamo caldamente di seguire il corso su [HTML](https://www.codecademy.com/learn/learn-html) & [CSS](https://www.codecademy.com/learn/learn-css) di [Codeacademy](https://www.codecademy.com/). Così potrai imparare tutto ciò di cui hai bisogno per rendere i tuoi siti web più belli con CSS.
 
 Pronta per il prossimo capitolo?! :)
