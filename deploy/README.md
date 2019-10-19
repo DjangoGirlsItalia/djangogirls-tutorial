@@ -155,6 +155,13 @@ To https://git.heroku.com/<nome-del-blog>.git
  * [new branch]      master -> master
 {% endpre %}
 
+Se il comando precedente ti ha dato un errore prova a dare il seguente comando prima di riprovare:
+
+{% filename %}command-line{% endfilename %}
+{% pre prompt="$", language="bash" %}
+heroku git:remote <nome-del-blog>
+{% endpre %}
+
 ## Creare il database su Heroku
 
 Ecco un'altra differenza tra il tuo computer ed il server: usa un database diverso. Quindi gli account utente ed i post possono essere diversi sul server rispetto a come appaiono sul tuo computer.
