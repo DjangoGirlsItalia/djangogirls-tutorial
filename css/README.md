@@ -66,7 +66,7 @@ djangogirls
 
 Non ci dilungheremo troppo sul come personalizzare e imparare CSS in questo momento, dal momento che è abbastanza facile e puoi impararlo da sola alla fine di questo workshop. Troverai alcuni corsi gratuiti dove imparare di più al fondo di questa pagina.
 
-Facciamo comunque un esempio. Perché non cambiare il colore della nostra intestazione? Per decifrare i colori, i computer usano dei codici speciali. Questi codici cominciano con `#` a cui fanno seguito 6 caratteri, sia lettere (A-F) che numeri (0-9). Per esempio, il codice per il blu è `#0000FF`. Puoi trovare vari esempi di codici colore qui: http://www.colorpicker.com/. Puoi anche usare [colori predefiniti](http://www.w3schools.com/cssref/css_colornames.asp) come ad esempio `red` e `green`.
+Facciamo comunque un esempio. Perché non cambiare il colore della nostra intestazione? Per decifrare i colori, i computer usano dei codici speciali. Questi codici cominciano con `#` a cui fanno seguito 6 caratteri, sia lettere (A-F) che numeri (0-9). Per esempio, il codice per il blu è `#0000FF`. Puoi trovare vari esempi di codici colore qui: https://www.colorpicker.com/. Puoi anche usare [colori predefiniti](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) come ad esempio `red` e `green`.
 
 Aggiungi il seguente codice nel tuo file `blog/static/css/blog.css`:
 
