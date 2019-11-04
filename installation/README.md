@@ -91,7 +91,7 @@ Django è scritto in Python. Abbiamo bisogno di Python per fare qualsiasi cosa i
 
 Per prima cosa bisogna controllare se la tua versione di Windows è a 32-bit o 64-bit, per farlo premi il tasto `Windows + Pausa/Break`, che apriranno le informazioni di sistema e cerca "Tipo sistema".
 
-![Tipo sitema](/installation/images/sistemtype.jpg)
+![Tipo sistema](/installation/images/sistemtype.jpg)
 
 Puoi scaricare Python per Windows dal sito web ufficiale.
 
