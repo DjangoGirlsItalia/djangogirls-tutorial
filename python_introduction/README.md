@@ -620,7 +620,7 @@ cd ~/Desktop
 
 <!--sec data-title="Cambiare Cartella: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-Sul prompt di Windows, sara come questo:
+Sul prompt di Windows, sarà come questo:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt=">", language="powershell" %}
@@ -631,7 +631,7 @@ cd %HomePath%\Desktop
 
 <!--sec data-title="Cambiare Cartella: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-E su Powershell di Windows, sara come questo:
+E su Powershell di Windows, sarà come questo:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt=">", language="powershell" %}
