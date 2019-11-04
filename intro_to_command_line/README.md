@@ -422,7 +422,7 @@ Questi sono solo alcuni dei comandi che puoi eseguire sulla tua command line, ma
 
 Se sei curioso/a, [ss64.com][1] contiene una guida completa ai comandi per tutti i sistemi operativi.
 
- [1]: http://ss64.com
+ [1]: https://ss64.com
 
 ## Fatto?
 

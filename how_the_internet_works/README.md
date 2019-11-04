@@ -1,6 +1,6 @@
 # Come funziona Internet
 
-> Questo capitolo è ispirato ad un discorso di Jessica McKellar "How the Internet Works" ([http://web.mit.edu/jesstess/www/](http://web.mit.edu/jesstess/www/)).
+> Questo capitolo è ispirato ad un discorso di Jessica McKellar "How the Internet Works" ([https://web.mit.edu/jesstess/www/](https://web.mit.edu/jesstess/www/)).
 
 Scommettiamo che usi Internet tutti i giorni. Ma sai davvero che cosa succede quando digiti un indirizzo come [https://djangogirls.org](https://djangogirls.org) nel tuo browser e premi `invio`?
 
@@ -16,7 +16,7 @@ Abbiamo creato un'immagine! Ecco com'è:
 
 ![Internet](images/internet_1.png)
 
-Sembra caotico, vero? Infatti è una rete di macchine collegate (i _server_ che abbiamo menzionato prima). Centinaia di migliaia di macchine! Molti, molti chilometri di cavi in tutto il mondo! Puoi visitare un sito di Submarine Cable Map ([http://submarinecablemap.com](http://submarinecablemap.com)) per vedere quanto è complicata la rete. Ecco uno screenshot dal sito web:
+Sembra caotico, vero? Infatti è una rete di macchine collegate (i _server_ che abbiamo menzionato prima). Centinaia di migliaia di macchine! Molti, molti chilometri di cavi in tutto il mondo! Puoi visitare un sito di Submarine Cable Map ([https://submarinecablemap.com](https://submarinecablemap.com)) per vedere quanto è complicata la rete. Ecco uno screenshot dal sito web:
 
 ![Submarine](/how_the_internet_works/images/internet_2.png)
 
