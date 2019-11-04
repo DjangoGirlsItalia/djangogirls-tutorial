@@ -20,8 +20,9 @@ Più avanti potrai provare le risorse elencate qui sotto. Sono tutte molto consi
 
 * [Django - tutorial ufficiale](https://docs.djangoproject.com/en/2.1/intro/tutorial01/)
 * [Tutorial per i nuovi Coder](http://newcoder.io/tutorials/)
-* [Corso Code Academy Python](https://www.codecademy.com/en/tracks/python)
-* [Corso Code Academy HTML & CSS](https://www.codecademy.com/tracks/web)
+* [Corso Code Academy Python](https://www.codecademy.com/learn/learn-python)
+* [Corso Code Academy HTML](https://www.codecademy.com/learn/learn-html)
+* [Corso Code Academy CSS](https://www.codecademy.com/learn/learn-css)
 * [Tutorial Django Carrots](https://github.com/ggcarrots/django-carrots)
 * [Il libro "Learn Python The Hard Way"](https://learnpythonthehardway.org/python3/)
 * [Lezioni video "Inizia con Django"](http://www.gettingstartedwithdjango.com/)
