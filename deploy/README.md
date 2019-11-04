@@ -4,7 +4,7 @@
 
 Fino ad ora il tuo sito è accessibile solo dal tuo computer, ma ora imparerai come metterlo online! Deploying è il processo di pubblicazione online del tuo progetto in modo tale che sia visibile anche da altre persone :).
 
-Come hai già visto ogni sito internet deve essere ospitato su un server. Ci sono tantissimi server provider disponibili su internet. Noi ne useremo uno che ha un processo di deployment relativamente semplice: [Heroku](https:/heroku.com). Questo provider è gratuito per piccole applicazioni che non hanno troppi visitatori. Sarà quindi perfetto per te al momento.
+Come hai già visto ogni sito internet deve essere ospitato su un server. Ci sono tantissimi server provider disponibili su internet. Noi ne useremo uno che ha un processo di deployment relativamente semplice: [Heroku](https://heroku.com). Questo provider è gratuito per piccole applicazioni che non hanno troppi visitatori. Sarà quindi perfetto per te al momento.
 
 # Git
 
