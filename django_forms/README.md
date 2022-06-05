@@ -312,7 +312,7 @@ In `blog/urls.py` aggiugi:
 
 {% filename %}blog/urls.py{% endfilename %}
 {% pre language="python" %}
-    path('post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
+    path('post/<int:pk>/edit/$', views.post_edit, name='post_edit'),
 {% endpre %}
 
 Riutilizzeremo il modello `blog/templates/blog/post_edit.html`, quindi l'ultima cosa che manca è una *view*.
