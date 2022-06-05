@@ -175,7 +175,7 @@ L'ultimo passo è quello di aggiungere un nuovo modello al nostro database. Prim
 
 **Note** Ricordati di salvare i file che hai appena modificato. Altrimenti il tuo computer eseguirà la versione precedente e potresti ottenere degli errori.
 
-Digita `python manage.py makemigrations blog`. Il risultato somiglierà a questo:
+Digita `python3 manage.py makemigrations blog`. Il risultato somiglierà a questo:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2-4"  %}
@@ -187,7 +187,7 @@ Migrations for 'blog':
 
 Django ci ha preparato un file di migrazione che dobbiamo applicare nel nostro database.
 
-Digita `python manage.py migrate blog` e l'output dovrebbe essere:
+Digita `python3 manage.py migrate blog` e l'output dovrebbe essere:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2-6" %}
