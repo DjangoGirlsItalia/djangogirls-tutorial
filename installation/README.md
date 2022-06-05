@@ -242,14 +242,14 @@ Ora che siamo nella cartella giusta, puoi installare Django usando `pip`. Nella 
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2-5" %}
-pip3 install --user django~=2.1 whitenoise~=4.1.0
-Collecting django~=2.1
-Downloading Django-2.1.7-py2.py3-none-any.whl (6.8MB)
+pip3 install --user django~=3.2.0 whitenoise~=6.0.0
+Collecting django~=3.2.19
+Downloading Django-3.2.19-py2.py3-none-any.whl (6.8MB)
 Installing collected packages: django
-Successfully installed django-2.1.7
+Successfully installed django-3.2.19
 {% endpre %}
 
-**Note** Assicurati di usare `pip3` invece di `pip` se durante l'installazione di Django ottieni l'errore `Could not find a version that satisfies the requirement django~=2.1`.
+**Note** Assicurati di usare `pip3` invece di `pip` se durante l'installazione di Django ottieni l'errore `Could not find a version that satisfies the requirement django~=3.2`.
 
 <!--sec data-title="Windows" data-id="django_err_windows"
 data-collapse=true ces-->
@@ -265,7 +265,7 @@ data-collapse=true ces-->
 >
 >{% filename %}command-line{% endfilename %}
 >{% pre prompt="C:\\Users\\Name\\djangogirls> ", output="2-5" %}
-python -m pip install django~=2.1 whitenoise~=4.1.0
+python -m pip install django~=3.2.0 whitenoise~=6.0.0
 {% endpre %}
 
 <!--endsec-->
