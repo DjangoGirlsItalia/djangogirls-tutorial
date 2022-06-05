@@ -39,7 +39,7 @@ Se dovessi vedere un percorso diverso (a parte il nome `olasitarska`), puoi acce
 <!--sec data-title="macOS e Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt="$", language="bash", output="2" %}
+{% pre prompt="$", language="bash" %}
 cd
 cd djangogirls
 {% endpre %}
@@ -49,7 +49,7 @@ cd djangogirls
 <!--sec data-title="Windows" data-id="windows_cd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
-{% pre prompt=">", language="powershell", output="2" %}
+{% pre prompt=">", language="powershell" %}
 cd %HOMEPATH%
 cd djangogirls
 {% endpre %}
