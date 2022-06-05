@@ -180,7 +180,7 @@ DATABASES = {
 }
 {% endpre %}
 
-Per creare un database per il nostro blog, eseguiamo questo nella console: `python3 manage.py migrate` (abbiamo bisogno di essere nella directory `djangogirls` che contiene il file `manage.py`). Se funziona, dovresti vedere qualcosa di simile:
+Per creare un database per il nostro blog, eseguiamo questo nella console: `python3 manage.py migrate` (o `python manage.py migrate` a seconda del tuo sistema operativo). Attenzione, è necessario essere nella directory `djangogirls` che contiene il file `manage.py`. Se funziona, dovresti vedere qualcosa di simile:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash", output="2-17" %}
@@ -205,7 +205,7 @@ Running migrations:
 
 E abbiamo finito! Tempo di avviare il server web e vedere se il nostro sito Web funziona!
 
-Devi essere nella directory che contiene il file di `manage.py` (la directory `djangogirls`). Nella console, possiamo avviare il server web eseguendo `python3 manage.py runserver`:
+Devi essere nella directory che contiene il file di `manage.py` (la directory `djangogirls`). Nella console, possiamo avviare il server web eseguendo `python3 manage.py runserver` (o `python manage.py runserver` a seconda del tuo sistema operativo):
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt="$", language="bash" %}

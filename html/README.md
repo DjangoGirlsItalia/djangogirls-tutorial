@@ -31,7 +31,7 @@ E ora crea un file `post_list.html` nella directory `blog/templates/blog` (lasci
 
 Guarda che aspetto ha il tuo sito adesso: http://127.0.0.1:8000/
 
-> Se continui ad avere un errore `TemplateDoesNotExists`, prova a riavviare il server. Vai nella command line, arresta il server premendo Ctrl+C ( I tasti Control e C insieme) e riavvialo utilizzando il comando `python3 manage.py runserver`.
+> Se continui ad avere un errore `TemplateDoesNotExists`, prova a riavviare il server. Vai nella command line, arresta il server premendo Ctrl+C ( I tasti Control e C insieme) e riavvialo utilizzando il comando `python3 manage.py runserver` (o `python manage.py runserver` a seconda del tuo sistema operativo).
 
 ![Figura 11.1](images/step1.png)
 
