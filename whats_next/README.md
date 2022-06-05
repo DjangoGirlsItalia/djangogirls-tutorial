@@ -10,7 +10,6 @@ Dopo di che, assicurati di:
 
 * Seguire Django Girls su [Facebook](https://facebook.com/djangogirls) o [Twitter](https://twitter.com/djangogirls)
 * Seguire Django Girls Italia su [Facebook](https://www.facebook.com/djangogirlsIT/) o [Twitter](https://twitter.com/djangogirlsIT) per rimanere aggiornata
-* Aggiungerti al gruppo Telegram [![DjangoGirls It](https://img.shields.io/badge/telegram-%40djangogirls__it-blue.svg)](https://t.me/djangogirls_ita) per rimanere in contatto con i Coach: è il posto giusto se hai dubbi o se vuoi continuare questo percorso.
 
 ### Mi puoi consigliare ulteriori risorse?
 
