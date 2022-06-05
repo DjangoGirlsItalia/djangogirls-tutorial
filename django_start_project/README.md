@@ -216,7 +216,7 @@ Se sei su Windows e fallisce con `UnicodeDecodeError`, usa questo comando:
 
 {% filename %}command-line{% endfilename %}
 {% pre prompt=">", language="powershell" %}
-python manage.py runserver 0:8000
+python3 manage.py runserver 0:8000
 {% endpre %}
 
 Ora tutto quello che devi fare è controllare che il tuo sito sia in esecuzione. Apri il tuo browser (Firefox, Chrome, Safari, Internet Explorer o qualsiasi altro usi) e digita l'indirizzo:
