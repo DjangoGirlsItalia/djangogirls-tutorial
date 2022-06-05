@@ -157,4 +157,4 @@ Così:
 
 È tutto! Controlla se il tuo sito sta ancora funzionando correttamente :)
 
-> Se hai un errore `TemplateDoesNotExists` che dice che non c'è un file `blog/base.html` e hai `runserver` in esecuzione nella console, prova a fermarlo (premendo Ctrl+C - I tasti Control e C insieme) e riavvialo mettendo in esecuzione il comando `python manage.py runserver`.
+> Se hai un errore `TemplateDoesNotExists` che dice che non c'è un file `blog/base.html` e hai `runserver` in esecuzione nella console, prova a fermarlo (premendo Ctrl+C - I tasti Control e C insieme) e riavvialo mettendo in esecuzione il comando `python3 manage.py runserver` (o `python manage.py runserver` a seconda del tuo sistema operativo).

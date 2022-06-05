@@ -14,11 +14,11 @@ admin.site.register(Post)
 
 Come puoi vedere stiamo importando il modello di Post che abbiamo definito nel capitolo precedente. Per far sì che il nostro modello sia visibile nella pagina di admin, dobbiamo registrare questo modello con `admin.site.register(Post)`.
 
-Ok, è tempo di guardare il nostro modello Post. Ricorda di eseguire `python manage.py runserver` nella console per avviare il web server. Vai nel browser e scrivi l'indirizzo `http://127.0.0.1:8000/admin/` Vedrai una pagina di login come questa:
+Ok, è tempo di guardare il nostro modello Post. Ricorda di eseguire `python3 manage.py runserver` (o `python manage.py runserver` a seconda del tuo sistema operativo) nella console per avviare il web server. Vai nel browser e scrivi l'indirizzo `http://127.0.0.1:8000/admin/` Vedrai una pagina di login come questa:
 
 ![Login page](images/login_page2.png)
 
-Per accedere, devi creare un *superuser* - un utente che ha il controllo su tutto nel sito. Torna alla command-line e digita `python manage.py createsuperuser`, e premi invio.
+Per accedere, devi creare un *superuser* - un utente che ha il controllo su tutto nel sito. Torna alla command-line e digita `python3 manage.py createsuperuser` (o `python manage.py createsuperuser` a seconda del tuo sistema operativo), e premi invio.
 
 
 > Ricordati: per scrivere nuovi comandi mentre il web server è attivo, apri una nuova finestra del terminale. Se non ti ricordi come farlo ne abbiamo discusso nelle sezioni **Il tuo primo progetto Django!** e **Introduzione alla command line**.
